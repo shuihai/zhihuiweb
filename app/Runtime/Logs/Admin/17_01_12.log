@@ -3093,3 +3093,1462 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2017-01-12T13:06:09+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0030s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:04:41+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-12T14:06:05+08:00 ] ::1 /zhihuiweb/Admin/Focus/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0040s ]
+SQL: DELETE FROM `zh_focus` WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2017-01-12T14:06:06+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:06:09+08:00 ] ::1 /zhihuiweb/Admin/Focus/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0020s ]
+SQL: DELETE FROM `zh_focus` WHERE `id` = 3 [ RunTime:0.0000s ]
+
+[ 2017-01-12T14:06:10+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:06:37+08:00 ] ::1 /zhihuiweb/Admin/Focus/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0070s ]
+SQL: DELETE FROM `zh_focus` WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-01-12T14:06:38+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0030s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:10:52+08:00 ] ::1 /zhihuiweb/Admin/Focus/add/tid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 10 行.
+NOTIC: [2] Missing argument 2 for Communal\Controller\TypeController::getOptionById(), called in C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php on line 10 and defined C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: selected_id C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 38 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:11:12+08:00 ] ::1 /zhihuiweb/Admin/Focus/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0030s ]
+SQL: INSERT INTO `zh_focus` (`tid`,`title`,`url`,`desc`,`sort`) VALUES ('5','首页第一张','','','999') [ RunTime:0.0020s ]
+NOTIC: [2] strstr() expects parameter 1 to be string, array given C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1010 行.
+NOTIC: [2] strstr() expects parameter 1 to be string, array given C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1013 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1066 行.
+NOTIC: [2048] Only variables should be passed by reference C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1028 行.
+SQL: UPDATE `zh_focus` SET `img`='focus/0/0/23/991699.jpeg' WHERE `id` = '23' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:11:13+08:00 ] ::1 /zhihuiweb/Admin/Focus/add/tid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 10 行.
+NOTIC: [2] Missing argument 2 for Communal\Controller\TypeController::getOptionById(), called in C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php on line 10 and defined C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: selected_id C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 38 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-12T14:11:16+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:13:50+08:00 ] ::1 /zhihuiweb/Admin/Focus/add/tid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 10 行.
+NOTIC: [2] Missing argument 2 for Communal\Controller\TypeController::getOptionById(), called in C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php on line 10 and defined C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: selected_id C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 38 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:14:10+08:00 ] ::1 /zhihuiweb/Admin/Focus/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0040s ]
+SQL: INSERT INTO `zh_focus` (`tid`,`title`,`url`,`desc`,`sort`) VALUES ('5','首页第三张','','','999') [ RunTime:0.0000s ]
+NOTIC: [2] strstr() expects parameter 1 to be string, array given C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1010 行.
+NOTIC: [2] strstr() expects parameter 1 to be string, array given C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1013 行.
+NOTIC: [2] unlink() expects parameter 1 to be a valid path, array given C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1066 行.
+NOTIC: [2048] Only variables should be passed by reference C:\wamp\www\zhihuiweb\app\Common\Extend\Image.class.php 第 1028 行.
+SQL: UPDATE `zh_focus` SET `img`='focus/0/0/24/935699.png' WHERE `id` = '24' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:14:11+08:00 ] ::1 /zhihuiweb/Admin/Focus/add/tid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php 第 10 行.
+NOTIC: [2] Missing argument 2 for Communal\Controller\TypeController::getOptionById(), called in C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\ecddb26e8574743d7c23fc37f1a67dd1.php on line 10 and defined C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: selected_id C:\wamp\www\zhihuiweb\app\Communal\Controller\TypeController.class.php 第 38 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:14:13+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:15:44+08:00 ] ::1 /zhihuiweb/Admin/Focus/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_focus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\afba486fbccfb43603e80b2e91bb6176.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\afba486fbccfb43603e80b2e91bb6176.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\afba486fbccfb43603e80b2e91bb6176.php 第 10 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:15:52+08:00 ] ::1 /zhihuiweb/Admin/Focus/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0020s ]
+SQL: UPDATE `zh_focus` SET `tid`='5',`title`='首页第二张',`url`='',`desc`='简要描述	简要描述	简要描述	简要描述	简要描述	简要描述	简要描述	简要描述	简要描述	简要描述	简要描述	',`sort`='999' WHERE `id` = '2' [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:15:54+08:00 ] ::1 /zhihuiweb/Admin/Focus/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_focus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\afba486fbccfb43603e80b2e91bb6176.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\afba486fbccfb43603e80b2e91bb6176.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\afba486fbccfb43603e80b2e91bb6176.php 第 10 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-12T14:51:00+08:00 ] ::1 /zhihuiweb/Admin/focus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_focus` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_focus` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT * FROM `zh_focus` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='37' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `zh_type` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\1ddd3184c932348885f28187244560ef.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:51:01+08:00 ] ::1 /zhihuiweb/Admin/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 10 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 11 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 14 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 16 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 22 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_info` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT `id`,`title`,`tid`,`time`,`img`,`author`,`hits`,`sort`,`flags` FROM `zh_info` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='49' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='44' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='43' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='42' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 11 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-12T14:51:03+08:00 ] ::1 /zhihuiweb/Admin/Info/add/tid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b5e18fe10a5912ad7846f6d459883304.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b5e18fe10a5912ad7846f6d459883304.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b5e18fe10a5912ad7846f6d459883304.php 第 10 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:51:15+08:00 ] ::1 /zhihuiweb/Admin/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `zh_type` ORDER BY sort asc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\11f0e3dea27bf4c592da08070f7836e0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\11f0e3dea27bf4c592da08070f7836e0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\11f0e3dea27bf4c592da08070f7836e0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-01-12T14:51:16+08:00 ] ::1 /zhihuiweb/Admin/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 10 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 11 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 14 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 16 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 22 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_info` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT `id`,`title`,`tid`,`time`,`img`,`author`,`hits`,`sort`,`flags` FROM `zh_info` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='49' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='44' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='43' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='42' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 11 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-12T14:51:22+08:00 ] ::1 /zhihuiweb/Admin/Info/edit/id/60.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_info` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\47d6336c33fd94f8cf1c4b860080df36.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\47d6336c33fd94f8cf1c4b860080df36.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\47d6336c33fd94f8cf1c4b860080df36.php 第 10 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.682039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.682039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-12T14:53:54+08:00 ] ::1 /zhihuiweb/Admin/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 10 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 11 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 14 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 16 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 22 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_info` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT `id`,`title`,`tid`,`time`,`img`,`author`,`hits`,`sort`,`flags` FROM `zh_info` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='49' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='44' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='43' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='42' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 11 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-12T14:53:59+08:00 ] ::1 /zhihuiweb/Admin/Info/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 10 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 11 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 14 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 16 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 22 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT `id`,`title`,`tid`,`time`,`img`,`author`,`hits`,`sort`,`flags` FROM `zh_info` ORDER BY `id` DESC LIMIT 20,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='41' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='40' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='39' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='18' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='18' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='18' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='18' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='18' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='21' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='18' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 11 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:54:02+08:00 ] ::1 /zhihuiweb/Admin/Info/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 10 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 11 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 14 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 16 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 22 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT `id`,`title`,`tid`,`time`,`img`,`author`,`hits`,`sort`,`flags` FROM `zh_info` ORDER BY `id` DESC LIMIT 40,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='17' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='16' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='15' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 11 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:54:05+08:00 ] ::1 /zhihuiweb/Admin/Info/edit/id/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_info` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\47d6336c33fd94f8cf1c4b860080df36.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\47d6336c33fd94f8cf1c4b860080df36.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\47d6336c33fd94f8cf1c4b860080df36.php 第 10 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-12T14:56:11+08:00 ] ::1 /zhihuiweb/Admin/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_info` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 10 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 11 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 14 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 16 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 22 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Admin\Controller\InfoController.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zh_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 5 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [2] Missing argument 6 for Common\Extend\Page::__construct(), called in C:\wamp\www\zhihuiweb\app\Admin\Controller\AdminController.class.php on line 29 and defined C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 99 行.
+NOTIC: [8] Undefined variable: scroll C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 101 行.
+NOTIC: [8] Undefined variable: target C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesId C:\wamp\www\zhihuiweb\app\Common\Extend\Page.class.php 第 111 行.
+SQL: SELECT `id`,`title`,`tid`,`time`,`img`,`author`,`hits`,`sort`,`flags` FROM `zh_info` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='49' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='48' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='44' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='43' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zh_type` WHERE ( 1=1 AND id='42' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 10 行.
+NOTIC: [8] Undefined index: tid C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 11 行.
+NOTIC: [8] Undefined index: level C:\wamp\www\zhihuiweb\app\Common\Common\function.php 第 238 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined variable: disabled C:\wamp\www\zhihuiweb\app\Common\Extend\Tree.class.php(299) : eval()'d code 第 1 行.
+NOTIC: [8] Undefined index: keywords C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: start C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: end C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 12 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: order C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 13 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\801720c0d4b95582ecf41928d9710ee9.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

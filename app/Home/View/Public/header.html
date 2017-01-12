@@ -9,53 +9,38 @@
 <title><if condition="$row['title']">{$row['title']}|</if>{$config['title']}</title>
 <meta name="keywords" content="<if condition="$row['keywords']">{$row['keywords']}|</if>{$config['keywords']}">
 <meta name="description" content="<if condition="$row['desc']">{$row['desc']}|</if>{$config['description']}">
-<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/common.css?version=1.0" />
-<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/index.css" />
-<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="__PUBLIC__/home/css/base.css" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/swiper.css" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/animate.css" />
+
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/swiper.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/wow.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/prefixfree.min.js"></script>
+
+
 <!--[if lte IE 6]>
 <style type="text/css">
     body { behavior:url("css/csshover.htc"); }
 </style>
 <![endif]-->
 </head>
+
 <body>
-<div id="header">
-    <div class="container">     
-        <div class="logo">
-            <a href="#"><img src="__PUBLIC__/home/images/logo.png" alt="科学技术研究院" title="科学技术研究院" /></a>
+        <div class="head">
+                <div class="headLogo fleft"><img src="__PUBLIC__/home/images/logo.png"/></div>
+                <div class="nav fleft">
+                        <ul>
+                                <li class="navli"><a href="{:U('Index/Index')}">首页</a></li>
+                                <li><a href="{:U('Info/Company_introduction')}">公司介绍</a></li>
+                                <li><a href="Customer-service.html">解决方案</a></li>
+                                <li><a href="Product-introduction.html">产品介绍</a></li>
+                                <li><a href="Business-contact.html">业务联系</a></li>
+                                <li><a href="Channel-cooperation.html">渠道合作</a></li>
+                                <li><a href="After-sale-platform.html">售后平台</a></li>
+                                <li><a href="Join-us.html">加入我们</a></li>
+                        </ul>
+                </div>
         </div>
-        <div id="menu_nav">
-          <ul>
-<!--             <volist name="headerType" id="vo">
-                <li class="menu_item"><a href="{$vo['template_index']}" hidefocus="true" class="menu_bg" >{$vo['title']}</a>
-                    
-                </li>
-            </volist> -->
-            <li class="menu_item"><a href="{:U('Index/index')}" hidefocus="true" <if condition="$CAName eq indexindex">class="menu_bg current"<else/>class="menu_bg"</if> >首页</a></li>
-            <li class="menu_item"><a href="{:U('Info/productServer')}" hidefocus="true"  <if condition="$CAName eq infoproductserver">class="menu_bg current"<else/>class="menu_bg"</if>>产品服务</a></li>            
-            <li class="menu_item"><a href="{:U('Info/companynews')}" hidefocus="true"  <if condition="($CAName eq infocompanynews) OR ($CAName eq infotechnologynews)">class="menu_bg current"<else/>class="menu_bg"</if>>新闻动态</a>
-                    <div>
-                      <a href="{:U('Info/companynews')}" hidefocus="true">公司新闻</a>
-                      <a href="{:U('Info/technologynews')}" hidefocus="true">科学新闻</a>
-                    </div>  
-            </li>
-            <li class="menu_item"><a href="{:U('Info/cases')}" hidefocus="true"  <if condition="$CAName eq infocases">class="menu_bg current"<else/>class="menu_bg"</if>>应用案例</a></li>
-            <li class="menu_item">
-                   <a href="{:U('Info/aboutUs')}" hidefocus="true"  <if condition="$CAName eq infoaboutus">class="menu_bg current"<else/>class="menu_bg"</if>>关于我们</a>
-                   <div>
-                      <a href="{:U('Info/aboutUs')}/#aboutus" hidefocus="true">公司简介</a>
-                      <a href="{:U('Info/aboutUs')}/#people" hidefocus="true">专家介绍</a>
-                      <a href="{:U('Info/aboutUs')}/#field" hidefocus="true">下属机构</a>
-                      <a href="{:U('Info/aboutUs')}/#friend" hidefocus="true">合作伙伴</a>
-                     <!--  <a href="{:U('Info/aboutUs')}/#cases" hidefocus="true">应用案例</a> -->
-                      <a href="{:U('Info/aboutUs')}/#service" hidefocus="true">售后服务</a>
-                  </div>
-            </li>
-          </ul>
-        </div>
-        <div class="right phone">
-            <i class="icon iconfont">&#xe624;</i><span>{$config['ex']['tel']}</span>
-        </div> 
-    </div>    
-</div>
-<div class="header_line"></div>

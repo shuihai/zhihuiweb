@@ -1,96 +1,193 @@
 <include file="Public/header" />
-<script src="__PUBLIC__/home/js/jquery.flexslider-min.js"></script>
-<div class="flexslider">
-    <ul class="slides">
-    	<volist name="focus" id='vo'>
-        	<li style="background:url(__UPLOAD__/{$vo['img']}) #CCE1F3 center 0 no-repeat"></li>
-        </volist>
-        <!--<a href="#"><img src="__UPLOAD__/{$vo['img']}" /></a>-->
-    </ul>        
-</div>
-<script type="text/javascript">
-$(function(){
-	$('.flexslider').flexslider({
-		directionNav: true,
-		pauseOnAction: false
-	});
-	$(".field_list li:nth-child(3n)").css("marginRight",0);
-	$(".case_list li:nth-child(4n)").css("marginRight",0);
-	$(".friend_list li:nth-child(6n)").css("marginRight",0);
-});
-</script>
-<div class="field">
-    <div class="container">
-     	<ul class="title_ul">            	
-            <li class="title_line"></li>
-            <li class="left">
-                <span class="index_title">涉及领域</span>             
-            </li>
-            <li class="title_line"></li>               
-        </ul>
-        	
-        <div class="clearfix"></div>
-        
-        <ul class="field_list ul_clear">
-        	<volist name="field" id="vo">
-	            <li>
-	                <img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" />
-	                <p class="field_title"><a href="javascript:void(0)" style="cursor:default">{$vo['title']}</a></p>
-	                <p class="field_con">{$vo['desc']}</p>
-	            </li>
-            </volist>
-        </ul>
-    </div>
-</div>
 
 
-<div class="clearfix"></div>
 
-<div class="case_bg">
-	<div class="container">
-        
-        <ul class="title_ul">            	
-            <li class="title_line"></li>
-            <li class="left">
-                <span class="index_title">智能机器人应用</span>
-            </li>
-            <li class="title_line"></li>               
-        </ul>
-        	
-        <div class="clearfix"></div>
-        
-        <ul class="case_list ul_clear">
-        	<volist name="case" id="vo">
-	            <li>
-	                <a href="javascript:void(0)"  style="cursor:default"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" /></a>
-	                <div class="case_des">
-	                    <h4><a href="javascript:void(0)"  style="cursor:default">{$vo['title']}</a></h4>
-	                    <p>{$vo['desc']}</p>
-	                </div>
-	            </li>
-            </volist>
-        </ul>
-    </div>
-</div>
-<div class="clearfix"></div>
-<div class="friend">
-	
-    <ul class="title_ul">            	
-        <li class="title_line"></li>
-        <li class="left">
-            <span class="index_title">合作伙伴</span>             
-        </li>
-        <li class="title_line"></li>               
-    </ul>
-        
-    <div class="clearfix"></div>
-    
-	<ul class="friend_list ul_clear">
-        <volist name="friends" id="v">
-    	   <li><a <if condition="$v['url']">href={$v['url']} target="_blank"<else/> href="javascript:void(0)"  style="cursor:default"</if> ><img src="__UPLOAD__/{$v['img']}" alt="{$v['title']}" title="{$v['title']}" /></a></li>
-        </volist>
-    </ul>
-</div>
+		<div class="banner">
+			
+		    <div class="swiper-container gallery-top">
+		        <div class="swiper-wrapper">
+                            <volist name="focus" id='vo'>
+		            <div class="swiper-slide" style="background-image:url(__UPLOAD__/{$vo['img']})"></div>
+                            </volist>
 
-<div class="clearfix"></div>
+		        </div>
+		        
+		    </div>
+		    <div class="previewqqs">
+		    	<div class="swiper-container gallery-thumbs">
+			        <div class="swiper-wrapper">
+                                    <volist name="focus" id='vo'>
+			            <div class="swiper-slide" style="background-image:url(__UPLOAD__/{$vo['img']})"></div>
+                                    </volist>
+
+			        </div>
+			        
+			    </div>
+			    <div class="swiper-button-next swiper-button-white"></div>
+		        <div class="swiper-button-prev swiper-button-white"></div>
+		    </div>
+		    
+		</div>
+		
+		<div class="centre">
+			<div class="resolve ">
+				<div class="margin15 margin150">
+					<div class="resolve1 fleft wow fadeInLeft">
+						<div class="resolvescript">
+							<span>电商解决方案</span>
+							<p>从商务和财务到销售与服务，金蝶的解决方案覆盖所有业务线。深入了解面向你所在业务线部门的解决方案组合，连接所有数据，驱动成功，连接所有数据，驱动成功。</p>
+						</div>
+						<div class="resolveprint">
+							<div class="resolveimg"><img src="__PUBLIC__/home/images/img_resolve1.png" /></div>
+							<div class="resolvewriting">
+								<p>从商务和财务到销售与服务，金蝶的解决方案覆盖所有业务线。深入了解面向你所在业务线部门的解决方案组合，连接所有数据，驱动成功，连接所有数据，驱动成功。</p>
+							</div>
+						</div>
+					</div>
+					<div class="resolve1 fleft wow fadeInRight">
+						<div class="resolvescript">
+							<span>音视频解决方案</span>
+							<p>采用数字化音频传输和智能化的系统管理解决方案，借助先进的音频数字处理传输技术，把先进的数字技术和音频技术完美结合；文件输入输出可控化；电源时序器等设备的无缝连接。</p>
+						</div>
+						<div class="resolveprint">
+							<div class="resolveimg"><img src="__PUBLIC__/home/images/img_resolve2.png" /></div>
+							<div class="resolvewriting">
+								<p>采用数字化音频传输和智能化的系统管理解决方案，借助先进的音频数字处理传输技术，把先进的数字技术和音频技术完美结合；文件输入输出可控化；电源时序器等设备的无缝连接。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="margin15 customized">
+				<div class="marginbig">功能定制<i class="margins-i"></i></div>
+				<div class="margin60 customizedul wow fadeInUp">
+					<div class="">
+						<span class="customized1">智能导航</span><span class="customized2">人体感应</span><span class="customized3">高清监控</span>
+						<span class="customized4">智能系统</span><span class="customized5">资料派送</span><span class="customized6">真人外形</span>
+						<span class="customized7">数据统计</span>
+					</div>
+					<div class="">
+						<span class="customized8">自主避障</span><span class="customized9">语音交互</span><span class="customized10">生物识别</span>
+						<span class="customized11">触屏展示</span><span class="customized12">自动充电</span><span class="customized13">关节活动</span>
+						<span class="customized14">后台管理</span>
+					</div>
+					
+				</div>
+			</div>
+			<div class="cooperate">
+				<div class="margin15">
+					<div class="marginbig">合作案例<i class="margins-i"></i></div>
+					<div class="cooperateul margin60">
+						<div class="cooperateleft fleft wow fadeInLeft" style=" animation-delay: 0.2s;">
+							<div class="cooperate11 cooperate11width">
+								<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate1.png" /></div>
+								<div class="cooperate11div"><div class="cooperate11span">青岛地铁合作案例</div></div>
+								<i  class="light"></i>
+							</div>
+						</div>
+						<div class="cooperateright fleft wow fadeInRight" style=" animation-delay: 0.6s;">
+							<ul>
+								<li>
+									<div class="cooperate11 cooperate22width">
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate2.png" /></div>
+										<div class="cooperate11div"><div class="cooperate11span">善林金融合作案例</div></div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="cooperate11 cooperate22width">
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate3.png" /></div>
+										<div class="cooperate11div"><div class="cooperate11span">万豪酒店合作案例</div></div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="cooperate11 cooperate22width">
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate4.png" /></div>
+										<div class="cooperate11div"><div class="cooperate11span">浙江省国家大学科技园</div></div>
+										
+									</div>
+								</li>
+								<li>
+									<div class="cooperate11 cooperate22width">
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate5.png" /></div>
+										<div class="cooperate11div"><div class="cooperate11span">万科合作案例</div></div>
+										
+									</div>
+								</li>
+                                                                
+                    
+                                                                
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="margin15 trends">
+				<div class="marginbig">智汇动态<i class="margins-i"></i></div>
+				<div class="trendsul margin60">
+					<ul>
+						<li class=" wow fadeInDown" style=" animation-delay: 0.2s;">
+							<div class="trendscontent">
+								<div class="contentimg"><img src="__PUBLIC__/home/images/img_trends1.png" /></div>
+								<div class="contentwriting">
+									<p class="writingp">美国机器人市场正方兴未艾，新一代主力机型即将推出。</p>
+									<span class="writingtime">2016-12-26</span>
+								</div>
+							</div>
+						</li>
+						<li class="wow fadeInDown" style=" animation-delay: 0.4s;">
+							<div class="trendscontent">
+								<div class="contentimg"><img src="__PUBLIC__/home/images/img_trends2.png" /></div>
+								<div class="contentwriting">
+									<p class="writingp">启智玩具等市场新风越吹越烈AR玩具成“当红炸子鸡”</p>
+									<span class="writingtime">2016-12-26</span>
+								</div>
+							</div>
+						</li>
+						<li class="wow fadeInDown" style=" animation-delay: 0.6s;">
+							<div class="trendscontent">
+								<div class="contentimg"><img src="__PUBLIC__/home/images/img_trends3.png" /></div>
+								<div class="contentwriting">
+									<p class="writingp">阿瑞拉机器人科技运动领导加强制作许可专业短片即将上市。</p>
+									<span class="writingtime">2016-12-26</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+		
+		<script>
+			new WOW().init();
+		    var galleryTop = new Swiper('.gallery-top', {
+		        spaceBetween: 10,
+		        loop:true,
+		        loopedSlides: 5, 
+		    });
+		    var galleryThumbs = new Swiper('.gallery-thumbs', {
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        spaceBetween: 10,
+		        slidesPerView: 4,
+		        touchRatio: 0.2,
+		        autoplay : 3000,
+		        autoplayDisableOnInteraction : false, 
+		        loop:true,
+		        loopedSlides: 5, 
+		        slideToClickedSlide: true
+		    });
+		    galleryTop.params.control = galleryThumbs;
+		    galleryThumbs.params.control = galleryTop;
+	    
+	    </script>
+
+
+
+
 <include file="Public/footer" />

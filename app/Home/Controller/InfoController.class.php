@@ -160,5 +160,38 @@ class InfoController extends HomeController{
         $this->assign('page',$Page->show());
         $this->display();
     }
+
+    
+    
+    //公司介绍
+    public function company_introduction(){
+        $d=D("Info");
+        //关于我们
+        $this->about=$d->where(array("tid"=>14))->order('time desc')->find();
+        //公司简介
+        $this->desc=$d->where(array("tid"=>15))->order('time desc')->find();
+        //专家介绍
+        $expert=$d->where(array("tid"=>16))->order('time desc')->find();
+        $expert['images']=json_decode($expert['images'],true);
+        //下属机构
+        $this->mechanism=$d->where(array("tid"=>17))->order('time desc')->find();
+        //合作伙伴
+        $friends=$d->where(array("tid"=>18))->order('sort asc')->select();
+        //应用案例
+        $this->case=$d->where(array("tid"=>19))->order('sort asc')->select();
+        //售后服务
+        $this->aftermarket=$d->where(array("tid"=>20))->order('time desc')->find();
+        $this->assign("expert",$expert);
+        $this->assign("friends",$friends);
+        $this->display();
+    }    
+
+    
+    //公司介绍
+    public function team(){
+
+        $this->display();
+    }        
+    
 }
 ?>

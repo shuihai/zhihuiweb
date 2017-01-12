@@ -1,73 +1,63 @@
-
-<div id="footer">
-    <div class="footer_con">
-        <div class="footer_concat">
-            <div class="footer_concat_con">
-                <h4>联系方式</h4>
-                <p>服务热线：{$config['ex']['tel']}</p>
-                <p>公司QQ：{$config['ex']['qq']}</p>
-            </div>
-            <div class="footer_concat_con" style="margin-top: 40px;width: 350px;">
-                <h4></h4>
-                <p>邮箱：{$config['ex']['email']}</p>
-                <p>地址：{$config['ex']['address']}</p>
-            </div>
-            <div class="footer_code">
-                <p class="sweep_code">扫一扫 关注我</p>
-                <img src="{$config['ex']['erweima']}" alt="二维码" title="二维码" />
-            </div>
+<div class="bottom">
+        <div class="bottom1">
+                <ul>
+                        <li>
+                                <div class="img_fault"><span class="img_span">100倍故障时长赔偿</span></div>
+                        </li>
+                        <li>
+                                <div class="img_customer"><span class="img_span">24小时售后支持</span></div>
+                        </li>
+                        <li>
+                                <div class="img_return"><span class="img_span">5天无理由退换</span></div>
+                        </li>
+                </ul>
         </div>
-        
-        <div class="underline_footer"></div>
-        
-        <div class="footer_copyright">
-            <ul class="footer_list">
-                <li><a href="{:U('Info/aboutus')}">关于我们</a><span>|</span></li>
-                <li><a href="#">使用指南</a><span>|</span></li>
-                <li><a href="#">联系我们</a><span>|</span></li>
-                <li><a href="#">服务条款</a></li>
-            </ul>
-            <p style="margin-left:200px;">{$config['ex']['beian']}</p>
-            <p class="copyright">{$config['ex']['banquan']}</p>
-        </div>
-    </div>
-</div>
-<div class="go-top dn" id="go-top">
-    <a href="javascript:void(0)" class="go"></a>
-</div>
-<script type="text/javascript">
-$(function(){
-    
-    
-    /*设置每行的最后一个元素margin-right为0*/
-    $(".about ul.people_list li:nth-child(5n)").css("marginRight",0);
-    $(".cases_list li:nth-child(6n)").css("marginRight",0);
-    $(".friend_list li:nth-child(6n)").css("marginRight",0);
-    
-    
-    
-    /*backtop start*/
-    $(window).on('scroll',function(){
-        var st = $(document).scrollTop();
-        if( st>0 ){
-            $('#go-top').fadeIn(function(){
-                $(this).removeClass('dn');
-            });
-           
-        }else{
-            $('#go-top').fadeOut(function(){
-                $(this).addClass('dn');
-            });
-        }   
-    });
-    
-    $('#go-top .go').on('click',function(){
-        $('html,body').animate({'scrollTop':0},500);
-    });
-    /*backtop end*/
-    
 
-});
-</script>
+        <div class="bottom2 margin15"></div>
+
+        <div class="bottom3">
+                <div class="bottomLeft fleft">
+                        <div><span class="bottomspan1">联系电话</span><span class="bottomspan2">022-83560730</span></div>
+                </div>
+                <div class="bottomRight fleft">
+                        <div class="bottomRight1">
+                                <span>全方位的购买咨询  |</span>
+                                <span>精准的配套推荐  |</span>
+                                <span>灵活的价格方案  |</span>
+                                <span>1对1贴心服务</span>
+                        </div>
+
+                        <div class="bottomRight2">
+                                <div class="bottomRight21 fleft">
+                                        <span>联系方式</span>
+                                        <ul>
+                                                <li>天津市南开区慧谷大厦2413</li>
+                                                <li>http://www.itcrm.com/</li>
+                                        </ul>
+                                </div>
+                                <div class="bottomRight22 fleft">
+                                        <span>关注智汇</span>
+                                        <div>
+                                                <img src="__PUBLIC__/home/images/img_qrcode.png" />
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="bottomRight3">
+                                <span class="bottomRight31">合作伙伴</span>
+                                <div class="bottomRight32">
+                                        <span>安远新能源</span>
+                                        <span>HFRT</span>
+                                        <span>高通盛融</span>
+                                        <span>博盛地产</span>
+                                        <span>中国科学院计算机研究所</span>
+                                        <span>万卓智汇</span>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+
 </body>
 </html>
