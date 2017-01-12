@@ -1,0 +1,57 @@
+<include file="Public/header"/>
+<div class="row_main">
+<form action="{:U('User/add')}" method="post" name="form">
+<table  class="form_table">
+		<tr class="tr rt">
+			<td>用户名称</td>
+			<td  class="lt">
+				<input type="text" name="username">
+			</td>
+		</tr>
+		<tr class="tr rt">
+			<td>昵称</td>
+			<td  class="lt">
+				<input type="text" name="nickname">
+			</td>
+		</tr>
+		<tr class="tr rt">
+			<td>密码</td>
+			<td  class="lt">
+				<input type="password" name="password">
+			</td>
+		</tr>
+		<tr class="tr rt">
+			<td>确认密码</td>
+			<td  class="lt">
+				<input type="password" name="repassword">
+			</td>
+		</tr>
+		<tr class="tr rt">
+			<td>用户角色</td>
+			<td  class="lt">
+				<select name="role">
+					<volist name="role" id="vo">
+						<option value="{$vo.id}" <eq name="vo.id" value="$row.role">selected=""</eq> >{$vo.name}</option>
+					</volist>
+				</select>
+			</td>
+		</tr>
+		<tr class="tr rt">
+			<td >用户状态</td>
+			<td  class="lt">
+				<select name="status">
+					<option value="0">禁止</option>
+					<option value="1">启用</option>
+				</select>
+			</td>
+		</tr>
+		<tr class="tr rt">
+			<td >&nbsp;</td>
+			<td  class="lt">
+				<input class="btn btn-default" type="submit" value="添加">
+			</td>
+		</tr>
+</table>
+</form>
+</div>
+<include file="Index/footer" />

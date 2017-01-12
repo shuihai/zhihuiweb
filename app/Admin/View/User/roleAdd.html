@@ -1,0 +1,27 @@
+<include file="Public/header"/>
+		<form action="{:U('Admin/User/roleAdd')}" method="post" name="form">
+			<table width="98%" border="0" cellpadding="4" cellspacing="1" class="table">
+				<tr class="tr rt">
+					<td>角色名称</td>
+					<td  class="lt">
+						<input type="text" name="name" id="name" style="width:200px" value="{$info.name}">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >角色状态</td>
+					<td  class="lt">
+						<select name="status">
+							<option value="0">禁止</option>
+							<option value="1">启用</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >&nbsp;</td>
+					<td  class="lt">
+						<input class="btn btn-default" type="submit" value="添加">
+					</td>
+				</tr>
+</table>
+</form>
+<include file="Index/footer" />

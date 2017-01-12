@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="lefthtml">
+<head>
+<title>左侧导航</title>
+<base href="http://{$_SERVER['SERVER_NAME']}__APP__/" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/style.css">
+<script type="text/javascript" src="__PUBLIC__/common/js/jquery.js"></script>
+<script language="javascript">
+function show(url){
+  location.href = url;
+}
+</script>
+<base target="main" />
+</head>
+<body>
+  <div class="menu">
+{$sub_menu_html}
+  </div>
+<!-- $("#items"+id).toggleClass("none"); -->
+<script language="javascript">
+function showHide(id){
+	return;
+}
+function sub_title(id) {
+  $('.menu a').removeClass('active');
+ $('#a_'+id).addClass('active');
+  var str = $('#a_'+id).text();
+  window.top.$('#sub_current').html('');
+  window.top.$('#sub_current').html(str);
+}
+</script>
+</body>
+</html>

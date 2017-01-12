@@ -1,0 +1,73 @@
+
+<div id="footer">
+    <div class="footer_con">
+        <div class="footer_concat">
+            <div class="footer_concat_con">
+                <h4>联系方式</h4>
+                <p>服务热线：{$config['ex']['tel']}</p>
+                <p>公司QQ：{$config['ex']['qq']}</p>
+            </div>
+            <div class="footer_concat_con" style="margin-top: 40px;width: 350px;">
+                <h4></h4>
+                <p>邮箱：{$config['ex']['email']}</p>
+                <p>地址：{$config['ex']['address']}</p>
+            </div>
+            <div class="footer_code">
+                <p class="sweep_code">扫一扫 关注我</p>
+                <img src="{$config['ex']['erweima']}" alt="二维码" title="二维码" />
+            </div>
+        </div>
+        
+        <div class="underline_footer"></div>
+        
+        <div class="footer_copyright">
+            <ul class="footer_list">
+                <li><a href="{:U('Info/aboutus')}">关于我们</a><span>|</span></li>
+                <li><a href="#">使用指南</a><span>|</span></li>
+                <li><a href="#">联系我们</a><span>|</span></li>
+                <li><a href="#">服务条款</a></li>
+            </ul>
+            <p style="margin-left:200px;">{$config['ex']['beian']}</p>
+            <p class="copyright">{$config['ex']['banquan']}</p>
+        </div>
+    </div>
+</div>
+<div class="go-top dn" id="go-top">
+    <a href="javascript:void(0)" class="go"></a>
+</div>
+<script type="text/javascript">
+$(function(){
+    
+    
+    /*设置每行的最后一个元素margin-right为0*/
+    $(".about ul.people_list li:nth-child(5n)").css("marginRight",0);
+    $(".cases_list li:nth-child(6n)").css("marginRight",0);
+    $(".friend_list li:nth-child(6n)").css("marginRight",0);
+    
+    
+    
+    /*backtop start*/
+    $(window).on('scroll',function(){
+        var st = $(document).scrollTop();
+        if( st>0 ){
+            $('#go-top').fadeIn(function(){
+                $(this).removeClass('dn');
+            });
+           
+        }else{
+            $('#go-top').fadeOut(function(){
+                $(this).addClass('dn');
+            });
+        }   
+    });
+    
+    $('#go-top .go').on('click',function(){
+        $('html,body').animate({'scrollTop':0},500);
+    });
+    /*backtop end*/
+    
+
+});
+</script>
+</body>
+</html>

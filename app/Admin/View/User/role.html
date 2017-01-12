@@ -1,0 +1,47 @@
+<include file="Public/header"/>
+<div class="so_main">
+  <div class="Toolbar_inbox">
+    <a href="{:U('Admin/User/roleAdd')}" class="btn btn-default"><span>添加</span></a>
+  </div>
+  <div class="list">
+	<form action="{:U('Admin/User/roleSort')}" method="post" name="form">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<th class="line_l" style="text-align:left">排序权重</th>
+			<th class="line_l">ID</th>
+			<th class="line_l">角色名称</th>
+			<th class="line_l">状态</th>
+			<th class="line_l">管理操作</th>
+		</tr>
+	    <volist name="list" id="vo">
+			<tr class='<eq name="mod" value="1">tr<else/>ji</eq>'>
+				<td align='left'>
+					<input type='text' value='{$vo.sort}' class="fl" size='3' name='sort[{$vo.id}]'></td>
+				<td align='center'>{$vo.id}</td>
+				<td >{$vo.name}</td>
+				<td align='center'><eq name="vo.status" value="1">启用<else/>禁止</eq>
+				</td>
+				<td align='center'>
+					<a href="javascript:settingAccess({$vo.id}, '{$vo.name}')">权限设置</a>&nbsp;
+					<a href="{:U('Admin/User/roleEdit/',array('id'=>$vo['id']))}">修改</a>&nbsp;
+					<a href="javascript:void(0)" onclick="return confirmurl('{:U('Admin/User/roleDel',array('id'=>$vo['id']))}','确定删除该角色吗?')">删除</a>
+				</td>
+			</tr>
+	    </volist>
+		</table>
+		 <div class="Toolbar_inbox">
+		    <input type="submit" value="排序" class="btn btn-default fl" />
+		 </div>
+	</form>
+  </div>
+<div class="Toolbar_inbox">
+    <div class="page fr">{$page}</div>
+  </div>
+</div>
+<script type="text/javascript">
+//权限设置
+function settingAccess(id, name) {
+	window.top.art.dialog.open('?s=Admin/User/access/roleid/'+id,{title:name+'权限设置', width: 600, height: 500});
+}
+</script>
+<include file="Index/footer" />

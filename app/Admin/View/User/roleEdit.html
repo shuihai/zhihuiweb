@@ -1,0 +1,29 @@
+<include file="Public/header"/>
+		<gt name="row.id" value="0">
+			<form action="{:U('Admin/User/roleEdit')}" method="post" name="form">
+			<input type="hidden" name="id" value="{$row.id}">
+			<table width="98%" border="0" cellpadding="4" cellspacing="1" class="table">
+				<tr class="tr rt">
+					<td>角色名称</td>
+					<td  class="lt">
+						<input type="text" name="name" id="name" style="width:200px" value="{$row.name}">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >用户状态</td>
+					<td  class="lt">
+						<select name="status">
+							<option value="0" <if condition="!$row['status']">selected</if>>禁止</option>
+							<option value="1" <if condition="$row['status']">selected</if>>启用</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >&nbsp;</td>
+					<td  class="lt">
+						<input class="btn btn-default" type="submit" value="修改" >
+					</td>
+				</tr>
+</table>
+</form>
+<include file="Index/footer" />

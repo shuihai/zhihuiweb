@@ -1,0 +1,52 @@
+<include file="Public/header"/>
+<div class="row_main">
+			<form action="{:U('User/edit')}" method="post" name="form">
+			<input type="hidden" name="id" value="{$row.id}">
+			<table  class="form_table">
+				<tr class="tr rt">
+					<td>用户名称</td>
+					<td  class="lt">
+						<input type="text" name="username" value="{$row.username}" <eq name="row.username" value="$Think.config.SPECIAL_USER">readonly="readonly"</eq>>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>昵称</td>
+					<td  class="lt">
+						<input type="text" name="nickname" value="{$row.nickname}" />
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>密码</td>
+					<td  class="lt">
+						<input type="password" name="password" id="password">&nbsp;&nbsp;不修改无需填
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>用户角色</td>
+					<td  class="lt">
+						<select name="role">
+							<volist name="role" id="vo">
+								<option value="{$vo.id}" <eq name="vo.id" value="$row.role">selected=""</eq> >{$vo.name}</option>
+							</volist>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >用户状态</td>
+					<td  class="lt">
+						<select name="status">
+							<option value="0" <if condition="!$row['status']">selected</if>>禁止</option>
+							<option value="1" <if condition="$row['status']">selected</if>>启用</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >&nbsp;</td>
+					<td  class="lt">
+						<input class="btn btn-default" type="submit" value="修改" >
+					</td>
+				</tr>
+</table>
+</form>
+</div>
+<include file="Index/footer" />

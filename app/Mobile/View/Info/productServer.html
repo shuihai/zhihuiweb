@@ -1,0 +1,44 @@
+<include file="Public/header"/>
+	<body style="background-color: #FFFFFF;">
+		<!-- 头部 -->
+		<div class="P_top backgroundColor">
+			<a onclick="window.history.back()"><img src="__PUBLIC__/mobile/image/10.png" /></a>
+			<strong>产品服务</strong>
+		</div>
+		
+		<!--内容-->
+		<div class="P_center backgroundColor">
+			<div class="P_up">
+				<div class="P_img">
+					<img src="__UPLOAD__/{$row['mobile_img']}"  />
+				</div>
+				<div class="P_right">
+					<strong>{$row['title']}</strong>
+					<p class="detail">{$row['desc']}</p>
+				</div>
+			</div>
+			<div class="P_chart backgroundColor">
+				{$row['text']}
+			</div>
+		</div>
+		
+<include file="Public/footer"/>
+	<script type="text/javascript">
+		$(function(){
+			$('.detail').each(function(){
+				var html=$(this).html();
+				$(this).html('<span class="short">'+html.substring(0,90)+'...</span><span class="all">'+html+'</span><div class="more"><img src="__PUBLIC__/mobile/image/12.png" /><span>向下</span> 展开</div>');
+			});
+			$('.detail .more').each(function(){
+				$(this).click(function(){
+					$(this).parent().children('.all,.short').toggle();
+					//			   if($(this).html()=='(更多)')
+//							$(this).html('(收起)');
+					//			   else $(this).html('(更多)');
+				});
+			});
+		});
+	</script> 	
+		
+	</body>
+</html>

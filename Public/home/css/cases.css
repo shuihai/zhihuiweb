@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*应用案例*/
+
+
+.cases_content h3 { font-size: 20px; margin: 50px 0; color: #b3b3b3;}
+.cases_content h3 span {  background:#76acd4; width: 10px; height: 30px; display: block; float: left; margin-right: 20px;}
+.cases_content .cases_list li { border: 1px solid #c3c2c2; height: 240px; margin-bottom: 50px;}
+.cases_content .cases_list li .cases_des { padding: 30px 15px 20px 55px; float: left; width: 850px; _padding-bottom:0px;}
+.cases_content .cases_list li h4 { color: #8b8989; font-size: 22px;}
+.cases_content .cases_list li img { width: 240px; height: 240px; display: block; float: left;}
+.cases_content .cases_list li p { line-height: 22px; margin: 15px 0; color: #9b9a9a; height: 110px; overflow: hidden;}
+.cases_content .cases_list li a { color: #9b9a9a; font-size: 14px; float: right;}
+
+
+

@@ -1,0 +1,93 @@
+<include file="Public/header" />
+<div class="so_main">
+  <div class="Toolbar_inbox">
+    <a href="{:U('Info/add',array('tid'=>$_GET['tid']?$_GET['tid']:0))}"  class="btn btn-default"><span>添加</span></a>&nbsp;
+    <a href="javascript:void(0);" onclick="eEvent.delAll()" class="btn btn-default">删除</a>
+    <form method="get" action="{:U('Info/index')}" class="fr" id="search_form">
+          <select name="tid" id="tid">
+              <option value="">全部分类</option>
+              <?php echo A('Communal/Type')->getOptionById(2,$_GET['tid']?$_GET['tid']:0);?>
+          </select>&nbsp;
+          <input name="keywords" type="text"  value="{$_GET['keywords']}" placeholder="标题关键词"/>
+          发布日期 <input name="start" type="text" id="start" value="{$_GET['start']}"/>-<input name="end" type="text" id="end" value="{$_GET['end']}"/>&nbsp;
+          <select name="order">
+              <option value="" <empty name="_GET['order']">selected</empty>>排序</option>
+              <option value="1" <if condition="$_GET['order'] eq '1'">selected</if>>小到大</option>
+              <option value="2" <if condition="$_GET['order'] eq '2'">selected</if>>大到小</option>
+          </select>&nbsp;
+          <select name="status">
+              <option value=""  <empty name="_GET['status']">selected</empty>>全部显示</option>
+              <option value="1" <if condition="$_GET['status'] eq '1'">selected</if>>只显示是</option>
+              <option value="0" <if condition="$_GET['status'] eq '0'">selected</if>>只显示否</option>
+          </select>&nbsp;
+          <input type="submit"  class="btn btn-default" id="submit" value="搜索" />
+      </form>
+  </div>
+  <div class="list">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th style="width:30px;">
+        <input type="checkbox" id="checkbox_handle" onclick="checkAll(this)" value="0">
+        <label for="checkbox"></label>
+    </th>
+    <th class="line_l">ID</th>
+    <th class="line_l">名字</th>
+    <th class="line_l">图片</th>
+    <th class="line_l">发布时间</th>
+    <th class="line_l">[分类id]分类名</th>
+    <th class="line_l">属性</th>
+    <th class="line_l">作者</th>
+    <th class="line_l">点击率</th>
+    <th class="line_l">排序</th>
+    <th class="line_l">操作</th>
+  </tr>
+<volist name="list" id="vo">
+      <tr overstyle='on' id="">
+        <td><input type="checkbox" name="ids[]" id="ids[]" value="{$vo['id']}"></td>
+        <td>{$vo['id']}</td>
+        <td>{$vo['title']|msubstr=0,50}</td>
+        <td><if condition="$vo['img']"><img src="__UPLOAD__/{$vo['img']}" style="height:35px;" onerror="this.style.display='none'" /></if></td>
+        <td>{$vo['time']|date='Y-m-d H:i',###}</td>
+        <td><a href="{:U('Info/index',array('tid'=>$vo['tid']))}"/>[{$vo['tid']}]{$vo['type']['title']}</a></td>
+        <td>
+        <?php
+        echo str_replace(array('h','c','f','a','s','b','i','j'), array('头条','推荐','幻灯','特荐','滚动','加粗','图片','跳转'), $vo['flags']);
+        ?></td>
+        <td>{$vo['author']}</td>
+        <td>{$vo['hits']}</td>
+        <td>{$vo['sort']}</td>
+        <td>
+          <!-- <a href="<php> echo strstr($vo['flags'],',j,') ? $vo['url'] : U('Home/Info/detail',array('id'=>$vo['id'])) ;</php>" target="_blank">预览</a>&nbsp;&nbsp; -->
+            <a href="{:U('Info/edit',array('id'=>$vo['id']))}">修改</a>&nbsp;&nbsp;
+            <a href="javascript:void(0)" onclick="eEvent.del('{$vo['id']}');">删除</a>
+        </td>
+      </tr>
+</volist>
+</table>
+</div>
+<div class="Toolbar_inbox">
+<div class="page fr">{$page}</div>
+</div>
+</div>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/common/datetime/datetimepicker.css" />
+<script src="__PUBLIC__/common/datetime/bootstrap-datetimepicker.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="__PUBLIC__/common/datetime/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+eEvent.delUrl="{:U('Info/del')}";
+$('#start').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:"zh-CN",
+    minView:2,
+    autoclose:true
+});
+$('#end').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:"zh-CN",
+    minView:2,
+    autoclose:true
+});
+$('#search_form select').change(function(event) {
+  $('#submit').click();
+});
+</script>
+<include file="Public/footer" />

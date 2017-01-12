@@ -1,0 +1,94 @@
+body{ max-width: 414px; margin: auto; padding: 0px; background-color: #ebebeb; font-family: "微软雅黑";-webkit-tap-highlight-color:rgba(0,0,0,0)}
+ul{ list-style: none; padding: 0px;}
+a{ text-decoration: none;}
+.display{ display: none;}
+
+
+.backgroundColor{ background-color: #FFFFFF;}
+.Top{ overflow: hidden; padding: 0 0.8rem;}
+.logo{ float: left; width: 7rem; padding-bottom: 0.9rem; }
+.logo img{ width: 7rem; padding-top: 1.5rem; }
+.Top_right{ text-align: center; float: right; font-size:12px ;}
+.Top_right p{ margin: 0px; }
+.Top_right .p1{ color: #787878; padding-top: 1.3rem;}
+.Top_right .p2{ color: #939ba0; padding-bottom: 1rem;}
+.Roll{}
+.swiper-container{ background-color: #a6a6a6; height: 12rem; }
+.swiper-container img{ width: 100%;}
+.swiper-container .swiper-pagination-bullet{ width: 1.5rem; height: 0.5rem; border-radius:initial; background-color: #e1e1e1;}
+.swiper-container .swiper-pagination-bullet-active{ background-color: #ffffff;}
+.Product{ border-top:1px solid #d4d4d4;  margin-bottom: 1.1rem; 
+box-shadow:0 0 0 , /*左边阴影*/  
+		    0 0 0, /*右边阴影*/  
+		    0 0 0, /*顶部阴影*/  
+		    0 0.5rem 0.5rem #d4d4d4; /*底边阴影*/  }
+.Product_top{ padding-left: 0.8rem; line-height: 3rem;}
+.Product_top span{font-weight: bold;  color: #3998d5; border-left: 7px solid #3998d5; padding-left: 0.5rem;}
+.Product .Product_border{ border-top: 1px solid #d4d4d4; width: 87%;}
+.Product .nav{ }
+.Product .nav ul{overflow: hidden; margin: auto; width: 80%; text-align: center; color: #787878; padding: 1rem 0 1rem  0; }
+.Product .nav ul li{ -webkit-tap-highlight-color: transparent; cursor: pointer; float: left; font-size: 0.8rem; width: 32.44%; padding-top: 1rem; padding-bottom: 1rem; }
+.Product .nav ul li:active{ background-color: #f5f5f5;}
+.Product .nav ul li img{ width: 3rem;}
+.Product .nav ul li span{ display: block;}
+.Product .nav ul li a{color: #787878;}
+.Application{}
+.Application_es{ overflow:hidden; margin: 0rem 0.8rem; padding: 1.8rem 0rem;}
+.Application_es .Img{ float: left; padding-top: 0.8rem;}
+.Application_es .Img img{ width: 5rem;}
+.Application_es .Substance{ width: 70%; float: right;}
+.Content_top p{ margin: 0px;}
+.Content_top .Content_p1{ color: #9f8c71; line-height: 1.3rem; font-weight: bold; font-size: 0.9rem;}
+.Content_top .Content_p2{ color: #9b9b9b; font-size: 0.6rem;}
+.Case{ overflow: hidden; float: left; padding-top: 0.5rem;}
+.Case .Case_left{ margin-bottom: 0.5rem; color: #afafaf; border: 1px solid #e1e1e1; float: left; padding: 0.3rem 0;}
+.Case .Case_left a{ text-decoration: underline; float: left; color: #afafaf; border-right: 1px solid #E1E1E1;font-size: 0.7rem; padding: 0rem 0.5rem;}
+.Case .Case_left a:hover{ color: #1d6b9d;}
+.Case_right{ float: left;}
+.Case_right img{ width: 1rem; padding-top: 0.5rem; padding-left: .2rem;}
+
+.Border{ border-top: 1px solid #d4d4d4;}
+.Product_top a{ color: #9d9d9d;font-weight: bold; float: right; font-size: 0.6rem; padding-right: 1rem; }
+.news{ padding: 0 1rem;}
+.news ul{ overflow: hidden; margin: 0px;}
+.news ul li a{ float: left;}
+.news ul li{ float: left; padding: 0.8rem 0; border-bottom: 1px solid #d4d4d4;}
+.news ul li .news_left{float: left;height: 5rem; }
+.news ul li .news_left img{ width: 5rem; height: 5rem;}
+.news ul li .news_right{ width: 68%; float: right;}
+.news ul li .news_right .news_title{ color: #616161; font-size: 0.8rem; line-height: 1.8rem;}
+.news ul li .news_right .news_center{ color: #aaaaaa; word-wrap: break-word;word-break: break-all; font-size: 0.6rem;}
+
+.About_us{ font-size: 0.7rem; padding: 0.5rem 0; margin-bottom: 3rem;}
+.About_us p{ line-height: 1.5rem;}
+.About_us p ,.Contact_us p{ text-align: center; margin: 0px;}
+.About_us a{ color: #906d94; margin-left: 0.7rem;}
+.Contact_us{ color: #000000; background-color: #f8b551; font-size: 1rem; line-height: 3rem; position: fixed; z-index: 1000; bottom: 0px; width: 100%;}
+.Contact_us a{ color: #000000; margin-left: 0.7rem;}
+
+.P_top{ overflow: hidden; padding: 0 1rem; border-bottom: 1px solid #a6a6a6;}
+.P_top a{ float: left; padding-top: 0.8rem;}
+.P_top a img{ width: 1rem;}
+.P_top strong{ float: left; width: 89%; text-align: center; font-size: 1rem; line-height: 3.5rem; }
+.P_center{ padding-bottom: 4rem;}
+.P_up{ overflow: hidden; padding: 1rem 1rem; }
+.P_up .P_img{ float: left;}
+.P_up .P_img img{ width: 7rem;}
+.P_up .P_right{  width: 59%; float: right;}
+.P_up .P_right strong{ line-height: 2rem;}
+.P_up .P_right p{ margin: 0px; font-size: 0.77rem;word-wrap: break-word;word-break: break-all;}
+.detail .all{display:none;}
+.detail .more{text-decoration:none;color:#0066CC;cursor:pointer;}
+.P_up .P_right div{ padding-top: 0.5rem; font-size: 0.7rem; color: #d87f7f; float: right;}
+.P_up .P_right div img{ width: 0.8rem; padding-right: 0.5rem;}
+.P_chart{ margin: 0 1rem; height: 13rem;  background-color: #e5e5e5;}
+
+.A_center{ padding: 0 1rem;}
+.A_center .A_p1{ color: #ff8f52; border-bottom: 1px solid #cfcfcf; font-size: 1rem; line-height: 3rem;}
+.A_center .A_p2{ font-size: 0.8rem; text-indent: 2rem;word-wrap: break-word;word-break: break-all; text-align: justify;}
+
+.Article{}
+.Article_q{ padding: 0 1rem; padding-top: 2rem;}
+.Article_q .news_title{color: #616161;font-size: 1rem;}
+.Article_q .news_center{ padding: 1.5rem 0; color: #aaaaaa;word-wrap: break-word;word-break: break-all; font-size: 0.8rem;}
+.Article_q .news_center img{max-width: 100%;height:auto;}

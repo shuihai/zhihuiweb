@@ -1,0 +1,53 @@
+<include file="Public/header"/>
+<div class="row_main">
+    <form class="form" action="{:U('Admin/Focus/edit')}" method="post" enctype="multipart/form-data"> <input type="hidden" value="{$row['id']}" name="id">
+        <table class="form_table">
+            <tr class="tr rt">
+                <td>焦点图分类</td>
+                <td  class="lt">
+                    <select name="tid">
+                        <?php echo A('Communal/Type')->getOptionById(3,$row['tid']);?>
+                    </select>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>名称</td>
+                <td  class="lt">
+                    <input type="text" name="title" value="{$row['title']}" class="form_table_title">
+                </td>
+            </tr>
+            <tr class="tr rt" id="url">
+                <td>跳转地址</td>
+                <td  class="lt">
+                    <input type="text" name="url" value="{$row['url']}" class="form_table_title"/>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>图片</td>
+                <td  class="lt">
+                   <input  type="file" name="img"/>
+                   <notempty name="row['img']"><img src="__UPLOAD__/{:imgPrefix('thumb_',$row['img'])}" style="max-height:200px" /><else/>暂无图片</notempty>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>简要描述</td>
+                <td  class="lt">
+                     <textarea name="desc">{$row['desc']}</textarea>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>排序</td>
+                <td  class="lt">
+                    <input type="text" name="sort" value="{$row['sort']}"/>
+                </td>
+            </tr>
+            <tr class="tr lt">
+                <td >&nbsp;</td>
+                <td colspan="4">
+                    <input name="submit" type="submit" class="btn btn-default" value="修改" >
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<include file="Public/footer"/>

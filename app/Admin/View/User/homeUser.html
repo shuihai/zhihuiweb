@@ -1,0 +1,54 @@
+<include file="Public/header" />
+<div class="so_main">
+    <div class="Toolbar_inbox">
+          <div class="list_search fr">
+              <form method="post" action="{:U('Admin/User/homeUser')}">
+                  <input name="type" type="hidden" value="{$list[0]['type']}"/>
+                  用户名&nbsp;<input name="keywords" type="text" value="{$_GET['keywords']}"/>&nbsp;
+                  <input type="submit" class="btn btn-default" value="搜索"/>
+              </form>
+        </div>
+    </div>
+  <div class="list">
+  <table id="area_list" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th>
+        <input type="checkbox" id="checkbox_handle" onclick="checkAll(this)" value="0">
+        <label for="checkbox"></label>
+    </th>
+    <th class="line_l">ID</th>
+    <th class="line_l">用户名</th>
+    <th class="line_l">电话</th>
+    <th class="line_l">注册时间</th>
+    <th class="line_l">审核状态</th>
+    <th class="line_l">操作</th>
+  </tr>
+<volist name="list" id="vo">
+      <tr overstyle='on' id="">
+        <td><input type="checkbox" name="ids[]" id="ids[]" value="{$vo['id']}"></td>
+        <td>{$vo['id']}</td>
+        <td>{$vo['nickname']}</td>
+          <td>{$vo['phone']}</td>
+        <td><?php echo date('Y-m-d H:i:s',$vo['reg_time']);?></td>
+        <td>
+          <switch name="vo['status']" >
+          <case value="0">未审核</case>
+          <case value="1">审核通过</case>
+          </switch>
+        </td>
+        <td>
+            <a href="{:U('Admin/User/homeUserEdit',array('id'=>$vo['id']))}">修改</a>&nbsp;&nbsp;
+             <a href="javascript:void(0)" onclick="eEvent.del('{$vo['id']}');">删除</a>
+        </td>
+      </tr>
+</volist>
+  </table>
+  </div>
+  <div class="Toolbar_inbox">
+    <div class="page fr">{$page}</div>
+  </div>
+</div>
+<script type="text/javascript">
+eEvent.delUrl="{:U('Admin/User/homeUserDel')}";
+</script>
+<include file="Public/footer" />

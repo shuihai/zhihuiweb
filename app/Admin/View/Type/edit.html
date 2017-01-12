@@ -1,0 +1,337 @@
+<include file="Public/header"/>
+<!-- tobe 当栏目类型选择列表的时候,栏目详情隐藏,栏目列表模板,栏目文章模板显示
+选择栏目为详情页时反之
+ -->
+<div class="row_main">
+<ul class="nav nav-tabs" role="tablist" id="info_tab">
+  <li role="presentation" class="active"><a href="#base" role="tab" data-toggle="tab">基础</a></li>
+  <li role="presentation"><a href="#extend" role="tab" data-toggle="tab">扩展</a></li>
+</ul>
+    <form class="form" id="form" action="{:U('Admin/Type/edit')}" method="post" enctype="multipart/form-data">
+    <input name="id"  type="hidden" value="{$row['id']}"/>
+    <input type="hidden" name="redirect_url" value="{$_SERVER['HTTP_REFERER']}" />
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="base">
+            <table width="98%" border="0" cellpadding="4" cellspacing="1" class="form_table">
+             <!-- <tr class="tr rt">
+           <td>上级</td>
+                <td  class="lt">
+                    <select name="pid">
+                    </select>
+                </td>
+            </tr> -->
+            <tr class="tr rt">
+                <td>栏目名称</td>
+                <td  class="lt">
+                <input type="text" name="title" value="{$row['title']}"/>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>栏目类型</td>
+                <td  class="lt">
+                    <select name="template_type">
+                        <option <eq name="row.template_type" value="0">selected</eq> value="0">列表</option>
+                        <option <eq name="row.template_type" value="1">selected</eq> value="1">详情</option>
+                    </select>
+                    <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="设为列表页则调用“栏目列表模板”模板，详情页则调用“栏目的详情页”模板">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>栏目的详情页</td>
+                <td  class="lt">
+                <input type="text" name="template_index" value="{$row['template_index']}"/>
+                <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="如果为空则调用index模板">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>栏目列表模板</td>
+                <td  class="lt">
+                <input type="text" name="template_list" value="{$row['template_list']}"/>
+                <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="如果为空则调用list模板">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>栏目文章模板</td>
+                <td  class="lt">
+                <input type="text" name="template_detail" value="{$row['template_detail']}"/>
+                <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="栏目下的文章默认调用该模板，如果为空则调用default模板">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>自定义属性</td>
+                <td  class="lt">
+                    <input type="checkbox" name="flags[]" value="h" id="h" <if condition="strstr($row['flags'],'h')">checked</if>><label for="h">头条[h]</label>
+                    <input type="checkbox" name="flags[]" value="c" id="c" <if condition="strstr($row['flags'],'c')">checked</if>><label for="c">推荐[c]</label>
+                    <input type="checkbox" name="flags[]" value="f" id="f" <if condition="strstr($row['flags'],'f')">checked</if>><label for="f">幻灯[f]</label>
+                    <input type="checkbox" name="flags[]" value="a" id="a" <if condition="strstr($row['flags'],'a')">checked</if>><label for="a">特荐[a]</label>
+                    <input type="checkbox" name="flags[]" value="s" id="s" <if condition="strstr($row['flags'],'s')">checked</if>><label for="s">滚动[s]</label>
+                    <input type="checkbox" name="flags[]" value="b" id="b" <if condition="strstr($row['flags'],'b')">checked</if>><label for="b">加粗[b]</label>
+                    <input type="checkbox" name="flags[]" value="i" id="i" <if condition="strstr($row['flags'],'i')">checked</if>><label for="i">图片[i]</label>
+                    <input type="checkbox" name="flags[]" value="j" id="j" <if condition="strstr($row['flags'],'j')">checked</if>><label for="j">跳转[j]</label>
+                    <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="在需要的时候可以根据标签去区分和调用">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt" <if condition="!strstr($row['flags'],'j')">style="display:none"</if> id="url">
+                <td>跳转地址</td>
+                <td  class="lt">
+                    <input type="text" name="url" value="{$row['url']}" class="form_table_title" />
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>封面图</td>
+                <td  class="lt">
+                   <input  type="file" name="img"/>
+                   <notempty name="row['img']"><img src="__UPLOAD__/{:imgPrefix('thumb_',$row['img'])}" style="max-height:200px" /><else/>暂无图片</notempty>
+                   <select name="img_status">
+                        <option <eq name="row.img_status" value="0">selected</eq> value="0">不显示</option>
+                        <option <eq name="row.img_status" value="1">selected</eq> value="1">显示</option>
+                    </select>
+                   <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="在需要的时候再设置此字段，如详情页充当banner，当为详情页时打钩则显示不打钩则不显示">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>描述</td>
+                <td  class="lt">
+                <textarea name="desc">{$row['desc']}</textarea>
+                <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="在需要的时候再设置此字段，如栏目描述、栏目短名称">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>栏目详情</td>
+                <td  class="lt">
+                    <textarea name="text" id="text">{$row['text']}</textarea>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td >是否显示：</td>
+                <td  class="lt">
+                    <select name="status">
+                        <option <eq name="row.status" value="1">selected</eq> value="1">是</option>
+                        <option <eq name="row.status" value="0">selected</eq> value="0">否</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>排序</td>
+                <td  class="lt">
+                <input type="text" name="sort" value="{$row['sort']}"/> &nbsp;前台显示顺序：越小越靠前
+                </td>
+            </tr>
+             </table>
+      </div>
+        <div role="tabpanel" class="tab-pane" id="extend">
+            <table class="form_table">
+            <tr class="tr rt">
+                <td>栏目关键词</td>
+                <td  class="lt">
+                <input type="text" name="keywords" value="{$row['keywords']}" class="form_table_title" />
+                <i class="tpl_tooltip" data-toggle="tooltip" data-placement="right" title="如多个关键词请用,间隔">?</i>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>多图上传</td>
+                <td  class="lt">
+                     <!-- 控制盘 -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default addphoto_btn"><div id="addphoto"></div></button>
+                    </div>
+                    <!-- 控制盘 -->
+                    <div id="addphoto"></div>
+                    <div class="info-body" id="queue_div">
+                        <ul class="photo-list droptrue" id="queue">
+                        <php>
+                        $images=jsonToArray($row['images']);
+                        </php>
+                        <volist name="images" id="vo">
+                        <li>
+                            <div class="img-thumbnail">
+                            <img src="__UPLOAD__/{$vo['img']}">
+                            <input name="img_path[]" type="hidden" value="{$vo['img']}"/>
+                            <div class="action">
+                                <i class="trigger icon icon-times" onclick="delimg(this)">×</i>
+                            </div>
+                            </div>
+                            <span class="caption"><input type="text" name="img_title[]" value="{$vo['title']}" placeholder="图片标题"/></span>
+                            <span class="caption"><input type="text" name="img_desc[]" value="{$vo['desc']}" placeholder="图片描述"/></span>
+                        </li>
+                        </volist>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td>多功能拓展</td>
+                <td class="lt">
+                    <div class="alert alert-success">
+                        <input type="input" id="field_name" placeholder="字段标识" />
+                        <input placeholder="拓展变量名" id="var_name"/>
+                        <select id="extend_type">
+                            <option value="editor">编辑器</option>
+                        </select>
+                        <a class="btn btn-warning" id="add_extend">添加拓展</a>
+                        <label></label>
+                    </div>
+                </td>
+            </tr>
+            <php>
+            $extend=jsonToArray($row['extend']);
+            </php>
+            <volist name="extend" id="vo">
+                <tr class="tr rt">
+                <td>{$vo['field_name']}</td>
+                <td class="lt">
+                <input name="field_name[]" type="hidden" value="{$vo['field_name']}"/>
+                <input name="field_type[]" type="hidden" value="{$vo['field_type']}"/>
+                <input class="field_var" name="field_var[]" value="{$vo['field_var']}" type="hidden"/>
+                <switch name="vo.field_type">
+                    <case value="editor"><textarea name="field_content[]" id="field_content_{$vo['field_var']}">{$vo['field_content']}</textarea></case>
+                </switch>
+                <span class="dlspan">&nbsp;&nbsp;<a onclick="removeP(this)">删除</a>&nbsp;&nbsp;{$vo['field_var']}</span>
+                </td><label></label>
+                </tr>
+            </volist>
+        </table>
+        </div>
+         <table class="form_table">
+            <tr class="tr lt">
+                <td >&nbsp;</td>
+                <td colspan="4">
+                    <input name="submit" type="submit" class="btn btn-default" value="修改" >
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</div>
+<script charset="utf-8" src="__PUBLIC__/common/uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript" src="__PUBLIC__/common/js/jquery-ui.min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/common/kindeditor/kindeditor.js"></script>
+<script type="text/javascript">
+//编辑器
+KindEditor.ready(function(K) {
+    window.editor= K.create("#text",{width:'1000px',height:'600px',cssPath:"__PUBLIC__/home/css/style.css"});
+});
+//当自定义属性为跳转时，显示跳转input
+$('#j').click('toggle',function(){
+    $("#url").toggle();
+});
+//切换基础和拓展
+$('#info_tab a').click(function(event) {
+     $(this).tab('show');
+});
+//上传多图，拖拽排序
+var timestamp = Date.parse(new Date()).toString().substring(0,10);
+$( "#queue" ).sortable({connectWith: "#queue"});
+$( "#queue" ).disableSelection();
+function delimg(obj){
+   $(obj).parents('li').remove();
+}
+//直接加载容易浏览器崩溃 延迟一下加载
+setTimeout(function(){
+    $('#addphoto').uploadify({
+        'fileSizeLimit':'2MB',
+        'removeCompleted': false,
+        'fileTypeExts' : '*.gif; *.jpg; *.png; *.jpeg;',
+        'swf'      : '__PUBLIC__/common/uploadify/uploadify.swf',
+        'uploader' : '?s=/Communal/Uploadify/upload&folder=temp/type/'+timestamp,
+        'buttonText' : '<div class="add"> <i class="icon icon-plus"></i>添加图片</div>',
+        'multi':false,
+        'width':95,
+        'height':25,
+        'uploadLimit':50,
+        onUploadSuccess: function(file,data,respone){
+                data=JSON.parse(data);
+                if(data.status){
+                    $('#queue').append('<li><div class="img-thumbnail">'
+                        +'<img src="'+data.path+'">'
+                        +'<input name="img_path[]" type="hidden" value="'+data.path+'"/>'
+                        +'<div class="action">'
+                            +'<i class="trigger icon icon-times" onclick="delimg(this)">×</i>'
+                        +'</div>'
+                        +'</div>'
+                        +'<span class="caption"><input type="text" name="img_title[]" value="" placeholder="图片标题"/></span>'
+                        +'<span class="caption"><input type="text" name="img_desc[]" value="" placeholder="图片描述"/></span>'
+                        +'</li>');
+                }else{
+                    alert('服务器处理失败');
+                }
+        }
+    });
+},100);
+// 拓展编辑器
+var extend_editor = KindEditor.editor({allowFileManager : true});
+var extend_editor_var=[];
+$('#config_tab a').click(function(event) {
+     $(this).tab('show');
+});
+$(function(){
+<volist name="extend" id="vo">
+<switch name="vo['field_type']">
+<case value="editor">
+    extend_editor_var['<php> echo $vo['field_var'];</php>']=KindEditor.create('#field_content_<php> echo $vo['field_var'];</php>',{
+        width : "1000px",cssPath:"__PUBLIC__/home/css/style.css"
+    });
+</case>
+<case value="image">
+    $('#image<php> echo $vo['field_var'];</php>').click(function() {
+            editor.loadPlugin('image', function() {
+                editor.plugin.imageDialog({
+                    imageUrl : $('#field_content_<php> echo $vo['field_var'];</php>').val(),
+                    clickFn : function(url, title, width, height, border, align) {
+                        $('#field_content_<php> echo $vo['field_var'];</php>').val(url);
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+</case>
+</switch>
+</volist>
+});
+$('#add_extend').click(function(event) {
+    var t=$('#extend_con'),i=$('#field_name').val(),v=$('#var_name').val(),et=$('#extend_type').val(),le=0;
+    if(v==undefined || v=='')
+    {
+        popMsg('标识不可以为空',1,'error');
+        return false;
+    }
+    $('#extend>div>dl>font').each(function(){
+        if($(this).html()==i){
+            popMsg('标识已被占用',1,'error');
+            le=1;
+            return false;
+        }
+    });
+    if(!v.match(/^[a-zA-Z0-9_]{1,}$/))
+    {
+        popMsg('变量名只能输入字母和下划线',1,'error');
+        return false;
+    }
+    $('.field_var').each(function(){
+        if($(this).val()==v){
+            popMsg('变量名已被占用',1,'error');
+            le=1;
+            return false;
+        }
+    });
+    if(le>0) return false;
+    var html='';
+    switch(et)
+    {
+        case 'editor':
+        html+='<tr class="tr rt"><td>'+i+'</td><td class="lt"><input name="field_name[]" type="hidden" value="'+i+'"/><input name="field_type[]" type="hidden" value="editor"/><input class="field_var" name="field_var[]" value="'+v+'" type="hidden"/><textarea name="field_content[]" id="field_content_'+v+'" class="fl"></textarea><a onclick="removeP(this)" class="fl">删除</a></td></tr>';
+          $('#extend>table').append(html);
+          setTimeout(function(){
+            extend_editor_var[v]=KindEditor.create('#field_content_'+v,{
+                width : "1000px",
+                cssPath:"__PUBLIC__/home/css/style.css"
+            });
+          },100);
+          break;
+    }
+});
+function removeP(e){
+    $(e).closest('tr').remove();
+}
+</script>
+<include file="Public/footer"/>

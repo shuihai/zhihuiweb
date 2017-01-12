@@ -1,0 +1,9 @@
+[ 2016-12-04T11:57:56+08:00 ] 185.128.43.219 //admin/scripts/setup.php
+ERR: 无法加载控制器:Scripts
+
+[ 2016-12-04T11:57:56+08:00 ] 185.128.43.219 //admin/pma/scripts/setup.php
+ERR: 无法加载控制器:Pma
+
+[ 2016-12-04T11:57:57+08:00 ] 185.128.43.219 //admin/phpmyadmin/scripts/setup.php
+ERR: 无法加载控制器:Phpmyadmin
+

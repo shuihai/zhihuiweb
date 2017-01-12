@@ -1,0 +1,77 @@
+<include file="Public/header"/>
+<div class="row_main">
+			<form action="{:U('Node/edit')}" method="post"  enctype="multipart/form-data">
+			<input type="hidden" name="id" value="{$row.id}">
+			<table class="form_table">
+				<tr class="tr rt">
+					<td>上级菜单</td>
+					<td  class="lt">
+						<select name="pid">
+							{$select_categorys}
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>菜单名称</td>
+					<td  class="lt">
+						<input type="text" name="title" id="title" value="{$row.title}">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >菜单类型</td>
+					<td  class="lt">
+						<select name="display">
+							<option value="1" <eq name="row.display" value="1">selected=""</eq> >主菜单</option>
+							<option value="2" <eq name="row.display" value="2">selected=""</eq> >子菜单</option>
+							<option value="3" <eq name="row.display" value="3">selected=""</eq> >该条显示</option>
+							<option value="0" <eq name="row.display" value="0">selected=""</eq> >整节点不显示</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>节点类型</td>
+					<td  class="lt">
+						<select name="level">
+							<!--option value="1">应用级</option-->
+							<option value="2" <eq name="row.level" value="2">selected=""</eq> >模块</option>
+							<option value="3" <eq name="row.level" value="3">selected=""</eq> >方法</option>
+							<option value="0" <eq name="row.level" value="0">selected=""</eq> >非节点</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>节点名称</td>
+					<td  class="lt">
+						<input type="text" name="name" value="{$row.name}">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >链接参数</td>
+					<td  class="lt">
+						<input type="text" name="data" value="{$row.data}">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >节点状态</td>
+					<td  class="lt">
+						<select name="status" >
+						<option value="1" <if condition="($row.status eq 1) OR ($row['status'] eq '') ">selected</if> >启用</option>
+						<option value="0" <eq name="row.status" value="0">selected</eq>>禁用</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >备注说明</td>
+					<td  class="lt">
+						<textarea  name="remark" id="remark">{$row.remark}</textarea> 
+					</td>
+				</tr>
+				<tr class="tr lt">
+	                <td >&nbsp;</td>
+	                <td colspan="4">
+	                    <input name="submit" type="submit" class="btn btn-default" value="修改" >
+	                </td>
+	            </tr>
+</table>
+</form>
+<include file="Public/footer" />

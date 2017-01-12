@@ -1,0 +1,60 @@
+<include file="Public/header"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/news.css" />
+
+<!--图片滚动-->
+<if condition="$row['images'] neq null">
+    <div class="news_detail">
+        <div id="news_detail_img">
+            <ul>
+            	<volist name="row['images']" id="vo">
+            		<li><img src="__UPLOAD__/{$vo['img']}" /></li>
+            	</volist>
+            </ul>
+        </div>
+    </div>
+</if>
+<script src="__PUBLIC__/home/js/jquery.kxbdMarquee.js"></script>
+<script type="text/javascript">
+(function(){
+    $("#news_detail_img").kxbdMarquee({direction:"left"});
+})();
+</script>
+<!--图片滚动-->
+<div class="clearfix"></div>
+<!--新闻详情-->
+
+<div class="news_detail_con">        
+    
+    <h4 class="detail_title">{$row['title']}</h4>
+    <div class="detail_con">
+   	{:htmlspecialchars_decode($row['text'])}<br />
+    </div>
+
+
+    <div class="detail_page">
+        <div class="detail_page_link">
+        	<if condition="$uprow">
+            	<a href="{:U('Info/detail',array('id'=>$uprow['id']))}"><span>上一篇</span><i class="icon iconfont">&#xe65d;</i></a>
+            </if>
+        </div>
+        <div class="detail_page_link">
+            <a href="javascript: history.go(-1);"><span>返回</span></a>
+        </div>
+        <div class="detail_page_link">
+        	<if condition="$downrow">
+            	<a href="{:U('Info/detail',array('id'=>$downrow['id']))}"><i class="icon iconfont">&#xe635;</i><span>下一篇</span></a>
+            </if>
+        </div>
+    </div>
+
+
+     	
+</div>
+<script type="text/javascript">
+$(function(){
+    $(".detail_page .detail_page_link:nth-child(3)").css("marginRight",0);
+});
+</script>
+<!--新闻详情-->
+<div class="clearfix"></div>
+<include file="Public/footer"/>

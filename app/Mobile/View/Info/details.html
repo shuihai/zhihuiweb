@@ -1,0 +1,18 @@
+<include file="Public/header"/>
+	<body style="background-color: #FFFFFF;">
+		<!-- 头部 -->
+		<div class="P_top backgroundColor">
+			<a onclick="window.history.back()"><img src="__PUBLIC__/mobile/image/10.png" /></a>
+			<strong>{:getTypeName($row['tid'])}</strong>
+		</div>
+		
+		<!--内容-->
+		<div class="Article">
+			<div class="Article_q">
+				<div class="news_title">{$row['title']}</div>
+				<div class="news_center">{$row['text']}</div>
+			</div>
+		</div>
+<include file="Public/footer"/>
+	</body>
+</html>

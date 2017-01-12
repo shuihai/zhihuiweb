@@ -1,0 +1,101 @@
+<include file="Public/header" />
+<div class="body-wrap">
+<if condition="$row['img_status']">
+    <div class="other-banner">
+        <div class="banner-wrap">
+            <img src="__UPLOAD__/{$row['img']}" alt="{$row['title']}">
+        </div>
+    </div>
+</if>
+<info:varlist name="list" ispage="1" />
+<div id="main">
+    <div class="information-list-wrap wrap">
+        <div class="detail-con clearfix">
+            <div class="detail-left">
+                <div class="information-list-title clearfix">
+                    <h1>Android开发</h1>
+                    <div class="title-right">
+                        <span class="">
+                            <p>
+                                {$listcount}
+                            </p>
+                            Total
+                        </span>
+                    </div>
+                </div>
+                <div class="detail-left-wrap">
+                    <div class="information-con-list">
+                        <ul class="con-list">
+                        <volist name="list" id="vo">
+                            <li class="con-item item-android">
+                                <ul class="item-list" data-role="data-wrapper">
+                                     <li class="clearfix">
+                                <div class="item-sec-left">
+                                    <a href="{:info_url($vo)}">
+                                        <img src="__UPLOAD__/{:imgPrefix('bmid_',$vo['img'])}" width="250" height="180" alt="{$vo.title}">
+                                    </a>
+                                </div>
+                                <div class="item-sec-right">
+                                    <h4>
+                                        <a href="{:info_url($vo)}">
+                                            {$vo.title}
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        {$vo.desc}
+                                        <a rel="nofollow" href="{:info_url($vo)}">[阅读全文]</a>
+                                    </p>
+                                    <div class="right-bottom clearfix">
+                                                    <div class="tag">
+                                                            <a href="{:U('Info/index',array('tid'=>$vo['tid']))}">{:getTypeName($vo['tid'])}</a>
+                                                        </div>
+                                                    <div class="info">
+                                            <span class="time">{$vo['time']|date="Y-m-d H:s"}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                </ul>
+                            </li>
+                        </volist>
+                        </ul>
+                    </div>
+                    <div class="information-list-more load-more">
+                        {$page}
+                    </div>
+                </div>
+            </div>
+            <div class="detail-right" id="other">
+                <div class="detail-right-con">
+                    <div class="case-sencil" id="other-case">
+    <h3>
+                Android文章推荐阅读
+            </h3>
+    <ul>
+    <info:list name="vo" row="5" order="hits desc">
+       <li class="clearfix">
+    <div class="case-sencil-left">
+        <a href="{:info_url($vo)}">
+            <img src="__UPLOAD__/{:imgPrefix('bmid_',$vo['img'])}" width="130" height="90" alt="{$vo['title']}">
+        </a>
+    </div>
+    <div class="case-sencil-right">
+        <h4>
+            <a href="{:info_url($vo)}">
+                {$vo['title']}
+            </a>
+        </h4>
+        <p>
+            {:msubstr($vo['title'],0,20)}
+        </p>
+    </div>
+</li>
+    </info:list>
+    </ul>
+</div>                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<include file="Public/footer" />

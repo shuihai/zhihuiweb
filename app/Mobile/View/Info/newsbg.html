@@ -1,0 +1,58 @@
+<include file="Public/header"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/news.css" />
+<div class="container_inner">        
+    <div class="product_news">
+        <ul class="pntabbtn ul_clear" id="pronewstab">
+           	<li class="on"><a href="javascript:void(0);">公司动态</a></li>
+            <li><a href="javascript:void(0);">科学新闻</a></li>
+        </ul>
+        <div class="pntabcon" id="pronewscon">
+            <div class="pn_sublist">            
+                <ul class="ul_clear">
+                    <volist name="company" id="vo">
+                     	<li>
+                            <a href="{:U('Info/detail',array('id'=>$vo['id']))}"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" /></a>
+                            <div class="product_des">
+                                <h4><a href="{:U('Info/detail',array('id'=>$vo['id']))}">{$vo['title']}</a></h4>
+                                <p>{$vo['desc']}</p>
+                            </div>
+                     	</li>  
+                    </volist>         
+                </ul>                
+            </div>
+            <div class="pn_sublist">            
+                <ul class="ul_clear">  
+                    <volist name="news" id="vo"> 
+                        <li>
+                            <a href="{:U('Info/detail',array('id'=>$vo['id']))}"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" /></a>
+                            <div class="product_des">
+                                <h4><a href="{:U('Info/detail',array('id'=>$vo['id']))}">{$vo['title']}</a></h4>
+                                <p>{$vo['desc']}</p>
+                            </div>
+                     	</li>
+                    </volist>        
+                </ul>                
+            </div>               
+        </div>
+	</div>          	
+</div>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.tabso_yeso.js"></script>
+<script type="text/javascript">
+$(function($){
+    
+    //新闻列表部分选项切换
+    $("#pronewstab").tabso({
+        cntSelect:"#pronewscon",
+        tabEvent:"click",
+        tabStyle:"normal"
+    });
+
+
+    $(".pn_sublist ul li:nth-child(4n)").css("marginRight",0);
+    
+    
+});
+</script>
+
+<div class="clearfix"></div>
+<include file="Public/footer"/>

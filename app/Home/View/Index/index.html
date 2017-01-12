@@ -1,0 +1,96 @@
+<include file="Public/header" />
+<script src="__PUBLIC__/home/js/jquery.flexslider-min.js"></script>
+<div class="flexslider">
+    <ul class="slides">
+    	<volist name="focus" id='vo'>
+        	<li style="background:url(__UPLOAD__/{$vo['img']}) #CCE1F3 center 0 no-repeat"></li>
+        </volist>
+        <!--<a href="#"><img src="__UPLOAD__/{$vo['img']}" /></a>-->
+    </ul>        
+</div>
+<script type="text/javascript">
+$(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+	$(".field_list li:nth-child(3n)").css("marginRight",0);
+	$(".case_list li:nth-child(4n)").css("marginRight",0);
+	$(".friend_list li:nth-child(6n)").css("marginRight",0);
+});
+</script>
+<div class="field">
+    <div class="container">
+     	<ul class="title_ul">            	
+            <li class="title_line"></li>
+            <li class="left">
+                <span class="index_title">涉及领域</span>             
+            </li>
+            <li class="title_line"></li>               
+        </ul>
+        	
+        <div class="clearfix"></div>
+        
+        <ul class="field_list ul_clear">
+        	<volist name="field" id="vo">
+	            <li>
+	                <img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" />
+	                <p class="field_title"><a href="javascript:void(0)" style="cursor:default">{$vo['title']}</a></p>
+	                <p class="field_con">{$vo['desc']}</p>
+	            </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div class="case_bg">
+	<div class="container">
+        
+        <ul class="title_ul">            	
+            <li class="title_line"></li>
+            <li class="left">
+                <span class="index_title">智能机器人应用</span>
+            </li>
+            <li class="title_line"></li>               
+        </ul>
+        	
+        <div class="clearfix"></div>
+        
+        <ul class="case_list ul_clear">
+        	<volist name="case" id="vo">
+	            <li>
+	                <a href="javascript:void(0)"  style="cursor:default"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" /></a>
+	                <div class="case_des">
+	                    <h4><a href="javascript:void(0)"  style="cursor:default">{$vo['title']}</a></h4>
+	                    <p>{$vo['desc']}</p>
+	                </div>
+	            </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="friend">
+	
+    <ul class="title_ul">            	
+        <li class="title_line"></li>
+        <li class="left">
+            <span class="index_title">合作伙伴</span>             
+        </li>
+        <li class="title_line"></li>               
+    </ul>
+        
+    <div class="clearfix"></div>
+    
+	<ul class="friend_list ul_clear">
+        <volist name="friends" id="v">
+    	   <li><a <if condition="$v['url']">href={$v['url']} target="_blank"<else/> href="javascript:void(0)"  style="cursor:default"</if> ><img src="__UPLOAD__/{$v['img']}" alt="{$v['title']}" title="{$v['title']}" /></a></li>
+        </volist>
+    </ul>
+</div>
+
+<div class="clearfix"></div>
+<include file="Public/footer" />

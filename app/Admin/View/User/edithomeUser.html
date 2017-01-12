@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>后台用户</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel='stylesheet' type='text/css' href='__PUBLIC__/Admin/css/admin_style.css' />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+			<form action="{:U('Admin/User/edithomeUser')}" method="post">
+			<input type="hidden" name="id" value="{$info.id}">
+			<table width="98%" border="0" cellpadding="4" cellspacing="1" class="table">
+
+				<tr class="table_title">
+					<td colspan="4">{$tpltitle}用户</td>
+				</tr>
+
+				<tr class="tr rt">
+					<td>帐号：</td>
+					<td  class="lt">
+                        <input type="text" name="username" id="username" style="width:200px" value="{$info.username}" />
+					</td>
+				</tr>
+                <tr class="tr rt">
+                    <td>昵称：</td>
+                    <td  class="lt">
+                        <input type="text" name="nickname" id="nickname" style="width:200px" value="{$info.nickname}" />
+                    </td>
+                </tr>
+				<tr class="tr rt">
+					<td>等级：</td>
+					<td  class="lt">
+                       <select name="rank">
+                           <option value="1" <eq name="info['rank']" value="1">selected</eq>>普通用户</option>
+                           <option value="2" <eq name="info['rank']" value="2">selected</eq>>中级用户</option>
+                           <option value="3" <eq name="info['rank']" value="3">selected</eq>>高级用户</option>
+                           <option value="4" <eq name="info['rank']" value="4">selected</eq>>管理员</option>
+                       </select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>积分：</td>
+					<td  class="lt">
+                        <input type="text" name="score" id="score" style="width:200px" value="{$info.score}" />
+					</td>
+				</tr>
+	<tr class="tr lt">
+		<td colspan="4">
+				<input class="bginput" type="submit" name="submit" value="修 改" >
+			&nbsp;
+			<input class="bginput" type="button" onclick="javascript:history.back(-1);" value="返 回" ></td>
+	</tr>
+</table>
+</form>
+<include file="Index:footer" />
+</body>
+</html>

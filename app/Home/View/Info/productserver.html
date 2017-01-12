@@ -1,0 +1,138 @@
+<include file="Public/header"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/product.css" />
+<div class="container_inner" style="margin-top:100px;">            
+    <div class="product_title">    
+        <ul class="pttabbtn ul_clear" id="protitletab">
+                <li class="on">
+                    <img src="__UPLOAD__/{$robot['img']}" />
+                    <a href="javascript:void(0);">{$robot['title']}</a>
+                </li>
+                <li>
+                    <img src="__UPLOAD__/{$vr['img']}" />
+                    <a href="javascript:void(0);">{$vr['title']}</a>
+                </li>
+                <!--<li>-->
+                    <!--<img src="__UPLOAD__/{$biometrics['img']}" />-->
+                    <!--<a href="javascript:void(0);">{$biometrics['title']}</a>-->
+                <!--</li>-->
+        </ul>
+        <div class="pttabcon" id="protitlecon">       
+                <div class="pt_sublist">            
+                    <h3>{$robot['title']}</h3>
+                    <p>
+                       {$robot['desc']}
+                    </p>
+                    <!--参数及焦点图部分-->
+                    <div class="clearfix"></div>
+                    <div class="container_inner product_parameter">
+                        {:htmlspecialchars_decode($robot['text'])}
+                        <div class="product_parameter_img">
+                            <!--图片滚动-->
+                            <div id="parameter_img">
+                                <ul>
+                                    <volist name="roMidFocus" id="vo">
+                                        <li><a class="fancybox"  data-fancybox-group="gallery"><img src="__UPLOAD__/{$vo['img']}" rel="lightbox" /></a></li>
+                                    </volist>
+                                </ul>
+                            </div>
+                            <script src="__PUBLIC__/home/js/jquery.kxbdMarquee.js"></script>
+                            <script type="text/javascript">
+                            (function(){
+                                $("#parameter_img").kxbdMarquee({direction:"left"});
+                            })();
+                            </script>
+                        </div>
+                    </div>
+                    <!--产品参数部分-->
+                    <div class="clearfix"></div>
+                    <!--底部应用场景图片轮播-->
+                    <div class="container_inner" style="height:399px;">
+                       <div class="callbacks_container">
+                            <ul id="scene_slider" class="scene_slider">
+                                <volist name="roBottomFocus" id="vo">
+                                    <li><a href="javascript:void(0)"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" /></a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--参数及焦点图部分结束-->
+                </div>
+                <div class="pt_sublist">            
+                    <h3>{$vr['title']}</h3>
+                    <p>
+                       {$vr['desc']}
+                    </p>
+                    <div class="clearfix"></div>
+
+                        <!--产品参数部分-->
+                        <div class="clearfix"></div>
+                        <!--底部应用场景图片轮播-->
+                        <div class="container_inner" style="height:399px;">
+                           <div class="callbacks_container">
+                                <ul id="scene_slider" class="scene_slider">
+                                    <volist name="VRBottomFocus" id="vo">
+                                        <li><a href="javascript:void(0)"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" /></a></li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                <!--<div class="pt_sublist">            -->
+                    <!--<h3>{$biometrics['title']}</h3>-->
+                    <!--<p>-->
+                       <!--{$biometrics['desc']}-->
+                    <!--</p>-->
+                    <!--<div class="clearfix"></div>-->
+
+                        <!--&lt;!&ndash;产品参数部分&ndash;&gt;-->
+                        <!--<div class="clearfix"></div>-->
+                        <!--&lt;!&ndash;底部应用场景图片轮播&ndash;&gt;-->
+                        <!--<div class="container_inner" style="height:399px;">-->
+                           <!--<div class="callbacks_container">-->
+                                <!--<ul id="scene_slider" class="scene_slider">-->
+                                    <!--<volist name="biBottomFocus" id="vo">-->
+                                        <!--<li><a href="javascript:void(0)" style="width:1200px;height:399px;"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" style="width:1200px;height:399px;"/></a></li>-->
+                                    <!--</volist>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>         -->
+        </div>   
+    </div> 
+
+</div>  
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.tabso_yeso.js"></script>
+<script type="text/javascript">
+$(function($){
+    //产品标题内容部分选项切换  
+    $("#protitletab").tabso({
+        cntSelect:"#protitlecon",
+        tabEvent:"mouseover",
+        tabStyle:"normal"
+    });
+});
+</script>
+
+<script type="text/javascript" src="__PUBLIC__/home/js/responsiveslides.min.js"></script>
+<script type="text/javascript">
+
+$(function () {
+  $(".scene_slider").responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 300,
+    namespace: "callbacks",
+    before: function () {
+      $('.events').append("<li>before event fired.</li>");
+    },
+    after: function () {
+      $('.events').append("<li>after event fired.</li>");
+    }
+  });
+});
+</script>
+
+
+<!--底部应用场景图片轮播-->
+<include file="Public/footer"/>

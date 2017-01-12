@@ -1,0 +1,92 @@
+<include file="Public/header"/>
+<link href="__PUBLIC__/mobile/css/iscroll.css" rel="stylesheet" type="text/css" />
+	<body style="background-color: #FFFFFF;">
+		<div id="wrapper">
+			<div id="scroller">
+				<!-- 头部 -->
+				<div class="P_top backgroundColor">
+					<a onclick="window.history.back()"><img src="__PUBLIC__/mobile/image/10.png" /></a>
+					<strong>新闻动态</strong>
+				</div>
+				<!--内容-->					
+				<div class="news" id="scroller-content">
+		    		<ul>
+						<volist name="list" id="vo">
+							<li>
+								<a href="{:U('details',array('id'=>$vo['id']))}">
+									<div class="news_left"><img src="__UPLOAD__/{$vo['mobile_img']}" /></div>
+									<div class="news_right">
+										<div class="news_title">{$vo['title']}</div>
+										<div class="news_center">{$vo['desc']}</div>
+									</div>
+								</a>
+							</li>
+						</volist>
+		    		</ul>
+		    	</div>
+		    </div>
+		</div>
+<include file="Public/footer"/>
+		<script src="__PUBLIC__/mobile/js/iscroll.js"></script>
+		<script>
+			$(function(){
+				var page=1;
+				var myScroll,
+						upIcon = $("#up-icon"),
+						downIcon = $("#down-icon");
+
+				myScroll = new IScroll('#wrapper', { probeType: 3, mouseWheel: true , click:true});
+				myScroll.on("scroll",function(){
+					var y = this.y,
+							maxY = this.maxScrollY - y,
+							downHasClass = downIcon.hasClass("reverse_icon"),
+							upHasClass = upIcon.hasClass("reverse_icon");
+					if(y >= 40){
+						!downHasClass && downIcon.addClass("reverse_icon");
+						return "";
+					}else if(y < 40 && y > 0){
+						downHasClass && downIcon.removeClass("reverse_icon");
+						return "";
+					}
+
+					if(maxY >= 40){
+						!upHasClass && upIcon.addClass("reverse_icon");
+						return "";
+					}else if(maxY < 40 && maxY >=0){
+						upHasClass && upIcon.removeClass("reverse_icon");
+						return "";
+					}
+				});
+
+				myScroll.on("slideUp",function(){
+					if(this.maxScrollY - this.y > 40){
+						page++;
+						$.ajax({
+							url:"{:U('news')}",
+							type:'post',
+							data:{'page':page},
+							success:function(data){
+								if(data.length>0){
+									//data = eval( "(" + data + ")" );
+									//console.log(data);
+									for(var i = 0;i<data.length;i++){
+										$('.news ul').append("<li>"
+												+"<a href='{:U('details',array('id'=>$vo['id']))}'>"
+												+		"<div class='news_left'><img src='__UPLOAD__/{$vo['mobile_img']}' /></div>"
+												+		"<div class='news_right'>"
+												+	"<div class='news_title'>{$vo['title']}</div>"
+												+"<div class='news_center'>{$vo['desc']}</div>"
+												+"</div>"
+												+"</a>"
+												+"</li>");
+									}
+								}
+							}
+						});
+						upIcon.removeClass("reverse_icon")
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<include file="Public/header" />
+<div class="row_main">
+			<form action="{:U('Admin/User/homeUserEdit')}" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="id" value="{$row.id}">
+			<table width="98%" border="0" cellpadding="4" cellspacing="1" class="form_table">
+                <tr class="tr rt">
+                    <td>姓名：</td>
+                    <td  class="lt">
+                        <input type="text" name="nickname" value="{$row.nickname}"/>
+                    </td>
+                </tr>
+                <tr class="tr rt">
+                    <td>网站：</td>
+                    <td  class="lt">
+                        <input type="text" name="web_name" value="{$row.web_name}"/>
+                    </td>
+                </tr>
+                <tr class="tr rt">
+                    <td>密码：</td>
+                    <td  class="lt">
+                        <input type="password" name="password" /> 不修改不填即可
+                    </td>
+                </tr>
+                <tr class="tr rt">
+                    <td>手机号码：</td>
+                    <td  class="lt">
+                        {$row.phone}
+                    </td>
+                </tr>
+                <tr class="tr rt">
+                    <td>邮箱：</td>
+                    <td  class="lt">
+                        {$row.email}
+                    </td>
+                </tr>
+                <tr class="tr rt">
+                    <td>头像：</td>
+                    <td  class="lt">
+                        <notempty name="row['avatar']">
+                            <img src="__UPLOAD__/{$row['avatar']}"/>
+                            <else/>
+                            暂无图片
+                        </notempty>
+                        <input type="file" name="avatar"/>
+                    </td>
+                </tr>
+            <tr class="tr rt">
+                    <td>状态：</td>
+                    <td  class="lt">
+                    <select name="status"><option value="0" <if condition="!$row['status']">selected</if>>未审核</option><option value="1" <if condition="$row['status']">selected</if>>审核通过</option></select>
+                    </td>
+                </tr>
+            <tr class="tr lt">
+            <td >&nbsp;</td>
+                <td colspan="4">
+                    <input class="btn btn-default" type="submit" name="submit" value="修 改" >
+                </td>
+            </tr>
+</table>
+</form>
+</div>
+<include file="Index/footer" />

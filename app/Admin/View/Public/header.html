@@ -1,0 +1,31 @@
+<?php $user=session('admin_user');?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="http://{$_SERVER['SERVER_NAME']}__ROOT__/" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理后台</title>
+<script type="text/javascript">
+var $config=[];
+$config['app']='http://{$_SERVER['SERVER_NAME']}__ROOT__/';
+$config['site_url']='{$config['site_url']}';
+$config['domain']='{$config['domain']}';
+$config['public']='__PUBLIC__';
+$config['upload']='__UPLOAD__';
+var $kindeditor=[];
+$kindeditor['image_upload_json']='{:U('Communal/Kindeditor/uploadJson')}';
+$kindeditor['path']='<?php echo strtolower(CONTROLLER_NAME).'/data/';?>';
+</script>
+<if condition="$notyle">
+<else/>
+<link href="__PUBLIC__/admin/css/style.css" rel="stylesheet" type="text/css">
+</if>
+<script type="text/javascript" src="__PUBLIC__/common/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/common/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/common/js/function.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/function.js"></script>
+<script type="text/javascript" src="__PUBLIC__/common/artDialog/jquery.artDialog.js"></script>
+<script type="text/javascript" src="__PUBLIC__/common/artDialog/plugins/artDialog.iframeTools.source.js"></script>
+</head>
+<body>

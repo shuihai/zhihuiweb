@@ -1,0 +1,12 @@
+[ 2016-12-24T20:00:48+08:00 ] 62.210.149.68 /admin/config.php
+ERR: 无法加载控制器:Config.php
+
+[ 2016-12-24T22:10:37+08:00 ] 212.47.238.149 //admin/scripts/setup.php
+ERR: 无法加载控制器:Scripts
+
+[ 2016-12-24T22:10:38+08:00 ] 212.47.238.149 //admin/pma/scripts/setup.php
+ERR: 无法加载控制器:Pma
+
+[ 2016-12-24T22:10:40+08:00 ] 212.47.238.149 //admin/phpmyadmin/scripts/setup.php
+ERR: 无法加载控制器:Phpmyadmin
+

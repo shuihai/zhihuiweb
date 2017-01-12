@@ -1,0 +1,28 @@
+<include file="Public/header"/>
+    <form class="form" id="form" action="{:U('Admin/User/actionAdd')}" method="post">
+        <!-- 添加 -->
+        <div>
+            <p><font>行为标识</font><input type="text" name="name"/>&nbsp;（输入行为标识 英文字母）如：user_login</p>
+            <p><font>行为名称</font><input type="text" name="title"/>&nbsp;（输入行为名称）</p>
+            <p><font>行为描述</font><textarea name="remark"></textarea>&nbsp;（输入行为描述）</p>
+            <p><font>行为规则</font><textarea name="rule"></textarea>
+<span style="width: 550px;display: block;margin-left:10px;float: left;color:#26B943">
+规则定义 table:$table|field:$field|condition:$condition|rule:$rule[|cycle:$cycle|max:$max][;......] 
+规则字段解释：table->要操作的数据表，不需要加表前缀； 
+field->要操作的字段； 
+condition->操作的条件，目前支持字符串，默认变量为执行行为的用户 
+rule->对字段进行的具体操作，目前支持加、减 
+cycle->执行周期，单位（小时），表示$cycle小时内最多执行$max次 
+max->单个周期内的最大执行次数（$cycle和$max必须同时定义，否则无效） 
+单个行为后可加 ； 连接其他规则
+</span>
+</p>
+            <p><font>状态</font><input type="radio" name="status" value="1" checked="checked"/>启用<input type="radio" name="status" value="0"/>禁用</p>
+            <p>
+            	<font>&nbsp;</font>
+            	<input name="submit" id="submit" type="submit" value="添加行为"/>
+            </p>
+        </div>
+        <!-- /添加 -->
+	</form>
+<include file="Public/footer"/>

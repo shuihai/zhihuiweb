@@ -1,0 +1,48 @@
+<include file="Public/header" />
+<div class="so_main">
+  <div class="list">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="line_l">ID</th>
+    <th class="line_l">户型说明</th>
+    <th class="line_l">面积</th>
+    <th class="line_l">装修方式</th>
+    <th class="line_l">装修风格</th>
+    <th class="line_l">装修档次</th>
+    <th class="line_l">手机号</th>
+    <th class="line_l">姓名</th>
+    <th class="line_l">咨询时间</th>
+  </tr>
+<volist name="list" id="vo">
+      <tr overstyle='on' id="">
+        <td>{$vo['id']}</td>
+        <td>{$vo['room_intro']}</td>
+        <td>{$vo['area']}m²</td>
+        <td>
+          <switch name="vo.type">
+              <case value="1">半包</case>
+              <case value="2">全包</case>
+          </switch>
+        </td>
+        <td>
+          {$vo['style']['title']}
+        </td>
+        <td>
+          <switch name="vo.type">
+              <case value="1">经济实惠</case>
+              <case value="2">小康实用</case>
+              <case value="3">高档豪华</case>
+          </switch>
+        </td>
+        <td>{$vo['phone']}</td>
+        <td>{$vo['name']}</td>
+        <td>{$vo['time']|date="Y-m-d H:i:s",###}</td>
+      </tr>
+</volist>
+</table>
+</div>
+<div class="Toolbar_inbox">
+<div class="page fr">{$page}</div>
+</div>
+</div>
+<include file="Public/footer" />

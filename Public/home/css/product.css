@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*产品标题切换*/
+.pttabbtn { margin:0px auto; text-align:center; position:relative;}
+.pttabbtn li { width:222px; height:175px; float:left; position:relative; font-size:20px; margin-left: 262px; cursor:pointer;}
+.pttabbtn li img { width:220px; height:113px; display:block; border:1px solid #9bc2df; border-bottom:none;}
+.pttabbtn li a { display:block; float:left; height:55px; line-height:55px; overflow:hidden; width:220px; text-align:center; cursor:pointer; color:#096cb0; background:#fff; border:1px solid #7fb1d6;}
+.pttabbtn li.on a, .pttabbtn li a:hover { width:222px; height:56px; line-height:56px; background:#7fb1d6;color:#fff; border:none;}
+
+
+
+/*产品内容切换*/
+.pttabcon .pt_sublist { width:1200px; height:auto; margin:0 auto;}
+.pttabcon .pt_sublist h3 { color:#7eb2d7; display:block; height:40px; line-height:40px; font-size:26px; text-align:center; margin-top:90px; margin-bottom:40px;}
+.pttabcon .pt_sublist p { color:#545454; line-height:30px; word-break:break-all; word-wrap:break-word;text-indent: 30px;}
+
+
+
+
+/*产品参数*/
+.product_parameter_txt {width: 244px;
+height: 407px;
+border: 1px solid #cccccc;
+float: left;
+overflow: hidden;}
+.product_parameter_txt ul li {width: 94%;
+border-bottom: 1px solid #e0e0e0;
+height: 23px;
+line-height: 23px;
+background: #fff;
+font-size: 14px;
+color: #7c7c7c;
+padding: 0 3%;}
+.product_parameter_txt ul .parameter_table_title { width: 94%; background: #e3e3e1; color: #000; padding: 0 3%;}
+
+
+
+
+.product_parameter_img { width: 939px; height: 305px; float: right;}
+
+
+
+#parameter_img { width:100%; height:408px; overflow:hidden; margin:0 auto; position: relative;}
+#parameter_img ul li { float:left; margin-right:5px; position: relative;}
+#parameter_img ul li img { width: 467px; height:408px; display:block;}
+
+
+
+
+/*应用场景*/
+
+.callbacks_container { position: relative; float: left; width: 100%;}
+.callbacks { position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0;}
+.callbacks li { position: absolute; width: 100%; left: 0; top: 0;}
+.callbacks img { display: block; position: relative; z-index: 1; height: auto; width: 100%; border: 0;}
+.callbacks_nav { position: absolute; top: 52%; left: 0; z-index: 3; text-indent: -9999px; overflow: hidden; text-decoration: none; height: 61px; width: 38px; background: url("../images/themes.gif") no-repeat left top; margin-top: -45px;}
+.callbacks_nav.next { left: auto; background-position: right top; right: 0;}
+.banner-scene .nextBtn i{background-position:right top;}
+.banner-scene .prevBtn i{background-position:left top;}
+.callbacks img{width: 1200px;height: 399px;}

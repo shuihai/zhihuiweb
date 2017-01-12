@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8a619ba3-3782-4bd0-8664-559ffdeb0aa3" name="智汇时代官网" url="http://101.201.31.185">
+        <fileTransfer host="101.201.31.185" port="22" rootFolder="/var/www/html/zhihuishidai" accessType="SFTP" password="dff0dfc2dfc3dfc2dfdfdfc3dfd9dfc2dfc3dfcedfcbdfc3dfd4df9bdf98df99" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

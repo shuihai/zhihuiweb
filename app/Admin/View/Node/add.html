@@ -1,0 +1,77 @@
+<include file="Public/header"/>
+<div class="row_main">
+			<form action="{:U('Node/add')}" method="post" enctype="multipart/form-data">
+			<table class="form_table">
+				<tr class="tr rt">
+					<td>上级菜单</td>
+					<td  class="lt">
+						<select name="pid">
+							{$select_categorys}
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>菜单名称</td>
+					<td  class="lt">
+						<input type="text" name="title" id="title">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >菜单类型</td>
+					<td  class="lt">
+						<select name="display">
+							<option value="1">主菜单</option>
+							<option value="2">子菜单</option>
+							<option value="3">该条显示</option>
+							<option value="0">整节点不显示</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>节点类型</td>
+					<td  class="lt">
+						<select name="level">
+							<!--option value="1">应用级</option-->
+							<option value="2">模块</option>
+							<option value="3">方法</option>
+							<option value="0">非节点</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td>节点名称</td>
+					<td  class="lt">
+						<input type="text" name="name" value="">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >链接参数</td>
+					<td  class="lt">
+						<input type="text" name="data" value="">
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >节点状态</td>
+					<td  class="lt">
+						<select name="status" >
+						<option value="1">启用</option>
+						<option value="0">禁用</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tr rt">
+					<td >备注说明</td>
+					<td  class="lt">
+						<textarea  name="remark" id="remark">{$row.remark}</textarea> 
+					</td>
+				</tr>
+				<tr class="tr lt">
+	                <td >&nbsp;</td>
+	                <td colspan="4">
+	                    <input name="submit" type="submit" class="btn btn-default" value="添加" >
+	                </td>
+	            </tr>
+</table>
+</form>
+</div>
+<include file="Public/footer" />

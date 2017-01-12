@@ -1,0 +1,39 @@
+<include file="Public/header"/>
+<div class="so_main">
+<!--   <div class="Toolbar_inbox">
+    <a href="{:U('Admin/User/add')}"  class="btn btn-default"><span>添加</span></a>
+  </div> -->
+  <div class="list">
+  <table id="area_list" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="line_l">ID</th>
+    <th class="line_l">用户名称</th>
+    <th class="line_l">角色</th>
+    <th class="line_l">最后登录时间</th>
+    <th class="line_l">状态</th>
+    <th class="line_l">管理操作</th>
+  </tr>
+ <volist name="list" id="vo">
+		<tr>
+			<td class="alc">{$vo.id}</td>
+			<td class="alc">{$vo.username}<notempty name="vo['screen_name']">&nbsp;&nbsp;<img src="{$vo.avatar}" width="20" height="20" /><font color="green">{$vo.screen_name}</font></notempty></td>
+			<td class="alc">{$role[$vo['role']]}</td>
+			<td class="alc">{$vo['last_login_time']|date="Y-m-d H:i:s",###}</td>
+			<td class="alc"><eq name="vo.status" value="1">启用<else/>禁止</eq> 
+			</td>
+			<td class="alc">
+				<a onclick="dialogIfram('修改','{:U('User/edit',array('id'=>$vo['id']))}','{$current_url}' )">修改</a>&nbsp;
+				<eq name="vo.username" value="$Think.config.SPECIAL_USER"><font color="#cccccc">删除</font><else/><a href="javascript:void(0)" onclick="eEvent.del('{$vo['id']}');">删除</a></eq>
+			</td>
+		</tr>
+    </volist>
+  </table>
+  </div>
+<div class="Toolbar_inbox">
+    <div class="page fr">{$page}</div>
+  </div>
+</div>
+<script type="text/javascript">
+eEvent.delUrl="{:U('User/del')}";
+</script>
+<include file="Index/footer" />

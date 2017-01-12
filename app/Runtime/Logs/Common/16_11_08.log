@@ -1,0 +1,213 @@
+[ 2016-11-08T04:58:42+08:00 ] 66.249.65.246 /robots.txt
+ERR: 无法加载模块:Robots
+
+[ 2016-11-08T07:14:49+08:00 ] 80.82.78.38 http://www.baidu.com/cache/global/img/gs.gif
+ERR: 无法加载模块:Cache
+
+[ 2016-11-08T07:53:57+08:00 ] 172.82.166.210 http://www.baidu.com/cache/global/img/gs.gif
+ERR: 无法加载模块:Cache
+
+[ 2016-11-08T10:02:48+08:00 ] 42.236.10.100 /robots.txt
+ERR: 无法加载模块:Robots
+
+[ 2016-11-08T10:07:10+08:00 ] 125.36.45.166 /dinner/yii/requirements/
+ERR: 无法加载模块:Dinner
+
+[ 2016-11-08T10:07:10+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:08:05+08:00 ] 178.154.189.28 /robots.txt
+ERR: 无法加载模块:Robots
+
+[ 2016-11-08T10:12:17+08:00 ] 125.36.45.166 /dinner/yii/requirements/
+ERR: 无法加载模块:Dinner
+
+[ 2016-11-08T10:12:17+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:12:17+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:12:18+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:12:18+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:12:18+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:12:25+08:00 ] 125.36.45.166 /dinner/yii/requirements/
+ERR: 无法加载模块:Dinner
+
+[ 2016-11-08T10:12:25+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:12:30+08:00 ] 125.36.45.166 /yii/requirements/
+ERR: 无法加载模块:Yii
+
+[ 2016-11-08T10:12:30+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:12:39+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T10:13:33+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T10:13:39+08:00 ] 125.36.45.166 /dinner/yii/requirements/
+ERR: 无法加载模块:Dinner
+
+[ 2016-11-08T10:13:39+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:15:05+08:00 ] 125.36.45.166 /dinner/yii/requirements/
+ERR: 无法加载模块:Dinner
+
+[ 2016-11-08T10:15:05+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:15:12+08:00 ] 125.36.45.166 /yii/requirements/
+ERR: 无法加载模块:Yii
+
+[ 2016-11-08T10:15:12+08:00 ] 125.36.45.166 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T10:31:24+08:00 ] 106.120.173.111 /goods.php?id=3156
+ERR: 无法加载模块:Goods
+
+[ 2016-11-08T10:31:34+08:00 ] 106.120.173.111 /category.php?id=252&brand=16
+ERR: 无法加载模块:Category
+
+[ 2016-11-08T10:31:44+08:00 ] 106.120.173.111 /category.php?category=19&display=grid&brand=21&page=2
+ERR: 无法加载模块:Category
+
+[ 2016-11-08T10:31:54+08:00 ] 106.120.173.111 /goods.php?id=8321
+ERR: 无法加载模块:Goods
+
+[ 2016-11-08T10:32:04+08:00 ] 106.120.173.111 /brand.php?id=290
+ERR: 无法加载模块:Brand
+
+[ 2016-11-08T10:32:14+08:00 ] 106.120.173.111 /brand.php?id=286&cat=253
+ERR: 无法加载模块:Brand
+
+[ 2016-11-08T12:01:34+08:00 ] 121.69.47.50 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T12:05:08+08:00 ] 114.255.243.125 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T12:05:14+08:00 ] 125.36.50.3 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T12:05:14+08:00 ] 114.255.243.125 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T12:05:26+08:00 ] 114.255.243.125 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T12:05:26+08:00 ] 114.255.243.125 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2016-11-08T13:53:33+08:00 ] 119.29.233.232 /index.php/module/action/param1/${@phpinfo()}
+ERR: 无法加载模块:Module
+
+[ 2016-11-08T14:29:24+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:29:29+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:29:53+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:30:13+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:53:53+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:55:00+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:55:00+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:55:02+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T14:56:17+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T15:29:02+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T15:29:13+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T15:45:52+08:00 ] 141.8.184.16 /robots.txt
+ERR: 无法加载模块:Robots
+
+[ 2016-11-08T15:45:52+08:00 ] 5.255.253.34 /robots.txt
+ERR: 无法加载模块:Robots
+
+[ 2016-11-08T16:04:55+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T16:08:15+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T16:08:38+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T16:08:40+08:00 ] 125.36.50.3 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T17:16:22+08:00 ] 117.34.105.8 /phpMyAdmin
+ERR: 无法加载模块:PhpMyAdmin
+
+[ 2016-11-08T18:00:12+08:00 ] 125.36.45.166 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:17:17+08:00 ] 202.113.123.170 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:17:22+08:00 ] 202.113.123.170 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:17:36+08:00 ] 202.113.123.170 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:17:38+08:00 ] 202.113.123.170 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:17:46+08:00 ] 202.113.123.170 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:19:57+08:00 ] 202.113.123.170 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:20:12+08:00 ] 202.113.123.170 /Public/home/images/favicon.ico
+ERR: 无法加载模块:Public
+
+[ 2016-11-08T19:22:18+08:00 ] 106.120.173.111 /category.php?id=610
+ERR: 无法加载模块:Category
+
+[ 2016-11-08T19:22:28+08:00 ] 106.120.173.111 /category.php?id=633
+ERR: 无法加载模块:Category
+
+[ 2016-11-08T19:22:38+08:00 ] 106.120.173.111 /goods.php?id=5495
+ERR: 无法加载模块:Goods
+
+[ 2016-11-08T19:22:48+08:00 ] 106.120.173.111 /goods.php?id=3357
+ERR: 无法加载模块:Goods
+
+[ 2016-11-08T19:22:58+08:00 ] 106.120.173.111 /brand.php?id=262
+ERR: 无法加载模块:Brand
+
+[ 2016-11-08T19:23:08+08:00 ] 106.120.173.111 /brand.php?id=25&cat=19
+ERR: 无法加载模块:Brand
+
+[ 2016-11-08T20:28:08+08:00 ] 122.114.35.35 /user.action
+ERR: 无法加载模块:User
+

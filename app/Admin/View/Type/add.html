@@ -1,0 +1,20 @@
+<include file="Public/header"/>
+    <form class="form" id="form" action="{:U('Admin/Type/add')}" method="post" enctype="multipart/form-data">
+        <div>
+            <p><font>上级</font>
+                <select name="pid">
+                    <option value="0">无</option>
+                    {$select}
+                </select>
+            </p>
+            <p><font>名称</font><input type="text" name="title" value=""/></p>
+            <p><font>描述</font><input type="text" name="desc" value=""/></p>
+            <p><font>排序</font><input type="text" name="sort" value="0" />&nbsp;前台显示顺序：越小越靠前</p>
+            <p><font>图片</font><input type="file" name="img"/></p>
+            <p>
+            	<font>&nbsp;</font>
+            	<input name="submit" id="submit" type="submit" value="添加"/>
+            </p>
+        </div>
+	</form>
+<include file="Public/footer"/>
