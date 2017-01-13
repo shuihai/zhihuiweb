@@ -14,11 +14,15 @@
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/base.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/swiper.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/animate.css" />
+<link href="/zhihuiweb/Public/home/css/adipoli.css" rel="stylesheet" type="text/css"/>
 
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.min.js" ></script>
+
+
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery-1.7.1.js" ></script>
+<script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/swiper.min.js" ></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/wow.min.js"></script>
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/prefixfree.min.js"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.SuperSlide.2.1.1.js" ></script>
 
 
 <!--[if lte IE 6]>
@@ -34,41 +38,56 @@
                 <div class="nav fleft">
                         <ul>
                                 <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/Company_introduction');?>">公司介绍</a></li>
-                                <li><a href="Customer-service.html">解决方案</a></li>
-                                <li><a href="Product-introduction.html">产品介绍</a></li>
-                                <li><a href="Business-contact.html">业务联系</a></li>
-                                <li><a href="Channel-cooperation.html">渠道合作</a></li>
-                                <li><a href="After-sale-platform.html">售后平台</a></li>
-                                <li><a href="Join-us.html">加入我们</a></li>
+                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
-        </div> 
-<link rel="stylesheet" type="text/css" href="/zhihuiweb/Public/home/css/news.css">
-<div class="container_inner news_content"> 
-    <h3><span></span>公司动态</h3>       
-    <div class="product_news">
-            <div class="pn_sublist">            
-                <ul class="ul_clear">
-                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                            <a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?> ><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>" alt="<?php echo ($vo['title']); ?>" title="<?php echo ($vo['title']); ?>" /></a>
-                            <div class="product_des">
-                                <h4><a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?>><?php echo ($vo['title']); ?></a></h4>
-                                <p><?php echo ($vo['desc']); ?></p>
-                            </div>
-                      </li><?php endforeach; endif; else: echo "" ;endif; ?>          
-                </ul>                
-            </div>
-            <div class="cutpage"><?php echo ($page); ?></div>       
         </div>
-	</div>         	
-</div>
-<script type="text/javascript">
-$(function($){	
-	$(".pn_sublist ul li:nth-child(4n)").css("marginRight",0);		
-});
-</script>
-<div class="clearfix"></div>
+		<div class="companytitle Products">
+			<div class="companytitle1"></div>
+			<div class="companytitle2">
+				<div class="title-c fleft">
+					<i class="title-i1">产品介绍</i>
+					<i class="title-i2">Products</i>
+				</div>
+				<div class="title-slant fleft"></div>
+				<div class="title-n fleft">
+					<i class="title-i3">您的满意是我们存在的价值。</i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="centre">
+			<div class="present1 margin100"> <span>产品介绍</span> </div>
+			<div class="present2 width1225 products ">
+				<div class="products1">
+					<div class="present21">机器人</div>
+					<div class="present22 present24">
+						<p>众多专业领域的技术精英，构成了智汇研究院的研发团队。我们基于自主研发技术并整合多项前沿科技，根据市场现有需求及对未来人类的期望预测，研发出多款智能服务型机器人，配合多领域行业的解决方案，为用户带来真正的价值转化，实现智能升级。</p>
+					</div>
+					<div class="products11">
+						<a href="Products1.html"><img src="/zhihuiweb/Public/home/images/img_4.png" class="products111" /></a>
+						<a href="Products1.html"><img src="/zhihuiweb/Public/home/images/img_5.png" class="products112" /></a>
+						<a href="Products1.html"><img src="/zhihuiweb/Public/home/images/img_6.png" class="products113" /></a>
+					</div>
+				</div>
+				<div class="products2">
+					<div class="present21">虚拟现实</div>
+					<div class="present22 present24 products12">
+						<p>智汇时代利用计算机技术自主研发，搭建虚拟现实平台，服务于众多行业领域。让用户突破限制，在以假乱真的多种虚拟世界中，身临其境地体验、娱乐、消费、活动、研究和探索。</p>
+						<p>我们自主研发搭建的VR平台，可服务于医学、教育、交通、军事、航天、工业、艺术、娱乐、游戏、城市规划、房地产、文物保护等众多行业领域，不仅为使用者带来虚拟逼真的场景和真实奇妙的体验，还为服务商提供完整优化的推广服务及后期问题的解决方案，使沉浸式技术在不同领域串联、共享。</p>
+					</div>
+					<div class="products11">
+						<a href=""><img src="/zhihuiweb/Public/home/images/img_7.png"/></a>
+					</div>
+				</div>
+			</div>	
+		</div>
 <div class="bottom">
         <div class="bottom1">
                 <ul>
@@ -129,9 +148,6 @@ $(function($){
         </div>
 </div>
 
-
-</body>
-</html>
 
 </body>
 </html>

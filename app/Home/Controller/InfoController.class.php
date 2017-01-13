@@ -192,6 +192,43 @@ class InfoController extends HomeController{
 
         $this->display();
     }        
+
+    //加入我们
+    public function join_us(){
+
+        $this->display();
+    }    
+    //渠道合作 
+    public function channel_cooperation(){
+
+        $this->display();
+    }       
     
+    
+     //产品介绍 
+    public function product_introduction(){
+
+        $this->display();
+    }         
+    
+
+    
+    //业务联系 
+    public function business_contact(){
+
+        $this->display();
+    } 
+
+ 
+    //售后平台 
+    public function after_sale_platform(){
+
+        $this->display();
+    }     
+    //解决方案 
+    public function customer_service(){
+
+        $this->display();
+    }         
 }
 ?>

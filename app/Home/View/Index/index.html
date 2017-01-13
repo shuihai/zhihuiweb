@@ -2,33 +2,42 @@
 
 
 
+
+
+
+
 		<div class="banner">
-			
-		    <div class="swiper-container gallery-top">
-		        <div class="swiper-wrapper">
-                            <volist name="focus" id='vo'>
-		            <div class="swiper-slide" style="background-image:url(__UPLOAD__/{$vo['img']})"></div>
-                            </volist>
+			<div id="slideBox" class="slideBox">
+				<div class="bd">
+					<ul>
+                                        <volist name="focus" id='vo'>
+                                        <li><a href="javascript:volid(0);"><img src="__UPLOAD__/{$vo['img']}" /></a></li>
+                                        </volist>
+					</ul>
+				</div>
+                                <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+				  	<tr>
+					   	<td>
 
-		        </div>
-		        
-		    </div>
-		    <div class="previewqqs">
-		    	<div class="swiper-container gallery-thumbs">
-			        <div class="swiper-wrapper">
-                                    <volist name="focus" id='vo'>
-			            <div class="swiper-slide" style="background-image:url(__UPLOAD__/{$vo['img']})"></div>
-                                    </volist>
-
-			        </div>
-			        
-			    </div>
-			    <div class="swiper-button-next swiper-button-white"></div>
-		        <div class="swiper-button-prev swiper-button-white"></div>
-		    </div>
+                                                    <div class="hd">
+                                                            <a class="prev" href="javascript:void(0)"></a>
+                                                            <ul>
+                                                            <volist name="focus" id='vo'>
+                                                                <li><a href="javascript:volid(0);"><img src="__UPLOAD__/{$vo['img']}"/></a></li>
+                                                            </volist>                                                
+                                                            </ul>
+                                                            <a class="next" href="javascript:void(0)"></a>
+                                                    </div>  
+                                                </td>
+                                        </tr>
+                                </table>
+			</div>
 		    
 		</div>
-		
+
+
+
+
 		<div class="centre">
 			<div class="resolve ">
 				<div class="margin15 margin150">
@@ -80,7 +89,7 @@
 					<div class="cooperateul margin60">
 						<div class="cooperateleft fleft wow fadeInLeft" style=" animation-delay: 0.2s;">
 							<div class="cooperate11 cooperate11width">
-								<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate1.png" /></div>
+								<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate1.png"  class="row5"/></div>
 								<div class="cooperate11div"><div class="cooperate11span">青岛地铁合作案例</div></div>
 								<i  class="light"></i>
 							</div>
@@ -89,28 +98,28 @@
 							<ul>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate2.png" /></div>
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate2.png" class="row5" /></div>
 										<div class="cooperate11div"><div class="cooperate11span">善林金融合作案例</div></div>
 										
 									</div>
 								</li>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate3.png" /></div>
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate3.png"  class="row5"/></div>
 										<div class="cooperate11div"><div class="cooperate11span">万豪酒店合作案例</div></div>
 										
 									</div>
 								</li>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate4.png" /></div>
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate4.png"  class="row5"/></div>
 										<div class="cooperate11div"><div class="cooperate11span">浙江省国家大学科技园</div></div>
 										
 									</div>
 								</li>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate5.png" /></div>
+										<div class="cooperate11img"><img src="__PUBLIC__/home/images/img_cooperate5.png"  class="row5"/></div>
 										<div class="cooperate11div"><div class="cooperate11span">万科合作案例</div></div>
 										
 									</div>
@@ -163,31 +172,22 @@
 		
 		
 		
-		<script>
+            <script>
 			new WOW().init();
-		    var galleryTop = new Swiper('.gallery-top', {
-		        spaceBetween: 10,
-		        loop:true,
-		        loopedSlides: 5, 
-		    });
-		    var galleryThumbs = new Swiper('.gallery-thumbs', {
-		        nextButton: '.swiper-button-next',
-		        prevButton: '.swiper-button-prev',
-		        spaceBetween: 10,
-		        slidesPerView: 4,
-		        touchRatio: 0.2,
-		        autoplay : 3000,
-		        autoplayDisableOnInteraction : false, 
-		        loop:true,
-		        loopedSlides: 5, 
-		        slideToClickedSlide: true
-		    });
-		    galleryTop.params.control = galleryThumbs;
-		    galleryThumbs.params.control = galleryTop;
+		    jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
 	    
 	    </script>
 
-
+		 <script type="text/javascript">
+            
+            $(function(){
+				$('.row5').adipoli({
+					'startEffect' : 'transparent',
+					'hoverEffect' : 'boxRainGrowReverse'
+				});
+       		 });
+            
+        </script>
 
 
 <include file="Public/footer" />

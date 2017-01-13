@@ -14,11 +14,15 @@
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/base.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/swiper.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/animate.css" />
+<link href="/zhihuiweb/Public/home/css/adipoli.css" rel="stylesheet" type="text/css"/>
 
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.min.js" ></script>
+
+
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery-1.7.1.js" ></script>
+<script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/swiper.min.js" ></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/wow.min.js"></script>
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/prefixfree.min.js"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.SuperSlide.2.1.1.js" ></script>
 
 
 <!--[if lte IE 6]>
@@ -34,41 +38,86 @@
                 <div class="nav fleft">
                         <ul>
                                 <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/Company_introduction');?>">公司介绍</a></li>
-                                <li><a href="Customer-service.html">解决方案</a></li>
-                                <li><a href="Product-introduction.html">产品介绍</a></li>
-                                <li><a href="Business-contact.html">业务联系</a></li>
-                                <li><a href="Channel-cooperation.html">渠道合作</a></li>
-                                <li><a href="After-sale-platform.html">售后平台</a></li>
-                                <li><a href="Join-us.html">加入我们</a></li>
+                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
-        </div> 
-<link rel="stylesheet" type="text/css" href="/zhihuiweb/Public/home/css/news.css">
-<div class="container_inner news_content"> 
-    <h3><span></span>公司动态</h3>       
-    <div class="product_news">
-            <div class="pn_sublist">            
-                <ul class="ul_clear">
-                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                            <a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?> ><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>" alt="<?php echo ($vo['title']); ?>" title="<?php echo ($vo['title']); ?>" /></a>
-                            <div class="product_des">
-                                <h4><a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?>><?php echo ($vo['title']); ?></a></h4>
-                                <p><?php echo ($vo['desc']); ?></p>
-                            </div>
-                      </li><?php endforeach; endif; else: echo "" ;endif; ?>          
-                </ul>                
-            </div>
-            <div class="cutpage"><?php echo ($page); ?></div>       
         </div>
-	</div>         	
-</div>
-<script type="text/javascript">
-$(function($){	
-	$(".pn_sublist ul li:nth-child(4n)").css("marginRight",0);		
-});
-</script>
-<div class="clearfix"></div>
+		<div class="companytitle Solutions">
+			<div class="companytitle1"></div>
+			<div class="companytitle2 fleft">
+				<div class="title-c fleft">
+					<i class="title-i1">解决方案</i>
+					<i class="title-i2">Industry Solutions</i>
+				</div>
+				<div class="title-slant fleft"></div>
+				<div class="title-n fleft">
+					<i class="title-i3">您的满意是我们存在的价值。</i>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="centre">
+			<div class="present1 margin100"> <span>解决方案</span> </div>
+			<div class="present2 width1225 industry ">
+				<div class="industry1">
+					<div class="present21">机器人</div>
+					<div class="industry11">
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_9.png" />
+							<p>综合型酒店</p>
+						</a>
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_10.png" />
+							<p>房地产</p>
+						</a>
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_11.png" />
+							<p>展会</p>
+						</a>
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_12.png" />
+							<p>大型园区</p>
+						</a>
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_13.png" />
+							<p>商业综合体</p>
+						</a>
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_14.png" />
+							<p>交通枢纽</p>
+						</a>
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_15.png" />
+							<p>金融</p>
+						</a>
+						<a href="">
+							<img src="/zhihuiweb/Public/home/images/img_16.png" />
+							<p>政务办公</p>
+						</a>
+					</div>
+				</div>
+				<div class="industry2">
+					<div class="present21">虚拟现实</div>
+					<div class="industry11">
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_17.png" />
+							<p>VR样板间</p>
+						</a>
+						<a href="Solutions1.html">
+							<img src="/zhihuiweb/Public/home/images/img_18.png" />
+							<p>VR旅游</p>
+						</a>
+					</div>
+				</div>
+			</div>	
+		</div>
 <div class="bottom">
         <div class="bottom1">
                 <ul>
@@ -129,9 +178,6 @@ $(function($){
         </div>
 </div>
 
-
-</body>
-</html>
 
 </body>
 </html>

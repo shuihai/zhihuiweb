@@ -14,11 +14,15 @@
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/base.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/swiper.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/animate.css" />
+<link href="/zhihuiweb/Public/home/css/adipoli.css" rel="stylesheet" type="text/css"/>
 
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.min.js" ></script>
+
+
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery-1.7.1.js" ></script>
+<script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/swiper.min.js" ></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/wow.min.js"></script>
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/prefixfree.min.js"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.SuperSlide.2.1.1.js" ></script>
 
 
 <!--[if lte IE 6]>
@@ -34,41 +38,73 @@
                 <div class="nav fleft">
                         <ul>
                                 <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/Company_introduction');?>">公司介绍</a></li>
-                                <li><a href="Customer-service.html">解决方案</a></li>
-                                <li><a href="Product-introduction.html">产品介绍</a></li>
-                                <li><a href="Business-contact.html">业务联系</a></li>
-                                <li><a href="Channel-cooperation.html">渠道合作</a></li>
-                                <li><a href="After-sale-platform.html">售后平台</a></li>
-                                <li><a href="Join-us.html">加入我们</a></li>
+                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
-        </div> 
-<link rel="stylesheet" type="text/css" href="/zhihuiweb/Public/home/css/news.css">
-<div class="container_inner news_content"> 
-    <h3><span></span>公司动态</h3>       
-    <div class="product_news">
-            <div class="pn_sublist">            
-                <ul class="ul_clear">
-                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                            <a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?> ><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>" alt="<?php echo ($vo['title']); ?>" title="<?php echo ($vo['title']); ?>" /></a>
-                            <div class="product_des">
-                                <h4><a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?>><?php echo ($vo['title']); ?></a></h4>
-                                <p><?php echo ($vo['desc']); ?></p>
-                            </div>
-                      </li><?php endforeach; endif; else: echo "" ;endif; ?>          
-                </ul>                
-            </div>
-            <div class="cutpage"><?php echo ($page); ?></div>       
         </div>
-	</div>         	
-</div>
-<script type="text/javascript">
-$(function($){	
-	$(".pn_sublist ul li:nth-child(4n)").css("marginRight",0);		
-});
-</script>
-<div class="clearfix"></div>
+		<div class="companytitle Contacts">
+			<div class="companytitle1"></div>
+			<div class="companytitle2">
+				<div class="title-c fleft">
+					<i class="title-i1">业务联系</i>
+					<i class="title-i2">Contacts</i>
+				</div>
+				<div class="title-slant fleft"></div>
+				<div class="title-n fleft">
+					<i class="title-i3">您的满意是我们存在的价值。</i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="centre">
+			<div class="present1 margin100"> <span>业务联系</span> </div>
+			<div class="present2 width1225 contacts ">
+				<div class="contacts1 fleft">
+					<div class="contactsimg"><img src="/zhihuiweb/Public/home/images/img_1.png"/></div>
+					<div class="contactsspan">
+						<span class="contactsspan1">张大民</span>
+						<span class="contactsspan2">金融、房地产业务负责人</span>
+					</div>
+					<div class="contacts11">
+						<div class="contacts111">
+							<span>个人经历：</span>
+							<p>从事金融、房地产行业多年，对该领域有独到的见解，可以更好的把握业务难点，可以帮助客户选择最合适的解决发案。</p>
+						</div>
+						<div class="contacts112">
+							<span>联系方式：</span>
+							<span>电话：125655552356</span>
+							<span>EMAIL：zhihui@123.com</span>
+							<span>地址：天津南开区慧谷大厦2413</span>
+						</div>
+					</div>
+				</div>
+				<div class="contacts1 fright">
+					<div class="contactsimg"><img src="/zhihuiweb/Public/home/images/img_2.png"/></div>
+					<div class="contactsspan">
+						<span class="contactsspan1">张大民</span>
+						<span class="contactsspan2">金融、房地产业务负责人</span>
+					</div>
+					<div class="contacts11">
+						<div class="contacts111">
+							<span>个人经历：</span>
+							<p>从事金融、房地产行业多年，对该领域有独到的见解，可以更好的把握业务难点，可以帮助客户选择最合适的解决发案。</p>
+						</div>
+						<div class="contacts112">
+							<span>联系方式：</span>
+							<span>电话：125655552356</span>
+							<span>EMAIL：zhihui@123.com</span>
+							<span>地址：天津南开区慧谷大厦2413</span>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
 <div class="bottom">
         <div class="bottom1">
                 <ul>
@@ -129,9 +165,6 @@ $(function($){
         </div>
 </div>
 
-
-</body>
-</html>
 
 </body>
 </html>

@@ -14,11 +14,15 @@
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/base.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/swiper.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/animate.css" />
+<link href="/zhihuiweb/Public/home/css/adipoli.css" rel="stylesheet" type="text/css"/>
 
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.min.js" ></script>
+
+
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery-1.7.1.js" ></script>
+<script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/swiper.min.js" ></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/wow.min.js"></script>
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/prefixfree.min.js"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.SuperSlide.2.1.1.js" ></script>
 
 
 <!--[if lte IE 6]>
@@ -34,41 +38,103 @@
                 <div class="nav fleft">
                         <ul>
                                 <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/Company_introduction');?>">公司介绍</a></li>
-                                <li><a href="Customer-service.html">解决方案</a></li>
-                                <li><a href="Product-introduction.html">产品介绍</a></li>
-                                <li><a href="Business-contact.html">业务联系</a></li>
-                                <li><a href="Channel-cooperation.html">渠道合作</a></li>
-                                <li><a href="After-sale-platform.html">售后平台</a></li>
-                                <li><a href="Join-us.html">加入我们</a></li>
+                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
-        </div> 
-<link rel="stylesheet" type="text/css" href="/zhihuiweb/Public/home/css/news.css">
-<div class="container_inner news_content"> 
-    <h3><span></span>公司动态</h3>       
-    <div class="product_news">
-            <div class="pn_sublist">            
-                <ul class="ul_clear">
-                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                            <a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?> ><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>" alt="<?php echo ($vo['title']); ?>" title="<?php echo ($vo['title']); ?>" /></a>
-                            <div class="product_des">
-                                <h4><a <?php if($vo['url']): ?>href=<?php echo $vo['url']; else: ?>href="<?php echo U('Info/detail',array('id'=>$vo['id']));?>"<?php endif; ?>><?php echo ($vo['title']); ?></a></h4>
-                                <p><?php echo ($vo['desc']); ?></p>
-                            </div>
-                      </li><?php endforeach; endif; else: echo "" ;endif; ?>          
-                </ul>                
-            </div>
-            <div class="cutpage"><?php echo ($page); ?></div>       
         </div>
-	</div>         	
-</div>
-<script type="text/javascript">
-$(function($){	
-	$(".pn_sublist ul li:nth-child(4n)").css("marginRight",0);		
-});
-</script>
-<div class="clearfix"></div>
+		<div class="companytitle Cooperation">
+			<div class="companytitle1"></div>
+			<div class="companytitle2">
+				<div class="title-c fleft">
+					<i class="title-i1">渠道合作</i>
+					<i class="title-i2">Cooperation</i>
+				</div>
+				<div class="title-slant fleft"></div>
+				<div class="title-n fleft">
+					<i class="title-i3">您的满意是我们存在的价值。</i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="centre">
+			<div class="present1 margin100"> <span>渠道合作</span> </div>
+			<div class="present2 width1225 cooperation ">
+				<div class="cooperation1">
+					<div class="cooperation11">
+						<div class="point-area" style="top: 105px; left: 125px; position: absolute; width: 110px; height: 110px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 45px; left: 65px;">新疆</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-40"></div>
+							<div class="point point-shadow point-80"></div>
+						</div>
+						<div class="point-area" style="top: 105px; left: 740px; position: absolute; width: 200px; height: 200px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 90px; left: 110px;">华东</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-40"></div>
+							<div class="point point-shadow point-80"></div>
+						</div>
+						<div class="point-area" style="top: 355px; left: 275px; position: absolute; width: 80px; height: 80px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 30px; left: 0px;">华北</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-70"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cooperation2">
+					<select id="province"> 
+					   <option>----请选择省份----</option> 
+					   <option>北京</option> 
+					   <option>上海</option> 
+					   <option>江苏</option> 
+					</select>
+					<span class="">省</span>
+					<select class="city"> 
+						<option>----请选择城市----</option> 
+                                                <option>东城</option> 
+                                                <option>西城</option> 
+                                                <option>崇文</option> 
+                                                <option>宣武</option> 
+                                                <option>朝阳</option> 
+                                        </select> 
+				
+				    <span class="">市</span>
+				    <input type="button" value="查找代理商" onclick="getSelectValue();">
+				</div>
+				<div class="cooperation3">
+					<span class="">代理商详情</span>
+					<ul class="cooperation31">
+						<li>省</li>
+						<li>市</li>
+						<li>代理商类型</li>
+						<li>地址</li>
+						<li>联系方式</li>
+					</ul>
+					<div class="cooperation32">
+						<ul class="">
+							<li>上海</li>
+							<li>黄浦</li>
+							<li></li>
+							<li></li>
+							<li>1111122255</li>
+						</ul>
+	
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+
+
+<!--底部应用场景图片轮播-->
 <div class="bottom">
         <div class="bottom1">
                 <ul>
@@ -129,9 +195,6 @@ $(function($){
         </div>
 </div>
 
-
-</body>
-</html>
 
 </body>
 </html>
