@@ -136,33 +136,25 @@
 				<div class="marginbig">智汇动态<i class="margins-i"></i></div>
 				<div class="trendsul margin60">
 					<ul>
+                                            <volist name="company" id="vo">
 						<li class=" wow fadeInDown" style=" animation-delay: 0.2s;">
 							<div class="trendscontent">
-								<div class="contentimg"><img src="__PUBLIC__/home/images/img_trends1.png" /></div>
+                                                            <div class="contentimg"><a href="
+                                                                                   <?php if(empty($vo['url'])){
+                                                                                        echo U('Info/detail',array('id'=>$vo['id']));
+                                                                                    }else{
+                                                                                        echo $vo['url'];
+                                                                                    }      
+                                                                                    ?>
+                                                                                       "><img src="__UPLOAD__/{$vo['img']}" /></a></div>
 								<div class="contentwriting">
-									<p class="writingp">美国机器人市场正方兴未艾，新一代主力机型即将推出。</p>
-									<span class="writingtime">2016-12-26</span>
+									<p class="writingp">{$vo['desc']}</p>
+									<span class="writingtime">{$vo['time']|date="Y-m-d",###}</span>
 								</div>
 							</div>
 						</li>
-						<li class="wow fadeInDown" style=" animation-delay: 0.4s;">
-							<div class="trendscontent">
-								<div class="contentimg"><img src="__PUBLIC__/home/images/img_trends2.png" /></div>
-								<div class="contentwriting">
-									<p class="writingp">启智玩具等市场新风越吹越烈AR玩具成“当红炸子鸡”</p>
-									<span class="writingtime">2016-12-26</span>
-								</div>
-							</div>
-						</li>
-						<li class="wow fadeInDown" style=" animation-delay: 0.6s;">
-							<div class="trendscontent">
-								<div class="contentimg"><img src="__PUBLIC__/home/images/img_trends3.png" /></div>
-								<div class="contentwriting">
-									<p class="writingp">阿瑞拉机器人科技运动领导加强制作许可专业短片即将上市。</p>
-									<span class="writingtime">2016-12-26</span>
-								</div>
-							</div>
-						</li>
+                                            </volist>   
+
 					</ul>
 				</div>
 			</div>

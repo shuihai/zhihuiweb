@@ -25,6 +25,12 @@
                 </td>
             </tr>
             <tr class="tr rt">
+                <td>置顶</td>
+                <td  class="lt">
+                    <input type="checkbox" name="top" value='1' <if condition="$row['top'] eq '1'">checked</if>>
+                </td>
+            </tr>            
+            <tr class="tr rt">
                 <td>自定义属性</td>
                 <td  class="lt">
                     <input type="checkbox" name="flags[]" value="j" id="j" <if condition="strstr($row['flags'],'j')">checked</if>><label for="j">跳转[j]</label>

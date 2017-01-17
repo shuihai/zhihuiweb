@@ -6,6 +6,7 @@ class HomeController extends CommonController{
     	parent::_initialize();
         //$this->assign("headerType",A("Communal/Type")->getSon("2"));
         $this->assign("CAName",strtolower(CONTROLLER_NAME.ACTION_NAME)); 
+       
         $this->assign('config',cacheConfig());
         $this->assign('',currentUrl());
     }

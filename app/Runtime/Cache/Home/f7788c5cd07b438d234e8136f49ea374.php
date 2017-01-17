@@ -37,17 +37,28 @@
                 <div class="headLogo fleft"><img src="/zhihuiweb/Public/home/images/logo.png"/></div>
                 <div class="nav fleft">
                         <ul>
-                                <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
-                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
-                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
-                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
-                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
-                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
-                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
+                                <li <?php if(($CAName == indexindex) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li <?php if(($CAName == infocustomer_service) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li <?php if(($CAName == infoproduct_introduction) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li <?php if(($CAName == infobusiness_contact) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li <?php if(($CAName == infochannel_cooperation) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li <?php if(($CAName == infoafter_sale_platform) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li <?php if(($CAName == infojoin_us) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
         </div>
+        <script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            
+            $(function(){
+				$('.row4').adipoli({
+                    'startEffect' : 'transparent',
+                	'hoverEffect' : 'boxRandom'
+                });
+       		 });
+            
+        </script>
 		<div class="companytitle Solutions">
 			<div class="companytitle1"></div>
 			<div class="companytitle2 fleft">
@@ -70,35 +81,35 @@
 					<div class="present21">机器人</div>
 					<div class="industry11">
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_9.png" />
+							<img src="/zhihuiweb/Public/home/images/img_9.png" class="row4"/>
 							<p>综合型酒店</p>
 						</a>
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_10.png" />
+							<img src="/zhihuiweb/Public/home/images/img_10.png" class="row4"/>
 							<p>房地产</p>
 						</a>
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_11.png" />
+							<img src="/zhihuiweb/Public/home/images/img_11.png" class="row4"/>
 							<p>展会</p>
 						</a>
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_12.png" />
+							<img src="/zhihuiweb/Public/home/images/img_12.png" class="row4"/>
 							<p>大型园区</p>
 						</a>
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_13.png" />
+							<img src="/zhihuiweb/Public/home/images/img_13.png" class="row4"/>
 							<p>商业综合体</p>
 						</a>
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_14.png" />
+							<img src="/zhihuiweb/Public/home/images/img_14.png" class="row4"/>
 							<p>交通枢纽</p>
 						</a>
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_15.png" />
+							<img src="/zhihuiweb/Public/home/images/img_15.png" class="row4"/>
 							<p>金融</p>
 						</a>
 						<a href="">
-							<img src="/zhihuiweb/Public/home/images/img_16.png" />
+							<img src="/zhihuiweb/Public/home/images/img_16.png" class="row4"/>
 							<p>政务办公</p>
 						</a>
 					</div>
@@ -107,11 +118,11 @@
 					<div class="present21">虚拟现实</div>
 					<div class="industry11">
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_17.png" />
+							<img src="/zhihuiweb/Public/home/images/img_17.png" class="row4"/>
 							<p>VR样板间</p>
 						</a>
 						<a href="Solutions1.html">
-							<img src="/zhihuiweb/Public/home/images/img_18.png" />
+							<img src="/zhihuiweb/Public/home/images/img_18.png" class="row4"/>
 							<p>VR旅游</p>
 						</a>
 					</div>

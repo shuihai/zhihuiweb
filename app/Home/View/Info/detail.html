@@ -1,5 +1,5 @@
 <include file="Public/header"/>
-<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/news.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css2/news.css" />
 
 <!--图片滚动-->
 <if condition="$row['images'] neq null">
@@ -13,7 +13,9 @@
         </div>
     </div>
 </if>
+<script src="__PUBLIC__/home/js/jquery.min.js"></script>
 <script src="__PUBLIC__/home/js/jquery.kxbdMarquee.js"></script>
+
 <script type="text/javascript">
 (function(){
     $("#news_detail_img").kxbdMarquee({direction:"left"});
@@ -40,11 +42,7 @@
         <div class="detail_page_link">
             <a href="javascript: history.go(-1);"><span>返回</span></a>
         </div>
-        <div class="detail_page_link">
-        	<if condition="$downrow">
-            	<a href="{:U('Info/detail',array('id'=>$downrow['id']))}"><i class="icon iconfont">&#xe635;</i><span>下一篇</span></a>
-            </if>
-        </div>
+
     </div>
 
 

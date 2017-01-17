@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*新闻标题*/
+.news_content h3 { font-size: 20px; margin: 50px 0; color: #b3b3b3;}
+.news_content h3 span {  background:#76acd4; width: 10px; height: 30px; display: block; float: left; margin-right: 20px;}
+
+
+
+/*新闻列表*/
+.pn_sublist li { float:left; width:275px; height:262px; border:1px solid #a0a0a0; background:#fff; margin:0 30px 35px 0;}
+.pn_sublist li a { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.pn_sublist li img { width:275px; height:180px;}
+.pn_sublist li .product_des { width:235px; height:68px; padding:7px 20px;}
+.pn_sublist li .product_des h4 a { color:#67686d; display:block; height:30px; line-height:30px; font-size:18px; font-weight:normal;}
+.pn_sublist li .product_des p { font-size:12px; color:#959499; height:36px; line-height:18px; word-break:break-all; word-wrap:break-word; overflow:hidden;}
+
+
+
+
+
+
+/*新闻详情页图片滚动*/
+
+.news_detail_con { width: 1184px; min-height: 100%; margin:90px auto;}
+.news_detail { width: 100%; height: 400px;}
+.news_detail #news_detail_img { width:100%; height:400px; overflow:hidden; margin:0 auto;}
+.news_detail #news_detail_img ul li { float:left; margin-right:10px;}
+.news_detail #news_detail_img ul li img { display:block; width: 603px; height: 400px;}
+
+
+
+
+/*新闻详情内容*/
+
+.news_detail_con .detail_title { text-align: center; font-size: 22px; font-weight: bold;; color: #000; margin: 55px auto;}
+.news_detail_con .detail_con { line-height: 25px; font-size: 14px;}
+.news_detail_con .detail_con img{display: block;margin: 0 auto;}
+.news_detail_con .detail_page { width: 550px; height: 21px; margin:90px auto 0; text-align: center;}
+.news_detail_con .detail_page .detail_page_link { float: left; height: 21px; line-height: 21px; margin-right: 200px;width: 56px;}
+.news_detail_con .detail_page .detail_page_link a { color: #000; font-size: 12px;}
+.news_detail_con .detail_page .detail_page_link a span {width: 56px; display: block; float: left; height: 21px; line-height: 21px;}
+
+
+

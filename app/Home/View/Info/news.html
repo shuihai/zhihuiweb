@@ -1,58 +1,91 @@
 <include file="Public/header"/>
-<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/news.css" />
-<div class="container_inner">        
-    <div class="product_news">
-        <ul class="pntabbtn ul_clear" id="pronewstab">
-           	<li class="on"><a href="javascript:void(0);">公司动态</a></li>
-            <li><a href="javascript:void(0);">科学新闻</a></li>
-        </ul>
-        <div class="pntabcon" id="pronewscon">
-            <div class="pn_sublist">            
-                <ul class="ul_clear">
-                    <volist name="company" id="vo">
-                     	<li>
-                            <a href="{:U('Info/detail',array('id'=>$vo['id']))}"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" /></a>
-                            <div class="product_des">
-                                <h4><a href="{:U('Info/detail',array('id'=>$vo['id']))}">{$vo['title']}</a></h4>
-                                <p>{$vo['desc']}</p>
-                            </div>
-                     	</li>  
-                    </volist>         
-                </ul>                
-            </div>
-            <div class="pn_sublist">            
-                <ul class="ul_clear">  
-                    <volist name="news" id="vo"> 
-                        <li>
-                            <a href="{:U('Info/detail',array('id'=>$vo['id']))}"><img src="__UPLOAD__/{$vo['img']}" alt="{$vo['title']}" title="{$vo['title']}" /></a>
-                            <div class="product_des">
-                                <h4><a href="{:U('Info/detail',array('id'=>$vo['id']))}">{$vo['title']}</a></h4>
-                                <p>{$vo['desc']}</p>
-                            </div>
-                     	</li>
-                    </volist>        
-                </ul>                
-            </div>               
-        </div>
-	</div>          	
-</div>
-<script type="text/javascript" src="__PUBLIC__/home/js/jquery.tabso_yeso.js"></script>
-<script type="text/javascript">
-$(function($){
-    
-    //新闻列表部分选项切换
-    $("#pronewstab").tabso({
-        cntSelect:"#pronewscon",
-        tabEvent:"click",
-        tabStyle:"normal"
-    });
-
-
-    $(".pn_sublist ul li:nth-child(4n)").css("marginRight",0);
-    
-    
-});
-</script>
-
-<div class="clearfix"></div>
+		<div class="companytitle">
+			<div class="companytitle1">
+				<ul>
+					<li class="titlec"><a href="{:U('Info/company_introduction')}">公司介绍</a></li>
+					<li><a href="{:U('Info/team')}">团队介绍</a></li>
+					<li><a href="{:U('Info/mechanism')}">下属机构</a></li>
+					<li><a href="{:U('Info/news')}">新闻动态</a></li>
+				</ul>
+			</div>
+			<div class="companytitle2">
+				<div class="title-c fleft">
+					<i class="title-i1">公司介绍</i>
+					<i class="title-i2">Company profile</i>
+				</div>
+				<div class="title-slant fleft"></div>
+				<div class="title-n fleft">
+					<i class="title-i3">您的满意是我们存在的价值。</i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="centre">
+			<div class="present1 margin100"> <span>公司介绍</span> </div>
+			<div class="present2 width1225">
+				<div class="present21">新闻动态</div>
+				<div class="present22 present24 news">
+					<ul>
+                                            
+                                            <volist name="company" id="vo">
+                                                <li>
+                                      
+							<span class="newstitle">{$vo['title']}</span>
+							<div class="newscentre1">
+								<div class="newscentre11 fleft"><span>{$vo['time']|date="Y-m-d",###}</span><span>{$vo['time']|date="h:i:s",###}<span></span></div>              
+								<div class="newscentre12 fleft"><a href="
+                                                                                    <?php if(empty($vo['url'])){
+                                                                                        echo U('Info/detail',array('id'=>$vo['id']));
+                                                                                    }else{
+                                                                                        echo $vo['url'];
+                                                                                    }      
+                                                                                     ?>
+                                                                                                   ">查看源网页</a><span>|</span></div>
+								<div class="newscentre13 fleft">
+									<span class="newscentre31">12</span>
+								
+									<span class="newscentre33"> &nbsp
+                                                                        <div class="newsqimg"><img src="__PUBLIC__/home/images/img_orwzma.png" /></div>
+                                                                        </span>
+								</div>
+							</div>
+							<div class="newsimg"><img src="__UPLOAD__/{$vo['img']}"/></div>
+							<div class="newscentre2">
+								<p>{$vo['desc']}</p>
+							</div>
+							<div class="newscentre3"><a href="
+                                                                                    <?php if(empty($vo['url'])){
+                                                                                        echo U('Info/detail',array('id'=>$vo['id']));
+                                                                                    }else{
+                                                                                        echo $vo['url'];
+                                                                                    }
+                                                                           
+                                                                                    ?>
+                                                                                    ">+ 更多</a></div>
+                                                        
+                                                  
+                                                </li>  
+                                            </volist>
+                                            
+						
+					</ul>
+                                        <div class="paging">
+						<div>
+							<ul>
+								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow1.png" /></a></li>
+								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow3.png" /></a></li>
+								<li><a href="#" class="padina"><span>1</span></a></li>
+								<li><a href="#"><span>2</span></a></li>
+								<li><a href="#"><span>3</span></a></li>
+								<li><a href="#"><span>4</span></a></li>
+								<li><a href="#"><span>5</span></a></li>
+								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow4.png" /></a></li>
+								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow2.png" /></a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
 <include file="Public/footer"/>

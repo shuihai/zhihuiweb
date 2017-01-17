@@ -9,55 +9,46 @@
 <title><?php if($row['title']): echo ($row['title']); ?>|<?php endif; echo ($config['title']); ?></title>
 <meta name="keywords" content="<?php if($row['keywords']): echo ($row['keywords']); ?>|<?php endif; echo ($config['keywords']); ?>">
 <meta name="description" content="<?php if($row['desc']): echo ($row['desc']); ?>|<?php endif; echo ($config['description']); ?>">
-<link type="text/css" rel="stylesheet" href="/zhihuiweb/Public/home/css/common.css?version=1.0" />
-<link type="text/css" rel="stylesheet" href="/zhihuiweb/Public/home/css/index.css" />
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/zhihuiweb/Public/home/css/base.css" />
+<link rel="stylesheet" href="/zhihuiweb/Public/home/css/swiper.css" />
+<link rel="stylesheet" href="/zhihuiweb/Public/home/css/animate.css" />
+<link href="/zhihuiweb/Public/home/css/adipoli.css" rel="stylesheet" type="text/css"/>
+
+
+
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery-1.7.1.js" ></script>
+<script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/swiper.min.js" ></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/wow.min.js"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.SuperSlide.2.1.1.js" ></script>
+
+
 <!--[if lte IE 6]>
 <style type="text/css">
     body { behavior:url("css/csshover.htc"); }
 </style>
 <![endif]-->
 </head>
+
 <body>
-<div id="header">
-    <div class="container">     
-        <div class="logo">
-            <a href="#"><img src="/zhihuiweb/Public/home/images/logo.png" alt="科学技术研究院" title="科学技术研究院" /></a>
+        <div class="head">
+                <div class="headLogo fleft"><img src="/zhihuiweb/Public/home/images/logo.png"/></div>
+                <div class="nav fleft">
+                        <ul>
+                                <li class="navli"><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li ><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
+                        </ul>
+                </div>
         </div>
-        <div id="menu_nav">
-          <ul>
-<!--             <?php if(is_array($headerType)): $i = 0; $__LIST__ = $headerType;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="menu_item"><a href="<?php echo ($vo['template_index']); ?>" hidefocus="true" class="menu_bg" ><?php echo ($vo['title']); ?></a>
-                    
-                </li><?php endforeach; endif; else: echo "" ;endif; ?> -->
-            <li class="menu_item"><a href="<?php echo U('Index/index');?>" hidefocus="true" <?php if($CAName == indexindex): ?>class="menu_bg current"<?php else: ?>class="menu_bg"<?php endif; ?> >首页</a></li>
-            <li class="menu_item"><a href="<?php echo U('Info/productServer');?>" hidefocus="true"  <?php if($CAName == infoproductserver): ?>class="menu_bg current"<?php else: ?>class="menu_bg"<?php endif; ?>>产品服务</a></li>            
-            <li class="menu_item"><a href="<?php echo U('Info/companynews');?>" hidefocus="true"  <?php if(($CAName == infocompanynews) OR ($CAName == infotechnologynews)): ?>class="menu_bg current"<?php else: ?>class="menu_bg"<?php endif; ?>>新闻动态</a>
-                    <div>
-                      <a href="<?php echo U('Info/companynews');?>" hidefocus="true">公司新闻</a>
-                      <a href="<?php echo U('Info/technologynews');?>" hidefocus="true">科学新闻</a>
-                    </div>  
-            </li>
-            <li class="menu_item"><a href="<?php echo U('Info/cases');?>" hidefocus="true"  <?php if($CAName == infocases): ?>class="menu_bg current"<?php else: ?>class="menu_bg"<?php endif; ?>>应用案例</a></li>
-            <li class="menu_item">
-                   <a href="<?php echo U('Info/aboutUs');?>" hidefocus="true"  <?php if($CAName == infoaboutus): ?>class="menu_bg current"<?php else: ?>class="menu_bg"<?php endif; ?>>关于我们</a>
-                   <div>
-                      <a href="<?php echo U('Info/aboutUs');?>/#aboutus" hidefocus="true">公司简介</a>
-                      <a href="<?php echo U('Info/aboutUs');?>/#people" hidefocus="true">专家介绍</a>
-                      <a href="<?php echo U('Info/aboutUs');?>/#field" hidefocus="true">下属机构</a>
-                      <a href="<?php echo U('Info/aboutUs');?>/#friend" hidefocus="true">合作伙伴</a>
-                     <!--  <a href="<?php echo U('Info/aboutUs');?>/#cases" hidefocus="true">应用案例</a> -->
-                      <a href="<?php echo U('Info/aboutUs');?>/#service" hidefocus="true">售后服务</a>
-                  </div>
-            </li>
-          </ul>
-        </div>
-        <div class="right phone">
-            <i class="icon iconfont">&#xe624;</i><span><?php echo ($config['ex']['tel']); ?></span>
-        </div> 
-    </div>    
-</div>
-<div class="header_line"></div>
-<link type="text/css" rel="stylesheet" href="/zhihuiweb/Public/home/css/news.css" />
+<link type="text/css" rel="stylesheet" href="/zhihuiweb/Public/home/css2/news.css" />
 
 <!--图片滚动-->
 <?php if($row['images'] != null): ?><div class="news_detail">
@@ -67,7 +58,9 @@
             </ul>
         </div>
     </div><?php endif; ?>
+<script src="/zhihuiweb/Public/home/js/jquery.min.js"></script>
 <script src="/zhihuiweb/Public/home/js/jquery.kxbdMarquee.js"></script>
+
 <script type="text/javascript">
 (function(){
     $("#news_detail_img").kxbdMarquee({direction:"left"});
@@ -92,9 +85,7 @@
         <div class="detail_page_link">
             <a href="javascript: history.go(-1);"><span>返回</span></a>
         </div>
-        <div class="detail_page_link">
-        	<?php if($downrow): ?><a href="<?php echo U('Info/detail',array('id'=>$downrow['id']));?>"><i class="icon iconfont">&#xe635;</i><span>下一篇</span></a><?php endif; ?>
-        </div>
+
     </div>
 
 
@@ -107,76 +98,66 @@ $(function(){
 </script>
 <!--新闻详情-->
 <div class="clearfix"></div>
-
-<div id="footer">
-    <div class="footer_con">
-        <div class="footer_concat">
-            <div class="footer_concat_con">
-                <h4>联系方式</h4>
-                <p>服务热线：<?php echo ($config['ex']['tel']); ?></p>
-                <p>公司QQ：<?php echo ($config['ex']['qq']); ?></p>
-            </div>
-            <div class="footer_concat_con" style="margin-top: 40px;width: 350px;">
-                <h4></h4>
-                <p>邮箱：<?php echo ($config['ex']['email']); ?></p>
-                <p>地址：<?php echo ($config['ex']['address']); ?></p>
-            </div>
-            <div class="footer_code">
-                <p class="sweep_code">扫一扫 关注我</p>
-                <img src="<?php echo ($config['ex']['erweima']); ?>" alt="二维码" title="二维码" />
-            </div>
+<div class="bottom">
+        <div class="bottom1">
+                <ul>
+                        <li>
+                                <div class="img_fault"><span class="img_span">100倍故障时长赔偿</span></div>
+                        </li>
+                        <li>
+                                <div class="img_customer"><span class="img_span">24小时售后支持</span></div>
+                        </li>
+                        <li>
+                                <div class="img_return"><span class="img_span">5天无理由退换</span></div>
+                        </li>
+                </ul>
         </div>
-        
-        <div class="underline_footer"></div>
-        
-        <div class="footer_copyright">
-            <ul class="footer_list">
-                <li><a href="<?php echo U('Info/aboutus');?>">关于我们</a><span>|</span></li>
-                <li><a href="#">使用指南</a><span>|</span></li>
-                <li><a href="#">联系我们</a><span>|</span></li>
-                <li><a href="#">服务条款</a></li>
-            </ul>
-            <p style="margin-left:200px;"><?php echo ($config['ex']['beian']); ?></p>
-            <p class="copyright"><?php echo ($config['ex']['banquan']); ?></p>
-        </div>
-    </div>
-</div>
-<div class="go-top dn" id="go-top">
-    <a href="javascript:void(0)" class="go"></a>
-</div>
-<script type="text/javascript">
-$(function(){
-    
-    
-    /*设置每行的最后一个元素margin-right为0*/
-    $(".about ul.people_list li:nth-child(5n)").css("marginRight",0);
-    $(".cases_list li:nth-child(6n)").css("marginRight",0);
-    $(".friend_list li:nth-child(6n)").css("marginRight",0);
-    
-    
-    
-    /*backtop start*/
-    $(window).on('scroll',function(){
-        var st = $(document).scrollTop();
-        if( st>0 ){
-            $('#go-top').fadeIn(function(){
-                $(this).removeClass('dn');
-            });
-           
-        }else{
-            $('#go-top').fadeOut(function(){
-                $(this).addClass('dn');
-            });
-        }   
-    });
-    
-    $('#go-top .go').on('click',function(){
-        $('html,body').animate({'scrollTop':0},500);
-    });
-    /*backtop end*/
-    
 
-});
-</script>
+        <div class="bottom2 margin15"></div>
+
+        <div class="bottom3">
+                <div class="bottomLeft fleft">
+                        <div><span class="bottomspan1">联系电话</span><span class="bottomspan2">022-83560730</span></div>
+                </div>
+                <div class="bottomRight fleft">
+                        <div class="bottomRight1">
+                                <span>全方位的购买咨询  |</span>
+                                <span>精准的配套推荐  |</span>
+                                <span>灵活的价格方案  |</span>
+                                <span>1对1贴心服务</span>
+                        </div>
+
+                        <div class="bottomRight2">
+                                <div class="bottomRight21 fleft">
+                                        <span>联系方式</span>
+                                        <ul>
+                                                <li>天津市南开区慧谷大厦2413</li>
+                                                <li>http://www.itcrm.com/</li>
+                                        </ul>
+                                </div>
+                                <div class="bottomRight22 fleft">
+                                        <span>关注智汇</span>
+                                        <div>
+                                                <img src="/zhihuiweb/Public/home/images/img_qrcode.png" />
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="bottomRight3">
+                                <span class="bottomRight31">合作伙伴</span>
+                                <div class="bottomRight32">
+                                        <span>安远新能源</span>
+                                        <span>HFRT</span>
+                                        <span>高通盛融</span>
+                                        <span>博盛地产</span>
+                                        <span>中国科学院计算机研究所</span>
+                                        <span>万卓智汇</span>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+
 </body>
 </html>

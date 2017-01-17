@@ -37,24 +37,24 @@
                 <div class="headLogo fleft"><img src="/zhihuiweb/Public/home/images/logo.png"/></div>
                 <div class="nav fleft">
                         <ul>
-                                <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
-                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
-                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
-                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
-                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
-                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
-                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
+                                <li <?php if(($CAName == indexindex) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li <?php if(($CAName == infocustomer_service) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li <?php if(($CAName == infoproduct_introduction) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li <?php if(($CAName == infobusiness_contact) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li <?php if(($CAName == infochannel_cooperation) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li <?php if(($CAName == infoafter_sale_platform) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li <?php if(($CAName == infojoin_us) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
         </div>
 		<div class="companytitle">
 			<div class="companytitle1">
 				<ul>
-					<li class="titlec"><a href="Company-introduction.html">公司介绍</a></li>
-					<li><a href="team.html">团队介绍</a></li>
-					<li><a href="mechanism.html">下属机构</a></li>
-					<li><a href="news.html">新闻动态</a></li>
+					<li class="titlec"><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+					<li><a href="<?php echo U('Info/team');?>">团队介绍</a></li>
+					<li><a href="<?php echo U('Info/mechanism');?>">下属机构</a></li>
+					<li><a href="<?php echo U('Info/news');?>">新闻动态</a></li>
 				</ul>
 			</div>
 			<div class="companytitle2">

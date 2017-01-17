@@ -37,14 +37,14 @@
                 <div class="headLogo fleft"><img src="/zhihuiweb/Public/home/images/logo.png"/></div>
                 <div class="nav fleft">
                         <ul>
-                                <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
-                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
-                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
-                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
-                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
-                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
-                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
+                                <li <?php if(($CAName == indexindex) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li <?php if(($CAName == infocustomer_service) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li <?php if(($CAName == infoproduct_introduction) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li <?php if(($CAName == infobusiness_contact) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li <?php if(($CAName == infochannel_cooperation) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li <?php if(($CAName == infoafter_sale_platform) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li <?php if(($CAName == infojoin_us) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
         </div>
@@ -71,9 +71,9 @@
 						<p>众多专业领域的技术精英，构成了智汇研究院的研发团队。我们基于自主研发技术并整合多项前沿科技，根据市场现有需求及对未来人类的期望预测，研发出多款智能服务型机器人，配合多领域行业的解决方案，为用户带来真正的价值转化，实现智能升级。</p>
 					</div>
 					<div class="products11">
-						<a href="Products1.html"><img src="/zhihuiweb/Public/home/images/img_4.png" class="products111" /></a>
-						<a href="Products1.html"><img src="/zhihuiweb/Public/home/images/img_5.png" class="products112" /></a>
-						<a href="Products1.html"><img src="/zhihuiweb/Public/home/images/img_6.png" class="products113" /></a>
+						<a href="<?php echo U('Info/products1');?>"><img src="/zhihuiweb/Public/home/images/img_4.png" class="products111" /></a>
+						<a href="<?php echo U('Info/products1');?>"><img src="/zhihuiweb/Public/home/images/img_5.png" class="products112" /></a>
+						<a href="<?php echo U('Info/products1');?>"><img src="/zhihuiweb/Public/home/images/img_6.png" class="products113" /></a>
 					</div>
 				</div>
 				<div class="products2">

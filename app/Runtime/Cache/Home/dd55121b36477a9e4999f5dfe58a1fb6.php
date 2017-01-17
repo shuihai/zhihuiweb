@@ -14,11 +14,15 @@
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/base.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/swiper.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/animate.css" />
+<link href="/zhihuiweb/Public/home/css/adipoli.css" rel="stylesheet" type="text/css"/>
 
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.min.js" ></script>
+
+
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery-1.7.1.js" ></script>
+<script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/swiper.min.js" ></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/wow.min.js"></script>
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/prefixfree.min.js"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.SuperSlide.2.1.1.js" ></script>
 
 
 <!--[if lte IE 6]>
@@ -34,23 +38,23 @@
                 <div class="nav fleft">
                         <ul>
                                 <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/Company_introduction');?>">公司介绍</a></li>
-                                <li><a href="Customer-service.html">解决方案</a></li>
-                                <li><a href="Product-introduction.html">产品介绍</a></li>
-                                <li><a href="Business-contact.html">业务联系</a></li>
-                                <li><a href="Channel-cooperation.html">渠道合作</a></li>
-                                <li><a href="After-sale-platform.html">售后平台</a></li>
-                                <li><a href="Join-us.html">加入我们</a></li>
+                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li ><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
         </div>
 		<div class="companytitle">
 			<div class="companytitle1">
 				<ul>
-					<li class="titlec"><a href="Company-introduction.html">公司介绍</a></li>
-					<li><a href="team.html">团队介绍</a></li>
-					<li><a href="mechanism.html">下属机构</a></li>
-					<li><a href="news.html">新闻动态</a></li>
+					<li class="titlec"><a href="<?php echo U('Info/Company_introduction');?>">公司介绍</a></li>
+					<li><a href="<?php echo U('Info/team');?>">团队介绍</a></li>
+					<li><a href="<?php echo U('Info/mechanism');?>">下属机构</a></li>
+					<li><a href="<?php echo U('Info/news');?>">新闻动态</a></li>
 				</ul>
 			</div>
 			<div class="companytitle2">
@@ -98,5 +102,66 @@
 			</div>
 		</div>
 
-<
-include file="Public/footer"/>
+<div class="bottom">
+        <div class="bottom1">
+                <ul>
+                        <li>
+                                <div class="img_fault"><span class="img_span">100倍故障时长赔偿</span></div>
+                        </li>
+                        <li>
+                                <div class="img_customer"><span class="img_span">24小时售后支持</span></div>
+                        </li>
+                        <li>
+                                <div class="img_return"><span class="img_span">5天无理由退换</span></div>
+                        </li>
+                </ul>
+        </div>
+
+        <div class="bottom2 margin15"></div>
+
+        <div class="bottom3">
+                <div class="bottomLeft fleft">
+                        <div><span class="bottomspan1">联系电话</span><span class="bottomspan2">022-83560730</span></div>
+                </div>
+                <div class="bottomRight fleft">
+                        <div class="bottomRight1">
+                                <span>全方位的购买咨询  |</span>
+                                <span>精准的配套推荐  |</span>
+                                <span>灵活的价格方案  |</span>
+                                <span>1对1贴心服务</span>
+                        </div>
+
+                        <div class="bottomRight2">
+                                <div class="bottomRight21 fleft">
+                                        <span>联系方式</span>
+                                        <ul>
+                                                <li>天津市南开区慧谷大厦2413</li>
+                                                <li>http://www.itcrm.com/</li>
+                                        </ul>
+                                </div>
+                                <div class="bottomRight22 fleft">
+                                        <span>关注智汇</span>
+                                        <div>
+                                                <img src="/zhihuiweb/Public/home/images/img_qrcode.png" />
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="bottomRight3">
+                                <span class="bottomRight31">合作伙伴</span>
+                                <div class="bottomRight32">
+                                        <span>安远新能源</span>
+                                        <span>HFRT</span>
+                                        <span>高通盛融</span>
+                                        <span>博盛地产</span>
+                                        <span>中国科学院计算机研究所</span>
+                                        <span>万卓智汇</span>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+
+</body>
+</html>

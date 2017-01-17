@@ -14,11 +14,15 @@
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/base.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/swiper.css" />
 <link rel="stylesheet" href="/zhihuiweb/Public/home/css/animate.css" />
+<link href="/zhihuiweb/Public/home/css/adipoli.css" rel="stylesheet" type="text/css"/>
 
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.min.js" ></script>
+
+
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery-1.7.1.js" ></script>
+<script src="/zhihuiweb/Public/home/js/jquery.adipoli.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/swiper.min.js" ></script>
 <script type="text/javascript" src="/zhihuiweb/Public/home/js/wow.min.js"></script>
-<script type="text/javascript" src="/zhihuiweb/Public/home/js/prefixfree.min.js"></script>
+<script type="text/javascript" src="/zhihuiweb/Public/home/js/jquery.SuperSlide.2.1.1.js" ></script>
 
 
 <!--[if lte IE 6]>
@@ -33,43 +37,52 @@
                 <div class="headLogo fleft"><img src="/zhihuiweb/Public/home/images/logo.png"/></div>
                 <div class="nav fleft">
                         <ul>
-                                <li class="navli"><a href="index.html">首页</a></li>
-                                <li><a href="info/Company_introduction.html">公司介绍</a></li>
-                                <li><a href="Customer-service.html">解决方案</a></li>
-                                <li><a href="Product-introduction.html">产品介绍</a></li>
-                                <li><a href="Business-contact.html">业务联系</a></li>
-                                <li><a href="Channel-cooperation.html">渠道合作</a></li>
-                                <li><a href="After-sale-platform.html">售后平台</a></li>
-                                <li><a href="Join-us.html">加入我们</a></li>
+                                <li <?php if(($CAName == indexindex) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li <?php if(($CAName == infocustomer_service) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li <?php if(($CAName == infoproduct_introduction) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li <?php if(($CAName == infobusiness_contact) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
+                                <li <?php if(($CAName == infochannel_cooperation) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
+                                <li <?php if(($CAName == infoafter_sale_platform) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
+                                <li <?php if(($CAName == infojoin_us) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
         </div>
 
 
 
+
+
+
+
 		<div class="banner">
-			
-		    <div class="swiper-container gallery-top">
-		        <div class="swiper-wrapper">
-                            <?php if(is_array($focus)): $i = 0; $__LIST__ = $focus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="swiper-slide" style="background-image:url(/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>)"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+			<div id="slideBox" class="slideBox">
+				<div class="bd">
+					<ul>
+                                        <?php if(is_array($focus)): $i = 0; $__LIST__ = $focus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="javascript:volid(0);"><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>" /></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+					</ul>
+				</div>
+                                <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+				  	<tr>
+					   	<td>
 
-		        </div>
-		        
-		    </div>
-		    <div class="previewqqs">
-		    	<div class="swiper-container gallery-thumbs">
-			        <div class="swiper-wrapper">
-                                    <?php if(is_array($focus)): $i = 0; $__LIST__ = $focus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="swiper-slide" style="background-image:url(/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>)"></div><?php endforeach; endif; else: echo "" ;endif; ?>
-
-			        </div>
-			        
-			    </div>
-			    <div class="swiper-button-next swiper-button-white"></div>
-		        <div class="swiper-button-prev swiper-button-white"></div>
-		    </div>
+                                                    <div class="hd">
+                                                            <a class="prev" href="javascript:void(0)"></a>
+                                                            <ul>
+                                                            <?php if(is_array($focus)): $i = 0; $__LIST__ = $focus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="javascript:volid(0);"><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>"/></a></li><?php endforeach; endif; else: echo "" ;endif; ?>                                                
+                                                            </ul>
+                                                            <a class="next" href="javascript:void(0)"></a>
+                                                    </div>  
+                                                </td>
+                                        </tr>
+                                </table>
+			</div>
 		    
 		</div>
-		
+
+
+
+
 		<div class="centre">
 			<div class="resolve ">
 				<div class="margin15 margin150">
@@ -121,7 +134,7 @@
 					<div class="cooperateul margin60">
 						<div class="cooperateleft fleft wow fadeInLeft" style=" animation-delay: 0.2s;">
 							<div class="cooperate11 cooperate11width">
-								<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate1.png" /></div>
+								<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate1.png"  class="row5"/></div>
 								<div class="cooperate11div"><div class="cooperate11span">青岛地铁合作案例</div></div>
 								<i  class="light"></i>
 							</div>
@@ -130,28 +143,28 @@
 							<ul>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate2.png" /></div>
+										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate2.png" class="row5" /></div>
 										<div class="cooperate11div"><div class="cooperate11span">善林金融合作案例</div></div>
 										
 									</div>
 								</li>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate3.png" /></div>
+										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate3.png"  class="row5"/></div>
 										<div class="cooperate11div"><div class="cooperate11span">万豪酒店合作案例</div></div>
 										
 									</div>
 								</li>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate4.png" /></div>
+										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate4.png"  class="row5"/></div>
 										<div class="cooperate11div"><div class="cooperate11span">浙江省国家大学科技园</div></div>
 										
 									</div>
 								</li>
 								<li>
 									<div class="cooperate11 cooperate22width">
-										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate5.png" /></div>
+										<div class="cooperate11img"><img src="/zhihuiweb/Public/home/images/img_cooperate5.png"  class="row5"/></div>
 										<div class="cooperate11div"><div class="cooperate11span">万科合作案例</div></div>
 										
 									</div>
@@ -168,33 +181,18 @@
 				<div class="marginbig">智汇动态<i class="margins-i"></i></div>
 				<div class="trendsul margin60">
 					<ul>
-						<li class=" wow fadeInDown" style=" animation-delay: 0.2s;">
+                                            <?php if(is_array($company)): $i = 0; $__LIST__ = $company;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class=" wow fadeInDown" style=" animation-delay: 0.2s;">
 							<div class="trendscontent">
-								<div class="contentimg"><img src="/zhihuiweb/Public/home/images/img_trends1.png" /></div>
+                                                            <div class="contentimg"><a href="
+                                                                                   <?php if(empty($vo['url'])){ echo U('Info/detail',array('id'=>$vo['id'])); }else{ echo $vo['url']; } ?>
+                                                                                       "><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>" /></a></div>
 								<div class="contentwriting">
-									<p class="writingp">美国机器人市场正方兴未艾，新一代主力机型即将推出。</p>
-									<span class="writingtime">2016-12-26</span>
+									<p class="writingp"><?php echo ($vo['desc']); ?></p>
+									<span class="writingtime"><?php echo (date("Y-m-d",$vo['time'])); ?></span>
 								</div>
 							</div>
-						</li>
-						<li class="wow fadeInDown" style=" animation-delay: 0.4s;">
-							<div class="trendscontent">
-								<div class="contentimg"><img src="/zhihuiweb/Public/home/images/img_trends2.png" /></div>
-								<div class="contentwriting">
-									<p class="writingp">启智玩具等市场新风越吹越烈AR玩具成“当红炸子鸡”</p>
-									<span class="writingtime">2016-12-26</span>
-								</div>
-							</div>
-						</li>
-						<li class="wow fadeInDown" style=" animation-delay: 0.6s;">
-							<div class="trendscontent">
-								<div class="contentimg"><img src="/zhihuiweb/Public/home/images/img_trends3.png" /></div>
-								<div class="contentwriting">
-									<p class="writingp">阿瑞拉机器人科技运动领导加强制作许可专业短片即将上市。</p>
-									<span class="writingtime">2016-12-26</span>
-								</div>
-							</div>
-						</li>
+						</li><?php endforeach; endif; else: echo "" ;endif; ?>   
+
 					</ul>
 				</div>
 			</div>
@@ -204,31 +202,22 @@
 		
 		
 		
-		<script>
+            <script>
 			new WOW().init();
-		    var galleryTop = new Swiper('.gallery-top', {
-		        spaceBetween: 10,
-		        loop:true,
-		        loopedSlides: 5, 
-		    });
-		    var galleryThumbs = new Swiper('.gallery-thumbs', {
-		        nextButton: '.swiper-button-next',
-		        prevButton: '.swiper-button-prev',
-		        spaceBetween: 10,
-		        slidesPerView: 4,
-		        touchRatio: 0.2,
-		        autoplay : 3000,
-		        autoplayDisableOnInteraction : false, 
-		        loop:true,
-		        loopedSlides: 5, 
-		        slideToClickedSlide: true
-		    });
-		    galleryTop.params.control = galleryThumbs;
-		    galleryThumbs.params.control = galleryTop;
+		    jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
 	    
 	    </script>
 
-
+		 <script type="text/javascript">
+            
+            $(function(){
+				$('.row5').adipoli({
+					'startEffect' : 'transparent',
+					'hoverEffect' : 'boxRainGrowReverse'
+				});
+       		 });
+            
+        </script>
 
 
 <div class="bottom">

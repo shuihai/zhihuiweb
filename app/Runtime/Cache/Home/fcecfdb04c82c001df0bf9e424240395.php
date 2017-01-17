@@ -37,14 +37,14 @@
                 <div class="headLogo fleft"><img src="/zhihuiweb/Public/home/images/logo.png"/></div>
                 <div class="nav fleft">
                         <ul>
-                                <li class="navli"><a href="<?php echo U('Index/Index');?>">首页</a></li>
-                                <li><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
+                                <li class="navli"><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li  <?php if($CAName == infocompany_introduction): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
                                 <li><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
                                 <li><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
                                 <li><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
                                 <li><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
                                 <li><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
-                                <li><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
+                                <li ><a href="<?php echo U('Info/join_us');?>">加入我们</a></li>
                         </ul>
                 </div>
         </div>
@@ -181,33 +181,18 @@
 				<div class="marginbig">智汇动态<i class="margins-i"></i></div>
 				<div class="trendsul margin60">
 					<ul>
-						<li class=" wow fadeInDown" style=" animation-delay: 0.2s;">
+                                            <?php if(is_array($company)): $i = 0; $__LIST__ = $company;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class=" wow fadeInDown" style=" animation-delay: 0.2s;">
 							<div class="trendscontent">
-								<div class="contentimg"><img src="/zhihuiweb/Public/home/images/img_trends1.png" /></div>
+                                                            <div class="contentimg"><a href="
+                                                                                   <?php if(empty($vo['url'])){ echo U('Info/detail',array('id'=>$vo['id'])); }else{ echo $vo['url']; } ?>
+                                                                                       "><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>" /></a></div>
 								<div class="contentwriting">
-									<p class="writingp">美国机器人市场正方兴未艾，新一代主力机型即将推出。</p>
-									<span class="writingtime">2016-12-26</span>
+									<p class="writingp"><?php echo ($vo['desc']); ?></p>
+									<span class="writingtime"><?php echo (date("Y-m-d",$vo['time'])); ?></span>
 								</div>
 							</div>
-						</li>
-						<li class="wow fadeInDown" style=" animation-delay: 0.4s;">
-							<div class="trendscontent">
-								<div class="contentimg"><img src="/zhihuiweb/Public/home/images/img_trends2.png" /></div>
-								<div class="contentwriting">
-									<p class="writingp">启智玩具等市场新风越吹越烈AR玩具成“当红炸子鸡”</p>
-									<span class="writingtime">2016-12-26</span>
-								</div>
-							</div>
-						</li>
-						<li class="wow fadeInDown" style=" animation-delay: 0.6s;">
-							<div class="trendscontent">
-								<div class="contentimg"><img src="/zhihuiweb/Public/home/images/img_trends3.png" /></div>
-								<div class="contentwriting">
-									<p class="writingp">阿瑞拉机器人科技运动领导加强制作许可专业短片即将上市。</p>
-									<span class="writingtime">2016-12-26</span>
-								</div>
-							</div>
-						</li>
+						</li><?php endforeach; endif; else: echo "" ;endif; ?>   
+
 					</ul>
 				</div>
 			</div>

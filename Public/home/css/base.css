@@ -59,7 +59,7 @@ body {
 .slideBox .hd ul li.on{ border: 2px solid #0074C8; }
 .slideBox .hd a{ background-color: #d7d7d7; }
 .slideBox .prev,
-.slideBox .next{ float: left; width:80px; height:127px;}
+.slideBox .next{ float: left; width:80px; height:130px;}
 .slideBox .prev{ background: url(../images/arrow_left.png) 30px no-repeat; }
 .slideBox .next{ background: url(../images/arrow_right.png) 30px  no-repeat;}
 .slideBox .prevStop{ display:none;  }
@@ -74,7 +74,7 @@ body {
 .resolve .resolveprint{ background-color: #e6e6e6; width: 491px; position: relative;}
 .resolve .resolveprint .resolveimg ,.resolve .resolveprint .resolveimg img{ height: 235px; width: 491px;}
 .resolve .resolveprint .resolvewriting{ display: none;  width: 300px; height: 235px; position: absolute; top: 0; background:transparent;background-color:rgba(13,109,181,0.8); right: 0;}
-.resolve .resolveprint .resolvewriting p{color: #FFFFFF; padding: 42px; width: 200px; height: 150px; line-height: 25px;}
+.resolve .resolveprint .resolvewriting p{ color: #FFFFFF; padding: 42px 42px 0 42px; width: 200px; height: 150px; line-height: 25px;word-break: break-all; word-wrap: break-word; overflow: hidden;}
 .resolve .resolve1:hover{  box-shadow: 0 0 20px rgba(13,109,181, 0.5); }
 .resolve .resolve1:hover .resolvewriting{ display: block;}
 
@@ -111,7 +111,7 @@ body {
 .cooperate .cooperateul .cooperate22width .cooperate11span{ width:421px;}
 .cooperate .cooperateul .cooperate11{ position: relative;}
 .cooperate .cooperateul .cooperate11 .cooperate11div{ position: absolute; z-index: 11; bottom: 0px; height: 40px; text-align: center; background:transparent;background-color:rgba(0,0,0,0.5);}
-.cooperate .cooperateul .cooperate11 .cooperate11span{ color: #FFFFFF; font-size: 24px; line-height: 40px; }
+.cooperate .cooperateul .cooperate11 .cooperate11span{ width: 100%; word-break: break-all; word-wrap: break-word; overflow: hidden; color: #FFFFFF; font-size: 24px; line-height: 40px; }
 .cooperate .cooperateul .cooperateright{ width: 882px;}
 .cooperate .cooperateul .cooperateright ul{ overflow: hidden;}
 .cooperate .cooperateul .cooperateright ul li{ float: left; margin: 0 20px 20px 0;}
@@ -122,10 +122,12 @@ body {
 .trends .trendsul ul{ overflow: hidden; height: 320px; padding: 0 15px;}
 .trends .trendsul ul li:nth-child(2){ margin: 0 20px;}
 .trends .trendsul ul li{ float: left; cursor: pointer; border: 1px solid #e5e5e5; width: 382px; padding-bottom: 20px; }
+.trends .trendsul ul li .trendscontent{  overflow: hidden;}
 .trends .trendsul ul li .trendscontent .contentimg{text-align: center; width: 100%; height: 180px;overflow: hidden;}
 .trends .trendsul ul li .trendscontent .contentimg img{ width: 100%; -webkit-transition: all 0.5s ease; width: 100%; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
-.trends .trendsul ul li .trendscontent .contentwriting .writingp{ padding: 20px; color: #333333; height: 42px; width: 340px; word-break: break-all; word-wrap: break-word; overflow: hidden;}
-.trends .trendsul ul li .trendscontent .contentwriting .writingtime{ float: right; display: block; padding: 0 20px; color: #cccccc;}
+.trends .trendsul ul li .trendscontent .contentwriting{ overflow: hidden;}
+.trends .trendsul ul li .trendscontent .contentwriting .writingp{ margin-bottom: 15px; padding: 20px 20px 0 20px; color: #333333; height: 41px; width: 340px; word-break: break-all; word-wrap: break-word; overflow: hidden;}
+.trends .trendsul ul li .trendscontent .contentwriting .writingtime{ height: 20px; float: right; display: block; padding: 0 20px; color: #cccccc;}
 .trends .trendsul ul li:hover{  -webkit-box-shadow: 0 0 15px rgba(186, 204, 207, 0.7); -moz-box-shadow: 0 0 15px rgba(186, 204, 207, 0.7);box-shadow: 0 0 15px rgba(186, 204, 207, 0.7);}
 .trends .trendsul ul li:hover img{-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1);-o-transform: scale(1.1); transform: scale(1.1); }
 
@@ -201,16 +203,27 @@ body {
 .news .newscentre1 a{ color: #ea7200; float: left; padding: 0 5px;}
 .news .newscentre1 span{ float: left; padding: 0 5px;}
 .news .newscentre1 .newscentre11 span:nth-child(3) ,.news .newscentre1 .newscentre12 span{ font-size: 16px; margin-top: -2px; }
+.news .newscentre1 .newscentre13 .newsqimg{ display: none; border: 1px solid #eeeeee; padding: 5px; background-color: #FFFFFF; position: absolute; z-index: 1;}
 .news .newscentre1 .newscentre13 span{ padding-left: 22px; margin-left: 15px; color: #CCCCCC;}
 .news .newscentre1 .newscentre13 .newscentre31{ background: url(../images/img_c4.png) 0 4px no-repeat; cursor: pointer;}
 .news .newscentre1 .newscentre13 .newscentre32{ background: url(../images/img_c3.png) 0 6px no-repeat;}
-.news .newscentre1 .newscentre13 .newscentre33{ background: url(../images/img_c5.png) 0 3px no-repeat;}
+.news .newscentre1 .newscentre13 .newscentre33{ cursor: pointer; background: url(../images/img_c5.png) 0 3px no-repeat;}
+.news .newscentre1 .newscentre13 .newscentre33:hover .newsqimg{ display: block;}
 .news .newsimg{ width: 1080px; height: 609px; margin-top: 40px;}
 .news .newsimg img{ width: 1080px; height: 609px;}
 .news .newscentre2{ margin-top: 30px;}
 .news .newscentre2 p{ line-height: 25px; }
 .news .newscentre3{ padding: 25px 0; overflow: hidden;}
 .news .newscentre3 a{ font-size:18px ; float: right; color: #0075c9;}
+.news .paging{  overflow: hidden; width: 370px; margin:40px auto;}
+.news .paging div{ }
+.news .paging ul{ border: 1px solid #e6e6e6;  border-radius: 5px; overflow: hidden; }
+.news .paging ul li{ border: 0; float: left; padding: 0; border-right: 1px solid #e6e6e6; width: 40px; text-align: center;}
+.news .paging ul li a{ float: left; font-size: 14px; height: 25px; line-height: 25px; color: #428bca;width: 40px;}
+.news .paging ul li:last-child{ border: 0;}
+.news .paging ul li img{ padding: 8px 17px;}
+.news .paging ul li .padina ,.news .paging ul li span:hover{ background-color: #428bca; color: #FFFFFF;}
+.news .paging ul li span{ display: block;}
 
 
 /*加入我们*/
@@ -219,11 +232,13 @@ body {
 .join .join1{  width: 430px; margin: 0 40px 70px 0;}
 .join .join1 .join12{ color: #999999; font-size: 14px; line-height: 25px; }
 
+
 /*售后平台*/
 .after .after1{ border: 1px solid #e5e5e5; position: relative; }
-.after .after1 .after11{ width: 450px; height: 450px;}
-.after .after1 .after11 img{ width: 450px; height: 450px;}
-.after .after1 .after12{ position: absolute; bottom: 0px; width: 450px; font-size: 24px; color: #FFFFFF;  background:transparent;background-color:rgba(0,0,0,0.5); line-height: 50px; text-align: center;}
+.after .after1 .after11{ width: 460px; height: 450px; text-align: center;}
+.after .after1 .after11 img{ margin:auto ;width: 450px; height: 450px;-webkit-transition:-webkit-transform .2s linear;-moz-transition:-moz-transform .2s linear;-o-transition:-o-transform .2s linear;transition:transform .2s linear}
+.after .after1 .after11 img:hover{-webkit-transform:translateX(-5px);-moz-transform:translateX(-5px);-ms-transform:translateX(-5px);-o-transform:translateX(-5px);transform:translateX(-5px)}
+.after .after1 .after12{ position: absolute; bottom: 0px; width: 460px; font-size: 24px; color: #FFFFFF;  background:transparent;background-color:rgba(0,0,0,0.5); line-height: 50px; text-align: center;}
 
 /*业务联系*/
 .contacts .contacts1{ width: 300px; margin: 0 30px;}
@@ -389,10 +404,15 @@ lesshat-selector {-lh-property: 0; }
 .products3 .products31 li{ float: left; margin-bottom: 40px;}
 .products3 .products31 li span{ display: block; font-size: 14px; color: #999999; line-height: 25px;}
 .products3 .products32{ width: 328px;}
+.products11 a img{ -webkit-transition:-webkit-transform .2s linear;-moz-transition:-moz-transform .2s linear;-o-transition:-o-transform .2s linear;transition:transform .2s linear }
+.products11 a img:hover{ opacity: 0.9; }
+
+
+
 
 /*解决方案*/
 .industry a{ height: 314px; height: 314px; float: left; position: relative; text-align: center;}
-.industry a p{ position: absolute; width: 100%; font-size: 24px; bottom: 0; text-align: center; line-height: 50px; background:transparent;background-color:rgba(0,0,0,0.5); }
+.industry a p{ position: absolute; z-index: 11; width: 100%; font-size: 24px; bottom: 0; text-align: center; line-height: 50px; background:transparent;background-color:rgba(0,0,0,0.5); }
 .industry1{ overflow: hidden; margin-bottom: 80px;}
 .industry1 a ,.industry1 a img{ width: 333px; }
 .industry2 a ,.industry2 a img{ width: 500px;}

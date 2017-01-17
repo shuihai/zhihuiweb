@@ -39,6 +39,7 @@ class InfoController extends AdminController {
             $d             = D('Info');
             $data          = $d->create();
             $data['time']  = strtotime($data['time']);
+            $data['zan']  = rand(300, 500);
             $data['flags'] = $data['flags'] ? ','.implode(',', $data['flags']).',' : '';
             //拓展
             foreach ($_POST['field_name'] as $key => $value) {
@@ -104,11 +105,13 @@ class InfoController extends AdminController {
         }
     }
     public function edit(){
+//        var_dump(I('post.'));die;
         if(IS_POST){
             if(!trim($_POST['title'])) exit($this->error('标题不能为空'));
             $d             = D('Info');
             $data          = $d->create();
             $data['time']  = strtotime($data['time']);
+       
             $data['flags'] = $data['flags'] ? ','.implode(',', $data['flags']).',' : '';
             // 拓展
             foreach ($_POST['field_name'] as $key => $value) {

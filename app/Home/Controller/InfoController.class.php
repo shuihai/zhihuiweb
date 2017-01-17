@@ -229,6 +229,18 @@ class InfoController extends HomeController{
     public function customer_service(){
 
         $this->display();
-    }         
+    }       
+    
+    //下属机构 
+    public function mechanism(){
+
+        $this->display();
+    }     
+    
+    //产品1 
+    public function products1(){
+
+        $this->display();
+    }     
 }
 ?>

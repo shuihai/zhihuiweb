@@ -1,0 +1,48 @@
+<include file="Public/header"/>
+  <form action="{:U('Node/sort')}" method="post" name="form">
+  <table width="98%" border="0" cellpadding="5" cellspacing="1" class="table">
+      <tr>
+        <td colspan="7" class="table_title">
+          <span class="fl">
+            <a href="javascript:void(0)" onclick="dialogIfram('添加','{:U('agent/add')}','{$current_url}')" class="btn btn-default">添加菜单(节点)</a>
+          </span>
+        </td>
+        <tr class="list_head ct">
+          <td width="70">排序权重</td>
+          <td width="70">ID</td>
+          <td  width="70">名称</td>
+          <td width="70">省</td>
+          <td width="70">市</td>
+          <td width="70">地址</td>
+          <td width="70">联系方式</td>
+          <td width="70">类型</td>
+          <td width="70">状态</td>
+          <td width="200">管理操作</td>
+        </tr>
+        
+        <volist name="agent" id="vo">
+       <tr class="list_head ct">
+          <td width="70">{$vo['sort']}</td>
+          <td width="70">{$vo['id']}</td>
+          <td  width="70">{$vo['name']}</td>
+          <td width="70">{$vo['province']}</td>
+          <td width="70">{$vo['city']}</td>
+          <td width="70">{$vo['address']}</td>
+          <td width="70">{$vo['phone']}</td>
+          <td width="70">{$vo['type']}</td>
+          <td width="70">{$vo['status']}</td>
+          <td width="200"><a href='javascript:void(0)' onclick="dialogIfram('编辑','{:U('agent/edit')}','{$current_url}')">修改</a></td>        
+        </tr>
+        </volist>
+        
+        <tr class="tr">
+          <td colspan="7" valign="middle">
+            <input type="submit" value="排序" class="btn btn-default" />
+          </td>
+        </tr>
+    </table>
+  </form>
+<script type="text/javascript">
+eEvent.delUrl="{:U('Node/del')}";
+</script>
+<include file="Public/footer" />
