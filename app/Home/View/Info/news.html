@@ -29,11 +29,11 @@
                                             
                                             <volist name="company" id="vo">
                                                 <li>
-                                      
+                                                    <input type="hidden" value =" {$vo['id']}" />
 							<span class="newstitle">{$vo['title']}</span>
 							<div class="newscentre1">
-								<div class="newscentre11 fleft"><span>{$vo['time']|date="Y-m-d",###}</span><span>{$vo['time']|date="h:i:s",###}<span></span></div>              
-								<div class="newscentre12 fleft"><a href="
+								<div class="newscentre11 "><span>{$vo['time']|date="Y-m-d",###}</span><span>{$vo['time']|date="h:i:s",###}<span></span></div>              
+								<div class="newscentre12 "><a href="
                                                                                     <?php if(empty($vo['url'])){
                                                                                         echo U('Info/detail',array('id'=>$vo['id']));
                                                                                     }else{
@@ -42,11 +42,11 @@
                                                                                      ?>
                                                                                                    ">查看源网页</a><span>|</span></div>
 								<div class="newscentre13 fleft">
-									<span class="newscentre31">12</span>
+                                                                    <div class="newscentre31 fleft"><span>{$vo['zan']}</span></div>
 								
-									<span class="newscentre33"> &nbsp
+									<div class="newscentre33 fleft"> &nbsp
                                                                         <div class="newsqimg"><img src="__PUBLIC__/home/images/img_orwzma.png" /></div>
-                                                                        </span>
+                                                                        </div>
 								</div>
 							</div>
 							<div class="newsimg"><img src="__UPLOAD__/{$vo['img']}"/></div>
@@ -71,21 +71,61 @@
 					</ul>
                                         <div class="paging">
 						<div>
+                                                <!--
 							<ul>
 								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow1.png" /></a></li>
 								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow3.png" /></a></li>
 								<li><a href="#" class="padina"><span>1</span></a></li>
 								<li><a href="#"><span>2</span></a></li>
-								<li><a href="#"><span>3</span></a></li>
+							
 								<li><a href="#"><span>4</span></a></li>
-								<li><a href="#"><span>5</span></a></li>
+								
 								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow4.png" /></a></li>
 								<li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow2.png" /></a></li>
 							</ul>
-						</div>
+                                                -->
+                                                <if  condition="$count gt 10">
+                                                {$page}
+                                                </if>
+                                                </div>
 						
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<script>
+                   var addurl =  "{:U('Info/addzan')}";
+		  $(document).ready(function (e) {
+		     $('.newscentre31').click(function () {
+//                         alert($(this).parent('div').parent('div').parent('li').children('input').val());
+                        var id = $(this).parent('div').parent('div').parent('li').children('input').val()
+                        $.post(addurl,{'id':id},
+                            function(result){
+                            },'json') 
+		
+		         var left = parseInt($(this).offset().left) + 10,
+		             top = parseInt($(this).offset().top) - 10,
+		             obj = $(this);
+		         $(this).append('<div class="zhans"><b>+1<\/b></\div>');
+		         $('.zhans').css({
+		             'position': 'absolute',
+		             'z-index': '1',
+		             'color': '#C30',
+		             'left': left + 'px',
+		             'top': top + 'px'
+		         }).animate({
+		             top: top - 10,
+		             left: left + 10
+		         }, 'slow', function () {
+		             $(this).fadeIn('fast').remove();
+		             var Num = parseInt(obj.find('span').text());
+		             Num++;
+		             obj.find('span').text(Num);
+		
+		         });
+		         return false;
+		     });
+		 });
+		</script>
 <include file="Public/footer"/>

@@ -48,120 +48,116 @@
                         </ul>
                 </div>
         </div>
-		<div class="companytitle">
-			<div class="companytitle1">
-				<ul>
-					<li class="titlec"><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
-					<li><a href="<?php echo U('Info/team');?>">团队介绍</a></li>
-					<li><a href="<?php echo U('Info/mechanism');?>">下属机构</a></li>
-					<li><a href="<?php echo U('Info/news');?>">新闻动态</a></li>
-				</ul>
-			</div>
-			<div class="companytitle2">
+
+		<div class="companytitle Solutions">
+			<div class="companytitle1"></div>
+			<div class="companytitle2 fleft">
 				<div class="title-c fleft">
-					<i class="title-i1">公司介绍</i>
-					<i class="title-i2">Company profile</i>
+					<i class="title-i1">解决方案</i>
+					<i class="title-i2">Industry Solutions</i>
 				</div>
 				<div class="title-slant fleft"></div>
 				<div class="title-n fleft">
 					<i class="title-i3">您的满意是我们存在的价值。</i>
 				</div>
 			</div>
+			
 		</div>
 		
 		<div class="centre">
-			<div class="present1 margin100"> <span>公司介绍</span> </div>
+			<div class="present1 margin100"> <span>解决方案</span> </div>
 			<div class="present2 width1225">
-				<div class="present21">新闻动态</div>
-				<div class="present22 present24 news">
-					<ul>
-                                            
-                                            <?php if(is_array($company)): $i = 0; $__LIST__ = $company;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                                                    <input type="hidden" value =" <?php echo ($vo['id']); ?>" />
-							<span class="newstitle"><?php echo ($vo['title']); ?></span>
-							<div class="newscentre1">
-								<div class="newscentre11 "><span><?php echo (date("Y-m-d",$vo['time'])); ?></span><span><?php echo (date("h:i:s",$vo['time'])); ?><span></span></div>              
-								<div class="newscentre12 "><a href="
-                                                                                    <?php if(empty($vo['url'])){ echo U('Info/detail',array('id'=>$vo['id'])); }else{ echo $vo['url']; } ?>
-                                                                                                   ">查看源网页</a><span>|</span></div>
-								<div class="newscentre13 fleft">
-                                                                    <div class="newscentre31 fleft"><span><?php echo ($vo['zan']); ?></span></div>
-								
-									<div class="newscentre33 fleft"> &nbsp
-                                                                        <div class="newsqimg"><img src="/zhihuiweb/Public/home/images/img_orwzma.png" /></div>
-                                                                        </div>
-								</div>
-							</div>
-							<div class="newsimg"><img src="/zhihuiweb/Uploads/<?php echo ($vo['img']); ?>"/></div>
-							<div class="newscentre2">
-								<p><?php echo ($vo['desc']); ?></p>
-							</div>
-							<div class="newscentre3"><a href="
-                                                                                    <?php if(empty($vo['url'])){ echo U('Info/detail',array('id'=>$vo['id'])); }else{ echo $vo['url']; } ?>
-                                                                                    ">+ 更多</a></div>
-                                                        
-                                                  
-                                                </li><?php endforeach; endif; else: echo "" ;endif; ?>
-                                            
-						
-					</ul>
-                                        <div class="paging">
-						<div>
-                                                <!--
-							<ul>
-								<li><a href="#" class="paginimg"><img src="/zhihuiweb/Public/home/images/btn_arrow1.png" /></a></li>
-								<li><a href="#" class="paginimg"><img src="/zhihuiweb/Public/home/images/btn_arrow3.png" /></a></li>
-								<li><a href="#" class="padina"><span>1</span></a></li>
-								<li><a href="#"><span>2</span></a></li>
-							
-								<li><a href="#"><span>4</span></a></li>
-								
-								<li><a href="#" class="paginimg"><img src="/zhihuiweb/Public/home/images/btn_arrow4.png" /></a></li>
-								<li><a href="#" class="paginimg"><img src="/zhihuiweb/Public/home/images/btn_arrow2.png" /></a></li>
-							</ul>
-                                                -->
-                                                <?php if($count > 10): echo ($page); endif; ?>
-                                                </div>
-						
+				<div class="Solutions1">
+					<div class="present21">综合型酒店</div>
+					<div class="Solutions11">
+						<div class="Solutions111 fleft">
+							<p>酒店行业涉及服务项目众多，类型各异。且国内酒店发展竞争激烈，整体市场供求关系不平衡，星级酒店长期处于亏损状态，传统经营模式陷入低谷。互联网+的出现及智慧科技的发展，为酒店行业带来了全新的转机。</p>
+							<p>智汇智能机器人在功能深度及应用广度方面可以提供多角度解决方案，为酒店日常接待及会议服务带来不可替代的优化作用，助力酒店突破转型，实现从管理效率到用户体验的全面价值提升。</p>
+							<span>行业关键词：</span>
+							<span>前台工作辅助 智能导航监控</span>
+							<span>身份识别保障隐私安全 移动服务提升用户满意度</span>
+							<span>大屏展示 深度交互 资料派送 会议需求的最强辅助</span>
+							<span>人体感应 场景化语音交互 定点监控更安心</span>
+						</div>
+						<div class="Solutions112 fright"><img src="/zhihuiweb/Public/home/images/img_19.png" /></div>
+					</div>
+				</div>
+				<div class="Solutions1">
+					<div class="present21">价值体现</div>
+					<div class="Solutions12">
+						<ul>
+							<li class="Solutions121">
+								<span>打破边界，紧密连接房企与客户</span>
+								<span>连接线上客户，为房企提高客户转化率；对于购房者，可以轻松获取项目信息，享受更优质高效的服务。</span>
+							</li>
+							<li class="Solutions122">
+								<span>互联网 + 房地产，打破传统流程壁垒</span>
+								<span>将房地产企业所有业务集中于统一的系统平台，结合移动互联网技术，打破传统流程壁垒。</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="Solutions123">
+								<span>打造供应商门，户实现产业链协同</span>
+								<span>解决采购过程中，缺乏计划性，随意性大，招标质量不高、缺乏目标成本指导，成本虚高或者虚低，监管不到位等问题。</span>
+							</li>
+							<li class="Solutions124">
+								<span>打破边界，紧密连接房企与客户</span>
+								<span>从成本管控到建立信息真实透明的供应商平台，到覆盖整个项目生命周期的经营分析，一体化管理各项业务流程。</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="Solutions125">
+								<span>分角色的智能办公工具</span>
+								<span>为不同岗位的员工、职工，提供更有针对性的工具，以人为中心打造极致的用户体验。</span>
+							</li>
+							<li class="Solutions126">
+								<span>商业地产运营信息一体化</span>
+								<span>帮助运营商实现招商、租赁、客服、物业、财务等全过程的运营管理信息化。</span>
+							</li>
+						</ul>
+					</div>
+					<div class="Solutions13">
+						<p>实施高端精品战略之路是融创强势升级，持久发展的必然选择。 通过对成本的监督和管理，实现更合理的投资回报率，让股东满意。</p>
+						<p>——融创集团副总裁兼财务总监 汪孟德</p>
+					</div>
+				</div>
+				<div class="Solutions1">
+					<div class="present21">更多成功客户</div>
+					<div class="Solutions14">
+						<ul>
+							<li>万科企业股份有限公司</li>
+							<li>合生创展集团有限公司</li>
+							<li>俊发地产有限公司</li>
+							<li>金地（集团）股份有限公司</li>
+							<li>深业集团有限公司</li>
+							<li>厦门建发集团股份有限公司</li>
+							<li>招商局（集团）股份有限公司</li>
+							<li>建业地产股份有限公司</li>
+							<li>杭州宋都房地产集团有限公司</li>
+							<li>融创中国控股有限公司</li>
+							<li>越秀地产股份有限公司</li>
+							<li>上海城建置业发展有限公司</li>
+							<li>旭辉控股（集团）有限公司</li>
+							<li>宝龙地产控股有限公司</li>
+							<li>力高（中国）地产有限公司</li>
+							<li>金科地产集团股份有限公司</li>
+							<li>中国奥园地产集团股份有限公司</li>
+							<li>新城控股集团有限公司</li>
+							<li>协信地产控股有限公司</li>
+							<li>龙光地产股份有限公司</li>
+						</ul>
+					</div>
+					<div class="Solutions15">
+						<p>现在开始申请体验</p>
+						<p>申请现场方案演示或聆听销售专家为您定制的解决方案以及相关知识。</p>
+						<span>联系我们</span>
+						<p>有问题？ 我们的销售代表会为您解答。请致电：4008-517-517 </p>
 					</div>
 				</div>
 			</div>
+			
 		</div>
 
-		<script>
-                   var addurl =  "<?php echo U('Info/addzan');?>";
-		  $(document).ready(function (e) {
-		     $('.newscentre31').click(function () {
-//                         alert($(this).parent('div').parent('div').parent('li').children('input').val());
-                        var id = $(this).parent('div').parent('div').parent('li').children('input').val()
-                        $.post(addurl,{'id':id},
-                            function(result){
-                            },'json') 
-		
-		         var left = parseInt($(this).offset().left) + 10,
-		             top = parseInt($(this).offset().top) - 10,
-		             obj = $(this);
-		         $(this).append('<div class="zhans"><b>+1<\/b></\div>');
-		         $('.zhans').css({
-		             'position': 'absolute',
-		             'z-index': '1',
-		             'color': '#C30',
-		             'left': left + 'px',
-		             'top': top + 'px'
-		         }).animate({
-		             top: top - 10,
-		             left: left + 10
-		         }, 'slow', function () {
-		             $(this).fadeIn('fast').remove();
-		             var Num = parseInt(obj.find('span').text());
-		             Num++;
-		             obj.find('span').text(Num);
-		
-		         });
-		         return false;
-		     });
-		 });
-		</script>
 <div class="bottom">
         <div class="bottom1">
                 <ul>
@@ -202,7 +198,7 @@
                                 <div class="bottomRight22 fleft">
                                         <span>关注智汇</span>
                                         <div>
-                                                <img src="/zhihuiweb/Public/home/images/img_orwzma.png" />
+                                                <img src="/zhihuiweb/Public/home/images/img_qrcode.png" />
                                         </div>
                                 </div>
                         </div>

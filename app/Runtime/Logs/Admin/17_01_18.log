@@ -1,0 +1,965 @@
+[ 2017-01-18T13:54:20+08:00 ] ::1 /zhihuiweb/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:54:20+08:00 ] ::1 /zhihuiweb/Admin/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T13:54:31+08:00 ] ::1 /zhihuiweb/Admin/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_user` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `zh_user` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-01-18T13:54:31+08:00 ] ::1 /zhihuiweb/Admin/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:54:31+08:00 ] ::1 /zhihuiweb/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=1 AND `level`<>1 ) ORDER BY sort ASC [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-01-18T13:54:31+08:00 ] ::1 /zhihuiweb/Admin/Index/left/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zh_node` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=14 ) ORDER BY sort ASC [ RunTime:0.0170s ]
+SQL: SELECT * FROM `zh_node` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=28 ) ORDER BY sort ASC [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: display C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=28 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=25 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: display C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=25 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=21 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: display C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=21 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:54:31+08:00 ] ::1 /zhihuiweb/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./app/Admin/View/Index/footer.html): failed to open stream: No such file or directory C:\wamp\www\zhihuiweb\ThinkPHP\Library\Think\Template.class.php 第 704 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:54:32+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:55:10+08:00 ] ::1 /zhihuiweb/Admin/agent/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:55:14+08:00 ] ::1 /zhihuiweb/Admin/agent/addcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:55:30+08:00 ] ::1 /zhihuiweb/Admin/Agent/addcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: INSERT INTO `zh_province_city` (`name`,`pid`,`type`) VALUES ('厦门市','1','2') [ RunTime:0.2260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T13:55:31+08:00 ] ::1 /zhihuiweb/Admin/agent/addcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:55:32+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:55:34+08:00 ] ::1 /zhihuiweb/Admin/agent/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T13:55:40+08:00 ] ::1 /zhihuiweb/Admin/Agent/getcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  * FROM `zh_province_city` WHERE `pid` = 1  [ RunTime:0.0000s ]
+
+[ 2017-01-18T13:55:50+08:00 ] ::1 /zhihuiweb/Admin/Agent/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: UPDATE `zh_agent` SET `name`='厦门代理',`province`='1',`city`='6',`address`='思明区',`phone`='18698525416',`type`='1' WHERE `id` = 2 [ RunTime:0.2280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-18T13:55:51+08:00 ] ::1 /zhihuiweb/Admin/agent/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T13:55:51+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:37:41+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:37:42+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T14:37:43+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:37:44+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-18T14:37:44+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:37:45+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:37:46+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:37:49+08:00 ] ::1 /zhihuiweb/Admin/agent/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `zh_agent` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\6a79780384643930a2a74873a40acfb7.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T14:37:56+08:00 ] ::1 /zhihuiweb/Admin/Agent/getcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  * FROM `zh_province_city` WHERE `pid` = 1  [ RunTime:0.0010s ]
+
+[ 2017-01-18T14:37:59+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T14:40:42+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T14:43:46+08:00 ] ::1 /zhihuiweb/Admin/agent/addcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T14:43:56+08:00 ] ::1 /zhihuiweb/Admin/Agent/addcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: INSERT INTO `zh_province_city` (`name`,`pid`,`type`) VALUES ('广州市','3','2') [ RunTime:0.1090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-18T14:43:57+08:00 ] ::1 /zhihuiweb/Admin/agent/addcity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_province_city` WHERE `type` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\b22fa383c8b4e1c62fc8f36f4b3ab990.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:43:59+08:00 ] ::1 /zhihuiweb/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_agent` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `zh_agent` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zh_province_city` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `zh_province_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: site_url C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 3 行.
+NOTIC: [8] Undefined index: domain C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 4 行.
+NOTIC: [8] Undefined variable: notyle C:\wamp\www\zhihuiweb\app\Runtime\Cache\Admin\7e54b206af2bb16b7b1c96f05f8e8ad0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T14:44:01+08:00 ] ::1 /zhihuiweb/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=1 AND `level`<>1 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-18T14:44:01+08:00 ] ::1 /zhihuiweb/Admin/Index/left/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zh_node` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=14 ) ORDER BY sort ASC [ RunTime:0.0010s ]
+SQL: SELECT * FROM `zh_node` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=28 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: display C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=28 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=25 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: display C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=25 ) ORDER BY sort ASC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=21 ) ORDER BY sort ASC [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: display C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT `id`,`data`,`title` FROM `zh_node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=21 ) ORDER BY sort ASC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\wamp\www\zhihuiweb\app\Admin\Controller\IndexController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-18T14:44:01+08:00 ] ::1 /zhihuiweb/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./app/Admin/View/Index/footer.html): failed to open stream: No such file or directory C:\wamp\www\zhihuiweb\ThinkPHP\Library\Think\Template.class.php 第 704 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

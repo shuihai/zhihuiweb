@@ -39,7 +39,7 @@
                         <ul>
                                 <li <if condition="($CAName eq indexindex) ">class="navli"</if>><a href="{:U('Index/index')}">首页</a></li>
                                 <li  <if condition="($CAName eq infocompany_introduction) or ($CAName eq infoteam) or ($CAName eq infomechanism) or ($CAName eq infonews) or ($CAName eq infodetail)">class="navli"</if> ><a href="{:U('Info/company_introduction')}">公司介绍</a></li>
-                                <li <if condition="($CAName eq infocustomer_service) ">class="navli"</if>><a href="{:U('Info/customer_service')}">解决方案</a></li>
+                                <li <if condition="($CAName eq infocustomer_service) or ($CAName eq infosolutions1)">class="navli"</if>><a href="{:U('Info/customer_service')}">解决方案</a></li>
                                 <li <if condition="($CAName eq infoproduct_introduction) or ($CAName eq infoproducts1) ">class="navli"</if>><a href="{:U('Info/product_introduction')}">产品介绍</a></li>
                                 <li <if condition="($CAName eq infobusiness_contact) ">class="navli"</if>><a href="{:U('Info/business_contact')}">业务联系</a></li>
                                 <li <if condition="($CAName eq infochannel_cooperation) ">class="navli"</if>><a href="{:U('Info/channel_cooperation')}">渠道合作</a></li>

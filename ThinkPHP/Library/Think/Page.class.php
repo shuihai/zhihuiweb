@@ -24,7 +24,7 @@ class Page{
     private $nowPage = 1;
 
 	// 分页显示定制
-    private $config  = array(
+    public $config  = array(
         'header' => '<span class="rows">共 %TOTAL_ROW% 条记录</span>',
         'prev'   => '<<',
         'next'   => '>>',
@@ -56,9 +56,9 @@ class Page{
      * @param string $value 设置值
      */
     public function setConfig($name,$value) {
-        if(isset($this->config[$name])) {
+        
             $this->config[$name] = $value;
-        }
+
     }
 
     /**
@@ -89,27 +89,27 @@ class Page{
         /* 计算分页临时变量 */
         $now_cool_page      = $this->rollPage/2;
 		$now_cool_page_ceil = ceil($now_cool_page);
-		$this->lastSuffix && $this->config['last'] = $this->totalPages;
+//		$this->lastSuffix && $this->config['last'] = $this->totalPages;
 
         //上一页
         $up_row  = $this->nowPage - 1;
-        $up_page = $up_row > 0 ? '<a class="prev" href="' . $this->url($up_row) . '">' . $this->config['prev'] . '</a>' : '';
-
+     //  $up_page = $up_row > 0 ? '<a class="prev" href="' . $this->url($up_row) . '">' . $this->config['prev'] . '</a>' : '';
+         $up_page = $up_row > 0 ? '<a class="prev" href="' . $this->url($up_row) . '">' . $this->config['prev'] . '</a>' : '<a class="prev" href="' . $this->url(1) . '">' . $this->config['prev'] . '</a>';
         //下一页
         $down_row  = $this->nowPage + 1;
-        $down_page = ($down_row <= $this->totalPages) ? '<a class="next" href="' . $this->url($down_row) . '">' . $this->config['next'] . '</a>' : '';
-
+     //   $down_page = ($down_row <= $this->totalPages) ? '<a class="next" href="' . $this->url($down_row) . '">' . $this->config['next'] . '</a>' : '';
+        $down_page = ($down_row <= $this->totalPages) ? '<a class="next" href="' . $this->url($down_row) . '">' . $this->config['next'] . '</a>' : '<a class="next" href="' . $this->url($this->totalPages) . '">' . $this->config['next'] . '</a>';
         //第一页
         $the_first = '';
-        if($this->totalPages > $this->rollPage && ($this->nowPage - $now_cool_page) >= 1){
-            $the_first = '<a class="first" href="' . $this->url(1) . '">' . $this->config['first'] . '</a>';
-        }
+//        if($this->totalPages > $this->rollPage && ($this->nowPage - $now_cool_page) >= 1){
+            $the_first = '<a class="paginimg" href="' . $this->url(1) . '">' . $this->config['first'] . '</a>';
+//        }
 
         //最后一页
         $the_end = '';
-        if($this->totalPages > $this->rollPage && ($this->nowPage + $now_cool_page) < $this->totalPages){
+//        if($this->totalPages > $this->rollPage && ($this->nowPage + $now_cool_page) < $this->totalPages){
             $the_end = '<a class="end" href="' . $this->url($this->totalPages) . '">' . $this->config['last'] . '</a>';
-        }
+//        }
 
         //数字连接
         $link_page = "";
@@ -124,13 +124,13 @@ class Page{
             if($page > 0 && $page != $this->nowPage){
 
                 if($page <= $this->totalPages){
-                    $link_page .= '<a class="num" href="' . $this->url($page) . '">' . $page . '</a>';
+                    $link_page .= '<li><a class="num" href="' . $this->url($page) . '"><span>' . $page . '</span></a></li>';
                 }else{
                     break;
                 }
             }else{
                 if($page > 0 && $this->totalPages != 1){
-                    $link_page .= '<span class="current">' . $page . '</span>';
+                    $link_page .= '<li><a class="padina" href="#"><span>' . $page . '</span></a></li>';
                 }
             }
         }
@@ -140,6 +140,10 @@ class Page{
             array('%HEADER%', '%NOW_PAGE%', '%UP_PAGE%', '%DOWN_PAGE%', '%FIRST%', '%LINK_PAGE%', '%END%', '%TOTAL_ROW%', '%TOTAL_PAGE%'),
             array($this->config['header'], $this->nowPage, $up_page, $down_page, $the_first, $link_page, $the_end, $this->totalRows, $this->totalPages),
             $this->config['theme']);
+//    print_r($page_str); die;
+//        var_dump($up_page) ;
+//        var_dump($link_page) ;
+//var_dump($page_str);die;
         return "<div>{$page_str}</div>";
     }
 }

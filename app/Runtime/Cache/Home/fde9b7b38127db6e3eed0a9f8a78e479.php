@@ -39,8 +39,8 @@
                         <ul>
                                 <li <?php if(($CAName == indexindex) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Index/index');?>">首页</a></li>
                                 <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
-                                <li <?php if(($CAName == infocustomer_service) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
-                                <li <?php if(($CAName == infoproduct_introduction) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li <?php if(($CAName == infocustomer_service) or ($CAName == infosolutions1)): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li <?php if(($CAName == infoproduct_introduction) or ($CAName == infoproducts1) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
                                 <li <?php if(($CAName == infobusiness_contact) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
                                 <li <?php if(($CAName == infochannel_cooperation) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
                                 <li <?php if(($CAName == infoafter_sale_platform) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
@@ -68,17 +68,17 @@
 				<div class="contacts1 fleft">
 					<div class="contactsimg"><img src="/zhihuiweb/Public/home/images/img_1.png"/></div>
 					<div class="contactsspan">
-						<span class="contactsspan1">张大民</span>
+						<span class="contactsspan1">付强</span>
 						<span class="contactsspan2">金融、房地产业务负责人</span>
 					</div>
 					<div class="contacts11">
 						<div class="contacts111">
 							<span>个人经历：</span>
-							<p>从事金融、房地产行业多年，对该领域有独到的见解，可以更好的把握业务难点，可以帮助客户选择最合适的解决发案。</p>
+							<p>超过10年的外资、央企的营销及项目管理经验，荣获美国PMP证书，擅长项目型营销。</p>
 						</div>
 						<div class="contacts112">
 							<span>联系方式：</span>
-							<span>电话：125655552356</span>
+							<span>电话：18902007796</span>
 							<span>EMAIL：zhihui@123.com</span>
 							<span>地址：天津南开区慧谷大厦2413</span>
 						</div>
@@ -87,17 +87,17 @@
 				<div class="contacts1 fright">
 					<div class="contactsimg"><img src="/zhihuiweb/Public/home/images/img_2.png"/></div>
 					<div class="contactsspan">
-						<span class="contactsspan1">张大民</span>
+						<span class="contactsspan1">王文学</span>
 						<span class="contactsspan2">金融、房地产业务负责人</span>
 					</div>
 					<div class="contacts11">
 						<div class="contacts111">
 							<span>个人经历：</span>
-							<p>从事金融、房地产行业多年，对该领域有独到的见解，可以更好的把握业务难点，可以帮助客户选择最合适的解决发案。</p>
+							<p>曾在工程、食品等行业担任渠道主管，是智汇研究院最年轻的营销工程师。</p>
 						</div>
 						<div class="contacts112">
 							<span>联系方式：</span>
-							<span>电话：125655552356</span>
+							<span>电话：18335203843</span>
 							<span>EMAIL：zhihui@123.com</span>
 							<span>地址：天津南开区慧谷大厦2413</span>
 						</div>
@@ -145,7 +145,7 @@
                                 <div class="bottomRight22 fleft">
                                         <span>关注智汇</span>
                                         <div>
-                                                <img src="/zhihuiweb/Public/home/images/img_qrcode.png" />
+                                                <img src="/zhihuiweb/Public/home/images/img_orwzma.png" />
                                         </div>
                                 </div>
                         </div>

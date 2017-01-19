@@ -1,6 +1,7 @@
 <?php
 namespace Admin\Controller;
 class InfoController extends AdminController {
+    
     public function _initialize() {
         parent::_initialize();
     }

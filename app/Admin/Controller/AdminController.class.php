@@ -3,6 +3,7 @@ namespace Admin\Controller;
 use Think\CommonController;
 class AdminController extends CommonController{
     public function _initialize(){
+
         $this->assign('config',cacheConfig() );
         $this->assign('current_url',currentUrl());
         $RBAC=new \Common\Extend\RBAC;

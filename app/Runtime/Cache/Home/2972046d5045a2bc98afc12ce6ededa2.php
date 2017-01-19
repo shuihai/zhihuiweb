@@ -39,8 +39,8 @@
                         <ul>
                                 <li <?php if(($CAName == indexindex) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Index/index');?>">首页</a></li>
                                 <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
-                                <li <?php if(($CAName == infocustomer_service) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
-                                <li <?php if(($CAName == infoproduct_introduction) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li <?php if(($CAName == infocustomer_service) or ($CAName == infosolutions1)): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li <?php if(($CAName == infoproduct_introduction) or ($CAName == infoproducts1) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
                                 <li <?php if(($CAName == infobusiness_contact) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
                                 <li <?php if(($CAName == infochannel_cooperation) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
                                 <li <?php if(($CAName == infoafter_sale_platform) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
@@ -67,47 +67,66 @@
 			<div class="present2 width1225 cooperation ">
 				<div class="cooperation1">
 					<div class="cooperation11">
-						<div class="point-area" style="top: 105px; left: 125px; position: absolute; width: 110px; height: 110px; visibility: visible; opacity: 1;">
-							<p class="point-name" style="position: absolute; top: 45px; left: 65px;">新疆</p>
-							<div class="point point-dot"></div>
-							<div class="point point-10"></div>
-							<div class="point point-40"></div>
-							<div class="point point-shadow point-80"></div>
-						</div>
-						<div class="point-area" style="top: 105px; left: 740px; position: absolute; width: 200px; height: 200px; visibility: visible; opacity: 1;">
-							<p class="point-name" style="position: absolute; top: 90px; left: 110px;">华东</p>
+						<div class="point-area" style="top: 180px; left: 150px; position: absolute; width: 110px; height: 110px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 45px; left: 65px;">西北</p>
 							<div class="point point-dot"></div>
 							<div class="point point-10"></div>
 							<div class="point point-40"></div>
 							<div class="point point-shadow point-80"></div>
 						</div>
 						<div class="point-area" style="top: 355px; left: 275px; position: absolute; width: 80px; height: 80px; visibility: visible; opacity: 1;">
-							<p class="point-name" style="position: absolute; top: 30px; left: 0px;">华北</p>
+							<p class="point-name" style="position: absolute; top: 30px; left: 0px;">西南</p>
 							<div class="point point-dot"></div>
 							<div class="point point-10"></div>
 							<div class="point point-70"></div>
 						</div>
+						<div class="point-area" style="top: 150px; left: 540px; position: absolute; width: 200px; height: 200px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 90px; left: 110px;">华北</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-40"></div>
+							<div class="point point-shadow point-80"></div>
+						</div>
+						<div class="point-area" style="top: 400px; left: 575px; position: absolute; width: 80px; height: 80px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 30px; left: 0px;">华中</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-70"></div>
+						</div>
+						<div class="point-area" style="top: 400px; left: 700px; position: absolute; width: 80px; height: 80px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 30px; left: 0px;">华东</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-70"></div>
+						</div>
+						<div class="point-area" style="top: 530px; left: 600px; position: absolute; width: 80px; height: 80px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 30px; left: 0px;">华南</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-70"></div>
+						</div>
+						<div class="point-area" style="top: 100px; left: 850px; position: absolute; width: 80px; height: 80px; visibility: visible; opacity: 1;">
+							<p class="point-name" style="position: absolute; top: 30px; left: 0px;">东北</p>
+							<div class="point point-dot"></div>
+							<div class="point point-10"></div>
+							<div class="point point-70"></div>
+						</div>
+						
 					</div>
 				</div>
 				<div class="cooperation2">
 					<select id="province"> 
-					   <option>----请选择省份----</option> 
-					   <option>北京</option> 
-					   <option>上海</option> 
-					   <option>江苏</option> 
+					   <option  value="0">----请选择省份----</option> 
+                                           <?php if(is_array($provice)): $i = 0; $__LIST__ = $provice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+				
 					</select>
 					<span class="">省</span>
-					<select class="city"> 
-						<option>----请选择城市----</option> 
-                                                <option>东城</option> 
-                                                <option>西城</option> 
-                                                <option>崇文</option> 
-                                                <option>宣武</option> 
-                                                <option>朝阳</option> 
+					<select class="city" id="city"> 
+						<option value="0">----请选择城市----</option> 
                                         </select> 
 				
 				    <span class="">市</span>
-				    <input type="button" value="查找代理商" onclick="getSelectValue();">
+				    <input type="button" value="查找代理商" id="getagent">
 				</div>
 				<div class="cooperation3">
 					<span class="">代理商详情</span>
@@ -118,22 +137,86 @@
 						<li>地址</li>
 						<li>联系方式</li>
 					</ul>
-					<div class="cooperation32">
-						<ul class="">
-							<li>上海</li>
-							<li>黄浦</li>
-							<li></li>
-							<li></li>
-							<li>1111122255</li>
-						</ul>
-	
+					<div class="cooperation32" id="showagent">
+		
 					</div>
 					
 				</div>
 			</div>	
 		</div>
 
+<script >
+    var cityurl = "<?php echo U('getcity');?>";
+    var agenturl = "<?php echo U('getagent');?>";
+    function getSelectValue(provinceid,cityid){
+	$.ajax({
+		url:agenturl,
+		type:'post',
+		dataType: 'json',
+		data: { 'provinceid':provinceid , 'cityid':cityid} ,
+		beforeSend: LoadFunction, //加载执行方法 
+		error: erryFunction, //错误执行方法 
+		success: succFunction //成功执行方法
+	}) 
+	function LoadFunction() { 
+	} 
+	function erryFunction() { 
+	} 
+	function succFunction(data) { 
+		//alert(date);
+		//alert(data['data']);
+		//alert(data['data'][0]['roomname']);
+         		
+		var json = data;
+		console.log(json);
+      
+		if(  json.code == 200 ){
+			var str='';
+			for( var i=0 ; i < json.data.length ; i++){
+				
+					str += "<ul><li>" + json.data[i]['province'] + "</li><li>" + json.data[i]['city'] + "</li><li>" + json.data[i]['type'] + "</li><li>" + json.data[i]['address'] + "</li><li>" + json.data[i]['phone'] + "</li>"+ "</ul>"
+				
+			}
+			
+			$("#showagent").html(str);
+			return;
+			
+		}else{
+			
+			$(".showagent").html(
+				"<li class='reminder-info'><div>暂无信息</div></li>"
+			);
+			return;
+		}
+		
+	} 
 
+    }
+
+    $(function (){
+        $('#province').change(function(){
+            $.post(cityurl,{'province':$('#province').val()},
+                function(result){
+                
+                    $('#city option').remove();
+                    $("<option  value=''>请选择城市</option>").appendTo("#city");
+                    for(var i=0;i<result.length;i++){
+                        //alert(result[i]['city']);
+                        $("<option value="+result[i]['id']+" >"+result[i]['name']+"</option>").appendTo("#city");
+                    }
+                },'json')
+        })
+        
+        $('body').on('click','#getagent',function(){
+            var provinceid = $('#province').val();
+            var cityid = $('#city').val();
+            getSelectValue(provinceid,cityid);
+
+        })
+    })
+    
+    
+</script>
 <!--底部应用场景图片轮播-->
 <div class="bottom">
         <div class="bottom1">
@@ -175,7 +258,7 @@
                                 <div class="bottomRight22 fleft">
                                         <span>关注智汇</span>
                                         <div>
-                                                <img src="/zhihuiweb/Public/home/images/img_qrcode.png" />
+                                                <img src="/zhihuiweb/Public/home/images/img_orwzma.png" />
                                         </div>
                                 </div>
                         </div>

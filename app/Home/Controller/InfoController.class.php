@@ -65,8 +65,8 @@ class InfoController extends HomeController{
         // $Page                    = new \Common\Extend\Page($count,$options['rows']);
         // $Page->setConfig('theme','%upPage% %first% %prePage% %linkPage% %nextPage% %downPage% %end%');
         // $nowPage                 = isset($_GET['p'])?$_GET['p']:1;
-        $this->company=$d->where(array("tid"=>9))->select();
-        $this->news=$d->where(array("tid"=>10))->select();
+        
+//        $this->news=$d->where(array("tid"=>10))->limit($Page->firstRow.','.$Page->listRows)->select();
         // $count                   = $model->where($options['where'])->count();
         // $Page                    = new \Common\Extend\Page($count,$options['rows']);
         // $Page->setConfig('theme','%upPage% %first% %prePage% %linkPage% %nextPage% %downPage% %end%');
@@ -79,7 +79,53 @@ class InfoController extends HomeController{
         // $this->assign('total',$count);
         // $this->assign('page',$Page->show());
         //科学新闻
-        $this->display();
+        
+        $count = $d->where(array("tid"=>9))->count();
+   // echo $M_store->getLastSql();die;
+        if ($count > 0) {
+            $rowsnum = 10;//每页记录数
+            $Page  = new \Think\Page($count,$rowsnum);
+            
+//            $Page->parameter['address'] =$address;
+//            echo C('__PUBLIC__');DIE;
+
+            define('__PUBLIC__', __ROOT__.'/Public');
+//            $Page->setConfig('header','共<em>%TOTAL_ROW%</em>篇文章');
+          
+            $Page->setConfig('first','<img src="'.__PUBLIC__.'/home/images/btn_arrow1.png" />');
+          $Page->setConfig('last','<img src="'.__PUBLIC__.'/home/images/btn_arrow2.png" />');
+        //      $Page->setConfig('last','尾页');
+           
+            $Page->setConfig('prev','<img src="'.__PUBLIC__.'/home/images/btn_arrow3.png" />');
+            $Page->setConfig('next','<img src="'.__PUBLIC__.'/home/images/btn_arrow4.png" />');
+            
+            // $Page->setConfig('theme',"<ul class=\"pagination\"><li class=\"paginate_button previous\" aria-controls=\"dynamic-table\" tabindex=\"0\" id=\"dynamic-table_previous\">%UP_PAGE%</li> <li class=\"paginate_button\" aria-controls=\"dynamic-table\" tabindex=\"0\">%LINK_PAGE%</li> <li class=\"paginate_button next\" aria-controls=\"dynamic-table\" tabindex=\"0\" id=\"dynamic-table_next\">%DOWN_PAGE%</li></ul>");
+          $Page->setConfig('theme',"<ul class=\"pagination\"> <li>%FIRST%</li> <li>%UP_PAGE%</li> %LINK_PAGE% <li>%DOWN_PAGE%</li> <li>%END%</li> </ul>");
+
+       //       $Page->setConfig('theme','%UP_PAGE% %FIRST% %PREPAGE% %LINK_PAGE% %NEXTPAGE% %DOWN_PAGE% %END%');
+            $show     = $Page->show();
+            $this->company=$d->where(array("tid"=>9))->limit($Page->firstRow.','.$Page->listRows)->select();
+            $this->page = $show;
+            $this->count = $count;
+            $this->display();
+            
+        }  else {
+            $this->count = $count;
+            $this->display();
+        }
+
+//    <ul>
+//            <li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow1.png" /></a></li>
+//            <li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow3.png" /></a></li>
+//            <li><a href="#" class="padina"><span>1</span></a></li>
+//            <li><a href="#"><span>2</span></a></li>
+//            <li><a href="#"><span>3</span></a></li>
+//            <li><a href="#"><span>4</span></a></li>
+//            <li><a href="#"><span>5</span></a></li>
+//            <li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow4.png" /></a></li>
+//            <li><a href="#" class="paginimg"><img src="__PUBLIC__/home/images/btn_arrow2.png" /></a></li>
+//    </ul>
+        
     }
     //关于我们
     public function aboutUs(){
@@ -200,10 +246,60 @@ class InfoController extends HomeController{
     }    
     //渠道合作 
     public function channel_cooperation(){
-
+        $this->provice=D('province_city')->where(array("type"=>1))->select();
         $this->display();
     }       
     
+    /**
+     * 获得城市数据
+     */        
+    public function getcity(){
+        $province_city = M('province_city');
+        $province = I('province');
+
+        $city = $province_city->distinct(true)->where(array('pid'=>$province))->select();
+
+        $this->ajaxReturn($city);
+//            echo JSON($city); //注意这里调用了json函数,需要更新一下common里的function函数
+    }
+    
+    
+    /**
+     * 获得经销商数据
+     */        
+    public function getagent(){
+        $agent = M('agent');
+        $province = I('provinceid');
+        $city = I('cityid');
+
+        $map = array();
+        
+        if(!empty($province)){
+            $map['province'] = $province;
+        }
+        if(!empty($city)){
+            $map['city'] = $city;
+        }
+        
+        if(!empty($status)){
+          $map['status'] = 1;
+        }
+        
+        $list = $agent->where($map)->order('id desc')->select();
+        $list2 = [];
+        foreach ($list as $value) {
+            $city = M('province_city')->field('name')->where(array('id'=>$value['city']))->find();
+            $province = M('province_city')->field('name')->where(array('id'=>$value['province']))->find();
+            $value['city'] = $city['name'];
+            $value['province'] = $province['name'];
+            $list2[] = $value;
+        }
+        $list = $list2;
+        $result = ['code'=>200,'data'=>$list];
+        $this->ajaxReturn($result);
+
+//            echo JSON($city); //注意这里调用了json函数,需要更新一下common里的function函数
+    }
     
      //产品介绍 
     public function product_introduction(){
@@ -242,5 +338,47 @@ class InfoController extends HomeController{
 
         $this->display();
     }     
+    
+    //解决方案1 
+    public function solutions1(){
+
+        $this->display();
+    }   
+    
+    //test 
+    public function startcaptchaservlet(){
+        if($_GET['type'] == 'pc'){
+                $GtSdk = new \GeetestLib(CAPTCHA_ID, PRIVATE_KEY);
+        }elseif ($_GET['type'] == 'mobile') {
+                $GtSdk = new\ GeetestLib(MOBILE_CAPTCHA_ID, MOBILE_PRIVATE_KEY);
+        }
+        session_start();
+        $user_id = "test";
+        $status = $GtSdk->pre_process($user_id);
+        $_SESSION['gtserver'] = $status;
+        $_SESSION['user_id'] = $user_id;
+        echo $GtSdk->get_response_str();
+//        $this->display();
+    }      
+
+    
+    public function maitain(){
+        $this->error('查无此编码');   
+    }   
+    
+    public function feedback(){
+        $this->success('感谢您的反馈意见!');   
+    }      
+
+    public function addzan(){
+      
+        $d = D('info');
+        $d->where(['id'=>I('id')])->setInc('zan',1); 
+    }       
+    //test
+    public function test(){
+
+        $this->display();
+    }      
 }
 ?>

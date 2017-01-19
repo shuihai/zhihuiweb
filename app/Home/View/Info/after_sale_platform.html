@@ -1,4 +1,9 @@
 <include file="Public/header"/>
+
+<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+<!-- 引入封装了failback的接口--initGeetest -->
+<script src="http://static.geetest.com/static/tools/gt.js"></script>
 		<div class="companytitle After">
 			<div class="companytitle1"></div>
 			<div class="companytitle2">
@@ -13,18 +18,145 @@
 			</div>
 		</div>
 		
-		<div class="centre">
+		<div class="centre afterCentre">
 			<div class="present1 margin100"> <span>售后平台</span> </div>
 			<div class="present2 width1225 after ">
-				<div class="after1 fleft">
-					<div class="after11"><img src="__PUBLIC__/home/images/img_robot.png"/></div>
-					<div class="after12"><span>查询我购买的机器人</span></div>
-				</div>
-				<div class="after1 fright">
-					<div class="after11"><img src="__PUBLIC__/home/images/img_girl.png"/></div>
-					<div class="after12"><span>意见与建议</span></div>
-				</div>
-			</div>	
-				
-		</div>
+                <ul>
+                    <li class="fleft">
+                        <div class="after1">
+                            <div class="after11"><img src="__PUBLIC__/home/images/img_robot.png"/></div>
+                            <div class="after12 afterarrow1"><span>查询我购买的机器人</span></div>
+                            <div class="after13 afterarrow2">
+                                <div class="arrow">
+                                    <i class="kx-arrow kx-arrow-right">
+                                        <em></em>
+                                        <span></span>
+                                    </i> 
+                                    <p>请输入您购买的机器人编码：</p>
+                                    <form class="popup" action="{:U('Info/maitain')}" method="post">
+                                        <input type="text" value="778855563214" class="text" />
+                                        <div id="embed-captcha"></div>
+                                        <p id="wait" class="show">正在加载验证码......</p>
+                                        <p id="notice" class="hide">请先拖动验证码到相应位置</p>
+                                        <br>
+                                        <input class="btn"type="submit" id="embed-submit" value="查询">
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li class="fright">
+                       <div class="after1">
+                            <div class="after11"><img src="__PUBLIC__/home/images/img_girl.png"/></div>
+                            <div class="after12 afterarrow3"><span>意见与建议</span></div>
+                            <div class="after13 afterarrow4">
+                                <div class="arrow">
+                                    <i class="kx-arrow kx-arrow-right">
+                                        <em></em>
+                                        <span></span>
+                                    </i> 
+                                    <p>提出你的想法与建议：</p>
+                                    <form class="popup" action="{:U('Info/feedback')}" method="post">
+                                        <input type="text" value="您的姓名" class="text" />
+                                        <input type="text" value="您的电话" class="text" />
+                                        <input type="text" value="您的邮箱" class="text" />
+                                        <input type="text" value="您的行业" class="text" />
+                                        <textarea>您的想法与建议</textarea>
+<!--                                        <div id="embed-captchaq2"></div>
+                                        <p id="waitq" class="show">正在加载验证码......</p>
+                                        <p id="noticeq" class="hide">请先拖动验证码到相应位置</p>-->
+                                        <br>
+                                        <input class="btn" type="submit" id="embed-submitq" value="提交">
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                    </li>
+                </ul>
+                </div>	
+
+        </div>
+		
+
+<script>
+    var flag1=0;
+    var flag2=0;
+    var randtime = (new Date()).getTime();
+    var firsturl = "{:U('Info/startcaptchaservlet')}?type=pc&t=" + randtime;
+        $(function(){
+                $(".afterarrow1").click(function(){
+                        $(this).toggleClass("afterarrow");
+                        if(flag1==0){
+                            $(".afterarrow2").show();
+                            flag1=1;
+                            if(flag2==1){
+                                $(".afterarrow4").hide();
+                                flag2=0;
+                            }
+                        }else{
+                            $(".afterarrow2").hide();
+                            flag1=0;
+                        }
+//                        $(".afterarrow2").toggle();
+                        
+                });
+                $(".afterarrow3").click(function(){
+                        $(this).toggleClass("afterarrow");
+                        if(flag2==0){
+                            $(".afterarrow4").show();
+                            flag2=1;
+                            if(flag1==1){
+                                $(".afterarrow2").hide();
+                                flag1=0;
+                            }                            
+                        }else{
+                            $(".afterarrow4").hide();
+                            flag2=0;
+                        }
+                        
+                });
+        });
+    var handlerEmbed = function (captchaObj) {
+        $("#embed-submit").click(function (e) {
+            var validate = captchaObj.getValidate();
+            if (!validate) {
+                $("#notice")[0].className = "show";
+                setTimeout(function () {
+                    $("#notice")[0].className = "hide";
+                }, 2000);
+                e.preventDefault();
+            }
+        });
+        // 将验证码加到id为captcha的元素里，同时会有三个input的值：geetest_challenge, geetest_validate, geetest_seccode
+        captchaObj.appendTo("#embed-captcha");
+//        captchaObj.appendTo("#embed-captcha2");
+        captchaObj.onReady(function () {
+            $("#wait")[0].className = "hide";
+        });
+        // 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
+    };// 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
+
+    $.ajax({
+        // 获取id，challenge，success（是否启用failback）
+        url: firsturl, // 加随机数防止缓存
+        type: "get",
+        dataType: "json",
+        success: function (data) {
+            // 使用initGeetest接口
+            // 参数1：配置参数
+            // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+            initGeetest({
+                gt: data.gt,
+                challenge: data.challenge,
+                product: "embed", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
+                offline: !data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+                // 更多配置参数请参见：http://www.geetest.com/install/sections/idx-client-sdk.html#config
+            }, handlerEmbed);
+        }
+    });
+</script>
 <include file="Public/footer"/>

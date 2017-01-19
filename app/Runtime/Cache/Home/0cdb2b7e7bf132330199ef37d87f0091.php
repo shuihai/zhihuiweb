@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -105,7 +105,7 @@
 
 <script>
     var randtime = (new Date()).getTime();
-    var firsturl = "{:U('Info/startcaptchaservlet')}?type=pc&t=" + randtime;
+    var firsturl = "<?php echo U('Info/startcaptchaservlet');?>?type=pc&t=" + randtime;
  
     var handlerEmbed = function (captchaObj) {
         $("#embed-submit").click(function (e) {

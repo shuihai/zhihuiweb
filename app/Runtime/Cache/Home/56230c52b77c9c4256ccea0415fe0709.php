@@ -39,8 +39,8 @@
                         <ul>
                                 <li <?php if(($CAName == indexindex) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Index/index');?>">首页</a></li>
                                 <li  <?php if(($CAName == infocompany_introduction) or ($CAName == infoteam) or ($CAName == infomechanism) or ($CAName == infonews) or ($CAName == infodetail)): ?>class="navli"<?php endif; ?> ><a href="<?php echo U('Info/company_introduction');?>">公司介绍</a></li>
-                                <li <?php if(($CAName == infocustomer_service) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
-                                <li <?php if(($CAName == infoproduct_introduction) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
+                                <li <?php if(($CAName == infocustomer_service) or ($CAName == infosolutions1)): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/customer_service');?>">解决方案</a></li>
+                                <li <?php if(($CAName == infoproduct_introduction) or ($CAName == infoproducts1) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/product_introduction');?>">产品介绍</a></li>
                                 <li <?php if(($CAName == infobusiness_contact) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/business_contact');?>">业务联系</a></li>
                                 <li <?php if(($CAName == infochannel_cooperation) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/channel_cooperation');?>">渠道合作</a></li>
                                 <li <?php if(($CAName == infoafter_sale_platform) ): ?>class="navli"<?php endif; ?>><a href="<?php echo U('Info/after_sale_platform');?>">售后平台</a></li>
@@ -90,10 +90,10 @@
 								<span>即听话又能谈天说地</span>
 								<span>智能语音交互，既能做到通用领域的流畅聊天，又为行业定制特殊场合的多轮对话。六麦阵列及360°声源定位，为你们的聊天创造最优环境。</span>
 							</li>
-							<li><img src="images/img_8.png"/></li>
+							<li><img src="/zhihuiweb/Public/home/images/img_8.png"/></li>
 						</ul>
 					</div>
-					<div class="products32 fright"><img src="images/img_4.png" /></div>
+					<div class="products32 fright"><img src="/zhihuiweb/Public/home/images/img_4.png" /></div>
 				</div>
 			</div>	
 		</div>
@@ -138,7 +138,7 @@
                                 <div class="bottomRight22 fleft">
                                         <span>关注智汇</span>
                                         <div>
-                                                <img src="/zhihuiweb/Public/home/images/img_qrcode.png" />
+                                                <img src="/zhihuiweb/Public/home/images/img_orwzma.png" />
                                         </div>
                                 </div>
                         </div>

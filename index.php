@@ -5,7 +5,12 @@ define('APP_NAME', 'app');
 define('APP_PATH', './app/');
 define('STATIC_PATH','./Uploads/');
 
+require_once  './lib/class.geetestlib.php';
+
+require_once './config/config.php';
 // define( "GZIP_ENABLE", function_exists ( 'ob_gzhandler') );
 // ob_start( GZIP_ENABLE ? 'ob_gzhandler': null );
+
 require 'ThinkPHP/ThinkPHP.php';
+
 

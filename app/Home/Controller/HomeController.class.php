@@ -3,7 +3,10 @@ namespace Home\Controller;
 use Think\CommonController;
 class HomeController extends CommonController{
     public function _initialize(){
-    	parent::_initialize();
+
+        
+        parent::_initialize();
+        
         //$this->assign("headerType",A("Communal/Type")->getSon("2"));
         $this->assign("CAName",strtolower(CONTROLLER_NAME.ACTION_NAME)); 
        

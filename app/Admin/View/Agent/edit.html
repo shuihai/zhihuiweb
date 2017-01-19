@@ -1,56 +1,65 @@
 <include file="Public/header" />
 <div class="row_main">
 
-<form action="{:U('Admin/Config/setting')}" method="post" enctype="multipart/form-data">
+<form action="{:U('Admin/Agent/edit')}" method="post" enctype="multipart/form-data">
 <div class="tab-content">
 
-                <input name="id" value="1" type="hidden" />
+                <input type="hidden" name="id" value="{$row.id}">
 	  	<table class="form_table">
 	        <tr class="tr rt">
 	            <td>代理商名称</td>
 	            <td  class="lt">
-	               <input type="text" name="name" value="{$config['name']}" class="form_table_title"/>
+	               <input type="text" name="name" value="{$row.name}" class="form_table_title"/>
 	            </td>
 	        </tr>
+
+
 	        <tr class="tr rt">
-	            <td>站点标题</td>
+	            <td>省</td>
 	            <td  class="lt">
-	               <input type="text" name="title" value="{$config['title']}" class="form_table_title"/>
-	            </td>
-	        </tr>
-	        <tr class="tr rt">
-	            <td>关键词</td>
-	            <td  class="lt">
-	               <textarea name="keywords">{$config['keywords']}</textarea>
-	            </td>
-	        </tr>
-	        <tr class="tr rt">
-	            <td>站点描述</td>
-	            <td  class="lt">
-	               <textarea name="description">{$config['description']}</textarea>
-	            </td>
-	        </tr>
-	        <tr class="tr rt">
-	            <td>短信接口用户名</td>
-	            <td  class="lt">
-	               <input type="text" name="sms_name" value="{$config['sms_name']}" class="form_table_title"/>
-	            </td>
-	        </tr>
-	        <tr class="tr rt">
-	            <td>短信接口密码</td>
-	            <td  class="lt">
-	               <input type="text" name="sms_password" value="{$config['sms_password']}" class="form_table_title"/>
-	            </td>
-	        </tr>
-	        <tr class="tr rt">
-	            <td>网站状态</td>
-	            <td  class="lt">
-	               <select name="status">
-	                    <option <eq name="config.status" value="1">selected</eq> value="1">开启</option>
-	                    <option <eq name="config.status" value="0">selected</eq> value="0">关闭</option>
+	               <select name="province" id="province">
+                           <option value="">请选择</option>
+                           <volist name="provice" id="vo">
+	                    <option value="{$vo.id}">{$vo.name}</option>
+                           </volist>
 	                </select>
 	            </td>
 	        </tr>
+	        <tr class="tr rt">
+	            <td>市</td>
+	            <td  class="lt">
+	               <select name="city"  id="city">
+                           <option value="">请选择城市</option>
+	                </select>
+	            </td>
+	        </tr>    
+	        <tr class="tr rt">
+	            <td>地址</td>
+	            <td  class="lt">
+	               <input type="text" name="address" value="{$row.address}" class="form_table_title"/>
+	            </td>
+	        </tr>         
+	        <tr class="tr rt">
+	            <td>联系方式</td>
+	            <td  class="lt">
+	               <input type="text" name="phone" value="{$row.phone}" class="form_table_title"/>
+	            </td>
+	        </tr>      
+	        <tr class="tr rt">
+	            <td>类型</td>
+	            <td  class="lt">
+	               <select name="type">
+	                    <option <eq name="row.type" value="1">selected</eq> value="1">一级代理</option>
+	                    <option <eq name="row.type" value="2">selected</eq> value="2">二级代理</option>
+                            <option <eq name="row.type" value="3">selected</eq> value="3">三级代理</option>
+	                </select>
+	            </td>
+	        </tr>   
+                <tr class="tr rt">
+                <td colspan="4">
+                    <input name="submit" type="submit" class="btn btn-default" value="添加" >
+                </td>
+                       
 		</table>
 </div>
 
@@ -58,5 +67,24 @@
 
 </form>
 </div>
-
+<script >
+    var cityurl = "{:U('getcity')}";
+   
+    $(function (){
+        $('#province').change(function(){
+            $.post(cityurl,{'province':$('#province').val()},
+                function(result){
+                
+                    $('#city option').remove();
+                    $("<option  value=''>请选择城市</option>").appendTo("#city");
+                    for(var i=0;i<result.length;i++){
+                        //alert(result[i]['city']);
+                        $("<option value="+result[i]['id']+" >"+result[i]['name']+"</option>").appendTo("#city");
+                    }
+                },'json')
+        })
+    })
+    
+    
+</script>
 <include file="Public/footer" />
