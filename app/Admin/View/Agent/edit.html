@@ -1,0 +1,62 @@
+<include file="Public/header" />
+<div class="row_main">
+
+<form action="{:U('Admin/Config/setting')}" method="post" enctype="multipart/form-data">
+<div class="tab-content">
+
+                <input name="id" value="1" type="hidden" />
+	  	<table class="form_table">
+	        <tr class="tr rt">
+	            <td>代理商名称</td>
+	            <td  class="lt">
+	               <input type="text" name="name" value="{$config['name']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>站点标题</td>
+	            <td  class="lt">
+	               <input type="text" name="title" value="{$config['title']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>关键词</td>
+	            <td  class="lt">
+	               <textarea name="keywords">{$config['keywords']}</textarea>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>站点描述</td>
+	            <td  class="lt">
+	               <textarea name="description">{$config['description']}</textarea>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>短信接口用户名</td>
+	            <td  class="lt">
+	               <input type="text" name="sms_name" value="{$config['sms_name']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>短信接口密码</td>
+	            <td  class="lt">
+	               <input type="text" name="sms_password" value="{$config['sms_password']}" class="form_table_title"/>
+	            </td>
+	        </tr>
+	        <tr class="tr rt">
+	            <td>网站状态</td>
+	            <td  class="lt">
+	               <select name="status">
+	                    <option <eq name="config.status" value="1">selected</eq> value="1">开启</option>
+	                    <option <eq name="config.status" value="0">selected</eq> value="0">关闭</option>
+	                </select>
+	            </td>
+	        </tr>
+		</table>
+</div>
+
+        
+
+</form>
+</div>
+
+<include file="Public/footer" />
